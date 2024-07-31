@@ -1,15 +1,20 @@
 # Patrick Américo
-Analista Programador de Sistemas
+Engenheiro da Computação e Analista Desenvolvedor de Sistemas
 
-:house:    SP <br>
-:iphone:   (12)  <br>
-:envelope:  patrick.americo@outlook.com
+## Contato
 
-Profissional de TI com +10 anos de experiência e paixão pela inovação em saúde
+* **Email:** :envelope: patrick.americo@outlook.com
+* **GitHub:** [https://github.com/patrickamerico](https://github.com/patrickamerico)
+* **LinkedIn:** [https://www.linkedin.com/in/patrick-americo-analista-ti-saude](https://www.linkedin.com/in/patrick-americo-analista-ti-saude)
+:house:    SP 
+:iphone:   (12)
 
-Engenheiro de Computação com CREA e Pós-graduado em Gestão de Projetos
+## Sobre Mim
 
-Especialista em:
+Com mais de 10 anos de experiência em tecnologia da informação, sou graduado em Engenharia da Computação e pós-graduado em Gestão de Projetos. Possuo expertise em análise, consultoria e desenvolvimento de sistemas.
+Ao longo de minha carreira, atuei como Scrum Master, Product Owner e membro do Scrum Team, sempre focado em entregas eficientes e dentro do prazo e orçamento.
+
+**Especialista em:**
 
   * Análise e Desenvolvimento de Sistemas: Desktop, Web e Mobile
   * Liderança de Equipe e Consultoria em TI para a Saúde
@@ -17,109 +22,129 @@ Especialista em:
   * Gestão de Projetos com Ênfase em Resultados
   * Garantia da Segurança e Conformidade com a LGPD
 
-Habilidades Diferenciadas:
+**Habilidades Diferenciadas:**
 
   * Inteligência Emocional e Tomada de Decisão Estratégica
   * Flexibilidade, Colaboração e Comunicação Eficaz
   * Orientação para Resultados e Foco no Cliente
   * Conhecimento Profundo das Rotinas da Agência Nacional de Saúde (ANS)
   * Experiência em ERP Hospitalar Tasy Philips e ERP de Gestão Sênior
+  
+**Idiomas:**
 
+	* Português (Nativo)
+	* Inglês (Intermediário)
+	* Espanhol (Intermediário)
 
-## Formação
-2020 - GESTÃO DE PROJETOS <br>
+## Habilidades
 
-2018 - ENGENHARIA DA COMPUTAÇÃO
-UNIVAP - Universidade do Vale do Paraíba
+### Hard Skills
 
-2011 - TÉCNICO EM INFORMÁTICA
-UNIVAP – COLÉGIO TÉCNICO “ANTÔNIO TEIXEIRA FERNANDES”
+**Linguagens de Programação:**
 
-## Experência Profissional
+	* HTML5
+	* CSS
+	* JavaScript
+	* PHP
+	* Genexus
+	* Delphi
+	* C
+	* C#
+	* Vb.net
+	* Python
+	* Java
 
-* (Atual) <br>
-**  S/A. Serviços Médico ** -
-Programador Sênior
-  * Análise econômica;
-  * Análise de requisitos;
-  * Especiﬁcação;
-  * Arquitetura;
-  * Codiﬁcação; 
-  * Elaboração de documentação;
-  * Treinamento a usuários (interno e externo);
-  * Suporte (interno e externo);
-  * Criação de soluções para aperfeiçoar os processos já existentes;
-  * Execução de atividades períodicas e voltadas à ANS; 
-  * Apoio no ERP Tasy e Sênior;
+**Banco de Dados:**
 
-* (2011 -  2015) <br>
-**Dash ************** Ltda** -
-Estágio > Programador Júnior > Programador Pleno.
-  * Ser responsável pelo laboratório utilizado pelos alunos.
-  * Solucionar dúvidas referentes as disciplinas.
-  * Desenvolver e manter sistemas e aplicativos de software (desktop e web);
-  * Criação de FPA-Function Point, Planning Poker, Análise econômica, Levantamento de requisitos, Design do projeto, Implementação, Teste, Documentação e suporte;
-  * Treinamento de colaboradores;
-  * Mentoria aos programadores júnior;
-  * Apresentação teórica e prática (Genexus) para ﬁns comerciais;
-  * Outsourcing, focado no desenvolvimento de sistema com ênfase nos módulos de NF-e e NFS-e (Abasf e DSF). 
+	* SQL Server
+	* MySQL
+	* Oracle
+	* DB2/AS400
+	* Progress
 
-## Conhecimentos
+**Business Intelligence e Ferramentas de Visualização:**
 
-### Sistemas Operacionais
-* Linux
-* Windows
+	* Power BI
+	* WekNow
+	* QuickView
+	* TaticView
+	* SADIG
 
-### Front-end
-* HTML;
-  * Markdown.
-* CSS;
-* JavaScript;
+**Outras Ferramentas:**
 
-### Linguagens de Programação
-* Genexus;
-* Delphi;
-* C;
-* C#;
-* Vb.net;
-* Python;
-* Java;
-* PHP;
-
-
-### Banco de Dados
-* SQL Server;
-* MySQL;
-* Oracle;
-* DB2/AS400;
-* Progress;
+	* Office 365
+	* Ms Project
 
 ### Sistemas de controle de versão
-* TortoiseSVN;
-* Git;
+	* TortoiseSVN;
+	* Git;
 
-## Projetos
-* [Site Pessoal]
-* [InfoAgro]
+## Formação Acadêmica
+
+	* **Pós-Graduação em Gestão de Projetos** - Universidade ******* ** ** (Junho de 2020)
+	* **Engenharia da Computação** - Universidade do **** ** ******* (Junho de 2018)
+	* **Técnico em Informática** - COLÉGIO TÉCNICO “******* ******** *********” (Dezembro de 2011)
+
+## Experiência Profissional
+
+**Desenvolvedor Sênior - Policlin ***** (Agosto de 2015 - Presente)**
+
+	* Analisar e projetar soluções sistêmicas** em ambientes desktop, web e mobile, utilizando metodologias ágeis e práticas de design centradas no usuário;
+	* Realizar levantamento de requisitos junto às partes interessadas, garantindo que as soluções atendam às necessidades de negócios e aos objetivos estratégicos da organização;
+	* Desenvolver e implementar soluções de software de alta qualidade, seguindo as melhores práticas de programação, incluindo testes automatizados e revisão de código;
+	* Liderar a arquitetura de sistemas, garantindo escalabilidade, performance e segurança, com foco em tecnologias modernas;
+	* Gerenciar prazos e expectativas em relação aos sistemas, utilizando ferramentas de gerenciamento de projetos para monitorar o progresso e comunicar resultados às partes interessadas;
+	* Implementar melhorias contínuas nos processos e fluxos de trabalho, promovendo a eficiência operacional e a adoção de novas ferramentas operacionais;
+	* Realizar análises de performance e propor otimizações nas aplicações existentes, garantindo a melhor experiência para o usuário final;
+	* Integrar sistemas, assegurando a interoperabilidade e a segurança dos dados em conformidade com a LGPD e outras regulamentações pertinentes;
+	* Desenvolver e manter documentação técnica, incluindo diagramas de arquitetura, manuais de usuário e guias de integração;
+	* Suportar usuários finais em questões relacionadas a regras de negócios e sistemas, oferecendo treinamento e assistência técnica conforme necessário;
+	* Colaborar com equipes de suporte técnico para resolver incidentes e problemas, garantindo a continuidade dos serviços.
+	* Pesquisar e avaliar novas tecnologias e tendências do mercado, propondo inovações que possam agregar valor aos produtos e serviços da empresa.
+	* Executar atividades periódicas relacionadas à ANS (Agência Nacional de Saúde Suplementar) e outras normativas aplicáveis, garantindo que os sistemas estejam em conformidade com as exigências regulatórias.
+
+**Programador Pleno - Dash ***** (Junho de 2011 - Julho de 2015)**
+
+	* Apresentar soluções de software a clientes externos, demonstrando funcionalidades e benefícios de forma clara e convincente;
+	* Conduzir workshops e reuniões de levantamento de requisitos junto às partes interessadas, garantindo o alinhamento das expectativas;
+	* Desenvolver software de alta qualidade, seguindo as melhores práticas de programação, incluindo padrões de projeto e princípios SOLID;
+	* Implementar testes automatizados em diferentes níveis (unitários, integração, ponta a ponta), garantindo a integridade do sistema;
+	* Configurar e manter pipelines de integração contínua, automatizando a construção, testes e implantação das aplicações;
+	* Implementar estratégias de versionamento de código, utilizando ferramentas como Git/SVN para controle de versão e ramificações;
+	* Liderar equipes de programadores júnior e pleno, fornecendo mentoria, revisão de código e treinamento em boas práticas;
+	* Participar de reuniões de planejamento e retrospectivas, contribuindo com a melhoria contínua dos processos e práticas da equipe;
+	* Projetar e desenvolver web services para integração entre sistemas, garantindo a interoperabilidade e a segurança das comunicações;
+	* Planejar e executar projetos de migração de sistemas legados para novas tecnologias, minimizando impactos e riscos;
+	* Realizar manutenção corretiva e evolutiva em sistemas existentes, implementando melhorias e correções de bugs;
+	* Trabalhar em equipe em ambiente ágil, utilizando metodologias como Scrum e Kanban para entrega iterativa de valor;
+	* Participar ativamente de cerimônias ágeis, como daily meetings, planning e retrospectivas, contribuindo para a melhoria contínua do processo;
 
 ## Certificações
-* Curso Git e Github para iniciantes (Udemy / [Certificado](#))
-* Business Intelligence Foundation Professional Certification – BIFPC
-* Fundamentos Na Lei Geral De Proteção De Dados – LGPDF
-* Six Sigma Yellow Belt
-* Six Sigma White Belt in Healthcare
-* Certificação Fundação Scrum – SFPC
-* Remote Work Professional Certification - RWPC
 
-## Redes Sociais
-*  [Linkedin]()
+	* Fundamentos na Lei Geral de Proteção de Dados - LGPD (Abril de 2023)
+	* Business Intelligence Foundation Professional Certification - BIFPC (Abril de 2023)
+	* Remote Work Professional Certification - RWP (Abril de 2023)
+	* Certificação Fundação Scrum - SFPC (Maio de 2023)
+	* Certificação Six Sigma White Belt in Healthcare (Maio de 2023)
+	* Certificação Six Sigma Yellow Belt (Maio de 2023)
 
-## Informações Adicionais
-* Nota Máxima no trabalho de conclusão de curso de Engenharia da Computação.
+## Premiações
 
-<br><br>
+* **InfoAgro - Apresentação de projeto para bancada e público geral**
+    * O InfoAgro é uma plataforma web responsiva, de fácil acesso, que oferece suporte ao agricultor na tomada de decisões, com base em dados precisos e atualizados coletados diretamente dos sensores instalados no campo. Com essa solução, os agricultores podem: Monitorar em tempo real as condições do solo, clima e outras variáveis importantes para a produção agrícola. Analisar dados históricos para identificar tendências e padrões que possam afetar a produção. Tomar decisões informadas sobre irrigação, fertilização, controle de pragas e outras práticas agrícolas.	A plataforma InfoAgro é altamente personalizável e pode ser adaptada às necessidades específicas de cada fazenda ou cultivo. Além disso, a interface intuitiva e amigável torna a plataforma fácil de usar para agricultores de todos os níveis de experiência. Com o InfoAgro, os agricultores podem aumentar a eficiência e a produtividade, reduzir custos e minimizar o impacto ambiental de suas operações. É uma solução inovadora e poderosa para a agricultura moderna.
+* **INIC - Iniciação Científica**
+    * Desenvolvido solução durante pandemia do Covid-19 de verificação de autenticidade para certificados emitidos em eventos, aproveitando o poder do MD5 - um algoritmo criptográfico de hash. O MD5 gera um código de soma único para cada documento de certificação, garantindo a integridade e a exclusividade destes mesmos. O uso do MD5 permite: Verificação rápida e precisa da integridade dos arquivos de certificação. Detecção de alterações maliciosas ou incorretas nos arquivos de certificação. Geração de um código de soma único para cada certificado, evitando colisões. Embora o MD5 seja considerado obsoleto hoje em dia devido a vulnerabilidades encontradas, foi fundamental para a história do crescimento da segurança em nossos processos de autenticação. Hoje, podemos utilizar algoritmos mais recentes e robustos, como SHA-256, para substituir o MD5 em situações críticas de segurança.
 
-## Me ajude!
-Encontrou algum erro nas informações? Sentiu falta de algo? Abre uma issue! <br>
+## Portfólio
 
-Inspirado no [davidallysson]([https://github.com/richmanzoli/curriculo](https://github.com/davidallysson/curriculo)https://github.com/davidallysson/curriculo). Confere o dele lá também! :wink:
+### Painel de Análise da Resolução de Queixas Consumidorias em Power BI
+
+* Visão geral com métricas pré-definidas e análise de dados abertos.
+
+### Design Inspirado no iFood: Introduzindo o Nosso Aplicativo de Comida
+
+* Aplicativo de comida com base na interface do iFood, desenvolvido em Figma.
+
+### Explorando Novos Sons: Apresentando Nosso Site de Música Inspirado no Spotify
+
+* Site de música com base na interface do Spotify, desenvolvido com HTML, CSS e JavaScript.
