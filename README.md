@@ -38,8 +38,18 @@ Aqui estão algumas das tecnologias e ferramentas com as quais tenho mais experi
 
 **Bancos de Dados:**
 
-[![My Skills](https://skillicons.dev/icons?i=mysql,postgres,sqlite,mongodb&theme=light)](https://skillicons.dev)
-*(Experiência principal em **SQL Server**, **Oracle**, **MySQL**, **DB2/AS400**)*
+[![My Skills](https://skillicons.dev/icons?i=mysql,postgres&theme=light)](https://skillicons.dev)
+
+<!-- Ícones extras para SQL Server, Oracle e DB2/AS400 via Devicon CDN -->
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="SQL Server" width="40" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle" width="40" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/db2/db2-original.svg" alt="DB2" width="40" height="40" />
+  <span style="font-size: 0.9rem; vertical-align: middle; margin-left: 8px;">
+    *(Experiência principal em <strong>SQL Server</strong>, <strong>Oracle</strong>, <strong>MySQL</strong>, <strong>DB2/AS400</strong>)*
+  </span>
+</p>
+
 
 **Ferramentas, Plataformas & Metodologias:**
 
