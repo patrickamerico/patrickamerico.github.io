@@ -1,768 +1,502 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Patrick</title>
-      <meta name="description" content="Patrick - Engenheiro da Computação e Analista Desenvolvedor de Sistemas">
-      <link rel="stylesheet" href="css/base.css">
-      <link rel="stylesheet" href="css/main.css">
-      <link rel="stylesheet" href="css/vendor.css">            
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-	  <link rel="icon" type="image/png" href="favicon.ico">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Patrick Américo - Desenvolvedor Sênior | Software Engineering | Analista de Sistemas</title>
+    <meta name="description" content="Portfólio de Patrick Américo, Desenvolvedor Sênior e Engenheiro da Computação com +10 anos de experiência em desenvolvimento de software full-stack, análise de sistemas, arquitetura, metodologias ágeis (Scrum) e gestão de projetos. Expertise em C#, Java, Python, SQL Server, Power BI.">
 
-   </head>
-   <body id="top">
-      <!-- Menu de Acessibilidade -->
-      <div id="accessibility-menu">
-         <button id="increase-font">A+</button>
-         <button id="decrease-font">A-</i></button>
-         <button id="high-contrast"><i class="fas fa-adjust"></i></button>
-         <button id="reset-styles"><i class="fas fa-undo"></i></button>
-      </div>
-      <header>
-         <div class="row">
-            <div class="top-bar">
-               <a class="menu-toggle" href="#" aria-label="Abrir Menu"><span aria-hidden="true">Menu</span></a>
-               <div class="logo">
-                  <a href="index.html" aria-label="Página Inicial">PA</a>
-               </div>
-               <nav id="main-nav-wrap">
-                  <ul class="main-navigation">
-                     <li><a class="smoothscroll" href="#intro" title="Início">Início</a></li>
-                     <li><a class="smoothscroll" href="#about" title="Sobre Mim">Sobre Mim</a></li>
-                     <li><a class="smoothscroll" href="#resume" title="Resumo">Resumo</a></li>
-                     <li><a class="smoothscroll" href="#portfolio" title="Portfólio">Portfólio</a></li>
-                     <li><a class="smoothscroll" href="#contact" title="Contato">Contato</a></li>
-                  </ul>
-               </nav>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.ico">
+
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts (Optional - Example: Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body id="top">
+
+    <!-- Pré-carregador -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- Menu Acessibilidade -->
+    <div id="accessibility-menu" aria-label="Menu de Acessibilidade">
+        <button id="increase-font" aria-label="Aumentar Fonte">A+</button>
+        <button id="decrease-font" aria-label="Diminuir Fonte">A-</button>
+        <button id="high-contrast" aria-label="Alternar Alto Contraste"><i class="fas fa-adjust"></i></button>
+        <button id="reset-styles" aria-label="Resetar Estilos"><i class="fas fa-undo"></i></button>		
+    </div>
+
+    <!-- Cabeçalho -->
+    <header id="header">
+        <div class="container">
+            <div class="nav-bar">
+                <div class="logo">
+                    <a href="index.html" aria-label="Página Inicial">PA</a>
+                </div>
+                <nav id="main-nav">
+                    <ul class="nav-list">
+                        <li><a class="nav-link" href="#intro">Início</a></li>
+                        <li><a class="nav-link" href="#about">Sobre Mim</a></li>
+                        <li><a class="nav-link" href="#skills">Competências</a></li> 
+                        <li><a class="nav-link" href="#resume">Trajetória</a></li> 
+                        <li><a class="nav-link" href="#portfolio">Portfólio</a></li>
+                        <li><a class="nav-link" href="#contact">Contato</a></li>
+                    </ul>
+                </nav>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Abrir Menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-         </div>
-      </header>
-      <section id="intro">
-         <div class="intro-overlay"></div>
-         <div class="intro-content">
-            <div class="row">
-               <div class="col-twelve">
-                  <h5>Olá, seja bem vindo!</h5>
-                  <h1>Eu sou Patrick</h1>
-                  <p class="intro-position">
-                     <span>Engenheiro da Computação</span>
-                     <span>Analista Desenvolvedor de Sistemas</span>
-                  </p>
-                  <a class="button stroke smoothscroll" href="#about" title="Sobre Mim">Conheça minha trajetória</a>
-               </div>
+        </div>
+    </header>
+
+    <!-- Seção de introdução -->
+    <section id="intro" class="section section-intro">
+        <div class="overlay"></div>
+        <div class="container intro-content">
+            <h5>Olá,</h5>            
+            <h1>Eu sou Patrick Américo</h1>
+            <p class="intro-position">                
+                <span>Software Engineering</span>
+                <span>Analista de Sistemas</span>
+				<span>Desenvolvedor de Software Sênior</span>
+            </p>
+            <a class="btn btn-stroke nav-link" href="#about">Conheça minha trajetória</a>
+             <ul class="intro-social">
+                <li><a href="mailto:patrick.americo@outlook.com" aria-label="Enviar Email" target="_blank"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="https://github.com/patrickamerico" aria-label="Visitar GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/patrick-americo-analista-ti-saude" aria-label="Visitar LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+             </ul>
+        </div>
+    </section>
+
+    <!-- Sobre a seção -->
+    <section id="about" class="section section-about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre Mim</h2>
             </div>
-            <div class="intro-info">               
-               <ul class="intro-social">
-                  <li><a href="mailto:patrick.americo@outlook.com" aria-label="Enviar Email"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
-                  <li><a href="https://github.com/patrickamerico" aria-label="Visitar GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
-                  <li><a href="https://www.linkedin.com/in/patrick-americo-analista-ti-saude" aria-label="Visitar LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-               </ul>
+            <div class="about-content">
+                <div class="about-text">
+                    
+                    <p class="lead">
+                        Profissional com mais de 10 anos de sólida experiência em Tecnologia da Informação, combinando a base analítica da <strong>Engenharia da Computação</strong> com a visão estratégica da Pós-Graduação em <strong>Gestão de Projetos</strong>. Atuo como <strong>Desenvolvedor Sênior</strong> e <strong>Analista de Sistemas</strong>, com expertise comprovada em todo o ciclo de vida do <strong>desenvolvimento de software</strong> (desktop, web e mobile), desde a <strong>análise de requisitos</strong> e <strong>arquitetura de sistemas</strong> até a implementação, testes e implantação.
+                        <br><br>
+                        Experiência prática em liderança técnica e aplicação de <strong>metodologias ágeis</strong> (<strong>Scrum</strong>), atuando como <strong>Scrum Master</strong> (foco em entregas eficientes, dentro do prazo e orçamento) e <strong>Product Owner</strong> (PO - priorização de backlog e interface com stakeholders). Sólidos conhecimentos em linguagens como <strong>Genexus</strong>, <strong>Delphi</strong>, <strong>Python</strong>, bancos de dados (<strong>SQL Server</strong>, Oracle, MySQL) e ferramentas de BI como <strong>Power BI</strong>. Busco constantemente otimizar processos e entregar soluções robustas, escaláveis e alinhadas às necessidades do negócio.
+                    </p>
+                     <h3>Idiomas</h3>
+                     <ul class="language-bars">
+                        <li>
+                           <strong>Português</strong>
+                           <div class="progress-bar"><span class="progress" style="width: 100%;">Nativo</span></div>
+                        </li>
+                        <li>
+                            <strong>Inglês</strong>
+                           <div class="progress-bar"><span class="progress" style="width: 35%;">Intermediário (Leitura/Escrita Técnica)</span></div>
+                        </li>
+                        <li>
+                            <strong>Espanhol</strong>
+                           <div class="progress-bar"><span class="progress" style="width: 40%;">Intermediário (Leitura/Escrita Técnica)</span></div>
+                        </li>
+                     </ul>
+                </div>
+                <div class="about-image">
+                    <img src="images/profile-pic.jpg" alt="Foto de Perfil - Patrick Américo, Desenvolvedor Sênior">
+                </div>
             </div>
-         </div>
-      </section>
-      <section id="about" >
-         <div class="row section-intro">
-               <h2>Sobre Mim</h2>
-               <p class="lead">
-                  Com mais de 10 anos de experiência em tecnologia da informação e graduado em Engenharia da Computação e Pós-graduado em Gestão de Projetos, tenho expertise em análise, consultoria e desenvolvimento de sistemas. <br/>
-                  Atuei como Scrum Master, garantindo o cumprimento de prazos e orçamentos, como Product Owner, intermediando processos de melhorias e demandas provenientes dos agentes internos e externos, bem como no Scrum Team, gerando entrega de demandas técnicas.  <br/>
-               </p>            
-         </div>
-         <div class="row about-content">
-            <div class="col-six tab-full">
-               <img src="images/profile-pic.jpg" alt="Foto de Perfil - Patrick">
+        </div>
+    </section>
+
+    <!-- Seção de Habilidades -->
+
+    <section id="skills" class="section section-skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Competências Técnicas e Ferramentas</h2>
+                <p>Domínio e experiência nas seguintes tecnologias, linguagens e plataformas:</p> <!-- Otimização: Texto mais engajador -->
             </div>
-            <div class="col-six tab-full">
-               <h3>Idiomas</h3>
-               <ul class="skill-bars">
-                  <li>
-                     <div class="progress percent100"><span>Nativo</span></div>
-                     <strong>Português</strong>
-                  </li>
-                  <li>
-                     <div class="progress percent35"><span>Intermediário</span></div>
-                     <strong>Inglês</strong>
-                  </li>
-                  <li>
-                     <div class="progress percent40"><span>Intermediário</span></div>
-                     <strong>Espanhol</strong>
-                  </li>
-               </ul>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li><i class="fab fa-html5"></i> HTML5</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                        <li><i class="fab fa-js-square"></i> JavaScript</li>
+						<li><i class="fab fa-js-square"></i> TypeScript</li>						
+                    </ul>
+                </div>
+                 <div class="skill-category">
+                    <h3>Backend & Linguagens</h3>
+                    <ul>
+                        <li><i class="fas fa-puzzle-piece"></i> Genexus</li>
+						<li><i class="fas fa-puzzle-piece"></i> Delphi</li>
+						<li><i class="fas fa-code"></i> C</li>
+						<li><i class="fas fa-code"></i> C++</li>
+                        <li><i class="fab fa-python"></i> Python</li>                        
+                        <li><i class="fas fa-code"></i> C#</li>
+                        <li><i class="fas fa-code"></i> VB.NET</li>
+						<li><i class="fab fa-java"></i> Java</li>
+                        <li><i class="fab fa-php"></i> PHP</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Bancos de Dados</h3>
+                    <ul>
+                        <li><i class="fas fa-database"></i> SQL Server</li>
+                        <li><i class="fas fa-database"></i> MySQL</li>
+                        <li><i class="fas fa-database"></i> Oracle</li>
+                        <li><i class="fas fa-database"></i> DB2/AS400</li>
+                        <li><i class="fas fa-database"></i> Progress</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>BI & Analytics</h3>
+                    <ul>
+                        <li><i class="fas fa-chart-bar"></i> Power BI</li>
+                        <li><i class="fas fa-chart-line"></i> WeKnow</li>
+                        <li><i class="fas fa-chart-pie"></i> QlikView</li>
+                        <li><i class="fas fa-tachometer-alt"></i> TaticView</li>
+                        <li><i class="fas fa-binoculars"></i> SADIG</li>
+                    </ul>
+                </div>
+				<div class="skill-category">
+                    <h3>Framework</h3>
+                    <ul>
+                        <li><i class="fab fa-html5"></i> Vue.js</li>
+                    </ul>
+                </div>
+                 <div class="skill-category">
+                    <h3>Ferramentas & Outros</h3>
+                    <ul>
+                        <li><i class="fas fa-tasks"></i> MS Project</li>
+						<li><i class="fab fa-git-alt"></i> SVN tortoise</li>
+                        <li><i class="fab fa-git-alt"></i> Git</li>
+						<li><i class="fab fa-git-alt"></i> Postman</li>
+                        <li><i class="fas fa-terminal"></i> Scrum</li>
+						<li><i class="fas fa-terminal"></i> Kanban</li>
+						<li><i class="fas fa-terminal"></i> Desenvolvimento Orientado por Recursos (FDD)</li>
+						<li><i class="fas fa-terminal"></i> Extreme Programming (XP)</li>
+						<li><i class="fas fa-terminal"></i> Metodologia de desenvolvimento Waterfall (em cascata)</li>
+						<li><i class="fas fa-terminal"></i> Metodologia Rapid Application Development (RAD)</li>
+                        <li><i class="fas fa-shield-alt"></i> LGPD</li>
+                        <li><i class="fas fa-briefcase"></i> Gestão de Projetos</li>
+                    </ul>
+                </div>
             </div>
-         </div>
-         </div>         
-         <section id="skills" class="secao">
-            <div class="row section-intro">
-               <div class="col-twelve">
-                  <h3>HARD SKILLS</h3>
-                  <p>Habiliade com as tecnologias utilizadas:</p>
-               </div>
+        </div>
+    </section>
+
+    <!-- Seção de currículo -->
+    <section id="resume" class="section section-resume">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trajetória Profissional e Acadêmica</h2>
+                
+                <p>Minha jornada combina formação técnica sólida em <strong>Engenharia da Computação</strong> com especialização em <strong>Gestão de Projetos</strong> e mais de uma década de experiência prática em <strong>desenvolvimento de software</strong> e <strong>análise de sistemas</strong>.</p>
             </div>
-            <div class="row">
-               <div class="col-two tab-full">
-                  <ul class="skill-bars">
-                     <li>
-                        <div></div>
-                        <strong>HTML5</strong>
-                     </li>
-                     <li>
-                        <div></div>
-                        <strong>CSS</strong>
-                     </li>
-                     <li>
-                        <div></div>
-                        <strong>JavaScript</strong>
-                     </li>
-					 <li>
-                        <div></div>
-                        <strong>PHP</strong>
-                     </li>
-                  </ul>
-               </div>
-               <div class="col-two tab-full">
-                  <ul class="skill-bars">
-                     <li>
-                        <div></div>
-                        <strong>Genexus</strong>
-                     </li>
-                     <li>
-                        <div></div>
-                        <strong>Delphi</strong>
-                     </li>
-                     <li>
-                        <div></div>
-                        <strong>C</strong>
-                     </li>
-                     <li>
-                        <div></div>
-                        <strong>C#</strong>
-                     </li>
-                     <li>
-                        <div></div>
-                        <strong>Vb.net</strong>
-                     </li>
-                     <li>
-                        <div></div>
-                        <strong>Python</strong>
-                     </li>
-                     <li>
-                        <div></div>
-                        <strong>Java</strong>
-                     </li>
-                  </ul>
-               </div>
-               <div class="col-two tab-full">
-                  <ul class="skill-bars">
-                     <li>
-                        <div></div>
-                        <strong>SQL Server</strong>
-                     </li>
-                     <li>
-                        <div></div>
-                        <strong>MySQL</strong>
-                     </li>
-                     <li>
-                        <div></div>
-                        <strong>Oracle</strong>
-                     </li>
-                     <li>
-                        <div></div>
-                        <strong>DB2/AS400</strong>
-                     </li>
-                     <li>
-                        <div></div>
-                        <strong>Progress</strong>
-                     </li>
-                  </ul>
-               </div>
-               <div class="col-two tab-full">
-                  <ul class="skill-bars">
-                     <li>
-                        <div></div>
-                        <strong>Power Bi</strong>
-                     </li>
-                     <li>
-                        <div></div>
-                        <strong>WekNow</strong>
-                     </li>
-                     <li>
-                        <div></div>
-                        <strong>QuickView</strong>
-                     </li>
-                     <li>
-                        <div></div>
-                        <strong>TaticView</strong>
-                     </li>
-                     <li>
-                        <div></div>
-                        <strong>SADIG</strong>
-                     </li>
-                  </ul>
-               </div>
-               <div class="col-two tab-full">
-                  <ul class="skill-bars">
-                     <li>
-                        <div></div>
-                        <strong>Office 365</strong>
-                     </li>
-                     <li>
-                        <div></div>
-                        <strong>Ms Project</strong>
-                     </li>
-                  </ul>
-               </div>
-               <div class="col-two tab-full">
-                  <ul class="skill-bars">
-                  </ul>
-               </div>
-            </div>
-         </section>
-      </section>
-      <section id="resume">
-         <div class="row section-intro">            
-               <h2>Resumo da Formação Acadêmica</h2>
-               <p>Com uma Pós-Graduação em Gestão de Projetos, aprimorei minhas habilidades em liderança de equipes, definição de escopo, prazos e recursos, além de gerenciamento de riscos e garantia de entregas eficientes. Minha Graduação em Engenharia da Computação me proporcionou uma base sólida em desenvolvimento de software, abrangendo desde a concepção e arquitetura de sistemas até a implementação e testes, com foco em linguagens de programação de baixo nível, bancos de dados, estruturas de dados e algoritmos, IA, robótica e aspectos físicos de arquitetura de sistemas eletrônicos. Foi o curso Técnico em Informática que despertou meu interesse pelo desenvolvimento de sistemas, fornecendo conhecimentos práticos em programação, design de interfaces e manutenção de computadores, essenciais para o início da minha trajetória na área.
-               </p>            
-         </div>
-         <div class="row resume-timeline">
-            <div class="col-twelve resume-header">
-               <h2>Formação Acadêmica</h2>
-            </div>
-            <div class="col-twelve">
-               <div class="timeline-wrap">
-                  <!-- Formação 1 -->
-                  <article class="timeline-block" data-type="education">
-                     <div class="timeline-ico">
-                        <i class="fas fa-graduation-cap"></i>
-                     </div>
-                     <div class="timeline-header">
-                        <h5>Universidade ******* ** ** - Junho, 2020</h5>
-                     </div>
-                     <div class="timeline-content">
-                        <p>Pós-Graduação em Gestão de Projetos</p>
-                     </div>
-                  </article>
-                  <!-- Formação 2 -->
-                  <article class="timeline-block" data-type="education">
-                     <div class="timeline-ico">
-                        <i class="fas fa-graduation-cap"></i>
-                     </div>
-                     <div class="timeline-header">
-                        <h5>Universidade do **** ** ******* - Junho, 2018</h5>
-                     </div>
-                     <div class="timeline-content">
-                        <p>Engenharia da Computação</p>
-                     </div>
-                  </article>
-                  <!-- Formação 3 -->
-                  <article class="timeline-block" data-type="education">
-                     <div class="timeline-ico">
-                        <i class="fas fa-graduation-cap"></i>
-                     </div>
-                     <div class="timeline-header">
-                        <h5>COLÉGIO TÉCNICO “******* ******** *********” - Dezembro, 2011</h5>
-                     </div>
-                     <div class="timeline-content">
-                        <p>
-                           Técnico em Informática
-                        </p>
-                     </div>
-                  </article>
-                  <!-- Adicione mais blocos de Formação Acadêmica aqui -->
-               </div>
-            </div>
-         </div>
-         <div class="row resume-timeline">
-            <div class="col-twelve resume-header">
-               <h2>Experiência Profissional</h2>
-            </div>
-            <div class="col-twelve">
-               <div class="timeline-wrap">
-                  <!-- Experiência 1 -->
-                  <article class="timeline-block" data-type="work">
-                     <div class="timeline-ico">
-                        <i class="fas fa-briefcase"></i>
-                     </div>
-                     <div class="timeline-header">
-                        <h5>Policlin ***** - Agosto, 2015 - Presente</h5>
-                     </div>
-                     <div class="timeline-content">
-                        <h4>Desenvolvedor Pleno > Desenvolvedor Sênior</h4>
-                        <ul>
-                           <li>Analisar e projetar soluções sistêmicas** em ambientes desktop, web e mobile, utilizando metodologias ágeis e práticas de design centradas no usuário;</li>
-							<li>Realizar levantamento de requisitos junto às partes interessadas, garantindo que as soluções atendam às necessidades de negócios e aos objetivos estratégicos da organização;</li>
-							<li>Desenvolver e implementar soluções de software de alta qualidade, seguindo as melhores práticas de programação, incluindo testes automatizados e revisão de código;</li>
-							<li>Liderar a arquitetura de sistemas, garantindo escalabilidade, performance e segurança, com foco em tecnologias modernas;</li>
-							<li>Gerenciar prazos e expectativas em relação aos sistemas, utilizando ferramentas de gerenciamento de projetos para monitorar o progresso e comunicar resultados às partes interessadas;</li>
-							<li>Implementar melhorias contínuas nos processos e fluxos de trabalho, promovendo a eficiência operacional e a adoção de novas ferramentas operacionais;</li>
-							<li>Realizar análises de performance e propor otimizações nas aplicações existentes, garantindo a melhor experiência para o usuário final;</li>
-							<li>Integrar sistemas, assegurando a interoperabilidade e a segurança dos dados em conformidade com a LGPD e outras regulamentações pertinentes;</li>
-							<li>Desenvolver e manter documentação técnica, incluindo diagramas de arquitetura, manuais de usuário e guias de integração;</li>
-							<li>Suportar usuários finais em questões relacionadas a regras de negócios e sistemas, oferecendo treinamento e assistência técnica conforme necessário;</li>
-							<li>Colaborar com equipes de suporte técnico para resolver incidentes e problemas, garantindo a continuidade dos serviços.</li>
-							<li>Pesquisar e avaliar novas tecnologias e tendências do mercado, propondo inovações que possam agregar valor aos produtos e serviços da empresa.</li>
-							<li>Executar atividades periódicas relacionadas à ANS (Agência Nacional de Saúde Suplementar) e outras normativas aplicáveis, garantindo que os sistemas estejam em conformidade com as exigências regulatórias.</li>
-                        </ul>
-                     </div>
-                  </article>
-                  <!-- Experiência 2 -->
-                  <article class="timeline-block" data-type="work">
-                     <div class="timeline-ico">
-                        <i class="fas fa-briefcase"></i>
-                     </div>
-                     <div class="timeline-header">
-                        <h5>Dash  ***** - Junho,2011 - Julho, 2015</h5>
-                     </div>
-                     <div class="timeline-content">
-                        <h4>Estágio > Programador Júnior > Programador Pleno</h4>
-                        <ul>
-                           <li>Apresentar soluções de software a clientes externos, demonstrando funcionalidades e benefícios de forma clara e convincente;</li>
-							<li>Conduzir workshops e reuniões de levantamento de requisitos junto às partes interessadas, garantindo o alinhamento das expectativas;</li>
-							<li>Desenvolver software de alta qualidade, seguindo as melhores práticas de programação, incluindo padrões de projeto e princípios SOLID;</li>
-							<li>Implementar testes automatizados em diferentes níveis (unitários, integração, ponta a ponta), garantindo a integridade do sistema;</li>
-							<li>Configurar e manter pipelines de integração contínua, automatizando a construção, testes e implantação das aplicações;</li>
-							<li>Implementar estratégias de versionamento de código, utilizando ferramentas como Git/SVN para controle de versão e ramificações;</li>
-							<li>Liderar equipes de programadores júnior e pleno, fornecendo mentoria, revisão de código e treinamento em boas práticas;</li>
-							<li>Participar de reuniões de planejamento e retrospectivas, contribuindo com a melhoria contínua dos processos e práticas da equipe;</li>
-							<li>Projetar e desenvolver web services para integração entre sistemas, garantindo a interoperabilidade e a segurança das comunicações;</li>
-							<li>Planejar e executar projetos de migração de sistemas legados para novas tecnologias, minimizando impactos e riscos;</li>
-							<li>Realizar manutenção corretiva e evolutiva em sistemas existentes, implementando melhorias e correções de bugs;</li>
-							<li>Trabalhar em equipe em ambiente ágil, utilizando metodologias como Scrum e Kanban para entrega iterativa de valor;</li>
-							<li>Participar ativamente de cerimônias ágeis, como daily meetings, planning e retrospectivas, contribuindo para a melhoria contínua do processo;</li>
-                        </ul>
-                     </div>
-                  </article>
-               </div>
-            </div>
-         </div>
-         <div class="row resume-timeline">
-            <div class="col-twelve resume-header">
-               <h2>Certificações</h2>
-            </div>
-            <div class="col-twelve">
-               <div class="timeline-wrap">
-                  <!-- Certificação 1 -->
-                  <article class="timeline-block" data-type="certification">
-                     <div class="timeline-ico">
-                        <i class="fas fa-certificate"></i>
-                     </div>
-                     <div class="timeline-header">
-                        <h3>Fundamentos na Lei Geral de Proteção de Dados - LGPD</h3>
-                        <p>Abril, 2023</p>
-                     </div>
-                     <div class="timeline-content">
-                        <p>
-                           O detentor deste selo validou suas habilidades e conhecimentos em Fundamentos na Lei
-                           Geral de Proteção de Dados. Demonstram uma ampla familiarização com a lei que prevê
-                           o tratamento de dados pessoais, mesmo em meios digitais, por pessoa física ou
-                           jurídica de direito público ou privado. Eles mostraram que têm conhecimento profundo
-                           da lei e seu impacto nas instituições, nos usuários e na sociedade.
-                        </p>
-                     </div>
-                  </article>
-                  <!-- Certificação 2 -->
-                  <article class="timeline-block" data-type="certification">
-                     <div class="timeline-ico">
-                        <i class="fas fa-certificate"></i>
-                     </div>
-                     <div class="timeline-header">
-                        <h3>Business Intelligence Foundation Professional Certification - BIFPC</h3>
-                        <p>Abril, 2023</p>
-                     </div>
-                     <div class="timeline-content">
-                        <p>
-                           Os detentores da Certificação Profissional BI Foundation têm um conhecimento básico
-                           de Business Intelligence. Eles podem conhecer o Histórico, o Processo de
-                           Implementação, a Arquitetura e o tipo de Análise de BI. Eles podem entender os
-                           conceitos de business intelligence e como você pode desenvolver visualizações e
-                           conhecimento de dados para tomar melhores decisões de negócios.
-                        </p>
-                     </div>
-                  </article>
-                  <!-- Certificação 3 -->
-                  <article class="timeline-block" data-type="certification">
-                     <div class="timeline-ico">
-                        <i class="fas fa-certificate"></i>
-                     </div>
-                     <div class="timeline-header">
-                        <h3>Remote Work Professional Certification - RWP</h3>
-                        <p>Abril, 2023</p>
-                     </div>
-                     <div class="timeline-content">
-                        <p>
-                           Os detentores da Certificação Profissional de Trabalho Remoto estão cientes e muito
-                           atentos às práticas, ferramentas e técnicas aceitas mundialmente para realizar o
-                           trabalho remoto, cientes de que a experiência remota pode ser gerenciada melhor e
-                           com alto grau de sustentabilidade. Eles conhecem as melhores práticas para um
-                           trabalho remoto produtivo e bem-sucedido.
-                        </p>
-                     </div>
-                  </article>
-                  <!-- Certificação 4 -->
-                  <article class="timeline-block" data-type="certification">
-                     <div class="timeline-ico">
-                        <i class="fas fa-certificate"></i>
-                     </div>
-                     <div class="timeline-header">
-                        <h3>Certificação Fundação Scrum - SFPC</h3>
-                        <p>Maio, 2023</p>
-                     </div>
-                     <div class="timeline-content">
-                        <p>
-                           Os detentores da Certificação Profissional Scrum Foundation desenvolveram
-                           habilidades de nível básico em Scrum que endossam seus conhecimentos fundamentais
-                           nesta estrutura. Eles demonstraram uma compreensão dos pilares empíricos do Scrum de
-                           transparência, inspeção e adaptação. Seu foco principal é o trabalho da Sprint para
-                           fazer o melhor progresso possível em direção a esses objetivos.
-                        </p>
-                     </div>
-                  </article>
-                  <!-- Certificação 5 -->
-                  <article class="timeline-block" data-type="certification">
-                     <div class="timeline-ico">
-                        <i class="fas fa-certificate"></i>
-                     </div>
-                     <div class="timeline-header">
-                        <h3>Certificação Six Sigma White Belt in Healthcare</h3>
-                        <p>Maio, 2023</p>
-                     </div>
-                     <div class="timeline-content">
-                        <p>
-                           Certificação de nível iniciante ideal para aqueles que procuram entender os
-                           fundamentos do Six Sigma e apliações na área da saúde.
-                        </p>
-                     </div>
-                  </article>
-                  <!-- Certificação Nulo -->
-                  <article class="timeline-block" data-type="certification">                     
-                  </article>
-                  <!-- Certificação 6 -->
-                  <article class="timeline-block" data-type="certification">
-                     <div class="timeline-ico">
-                        <i class="fas fa-certificate"></i>
-                     </div>
-                     <div class="timeline-header">
-                        <h3>Certificação Six Sigma Yellow Belt</h3>
-                        <p>Maio, 2023</p>
-                     </div>
-                     <div class="timeline-content">
-                        <p>
-                           A certificação Lean Six Sigma Yellow Belt abrange conceitos de análise e melhoria de
-                           processos. Essa certificação torna o aluno apto a analisar criticamente os
-                           processos, eliminando desperdícios, desconexões e problemas crônicos na empresa. Um
-                           profissional, ao certificar-se Yellow Belt, torna-se a referência em solução de
-                           problemas na organização.
-                        </p>
-                     </div>
-                  </article>
-               </div>
-            </div>
-         </div>
-         <div class="row resume-timeline">
-            <div class="col-twelve resume-header">
-               <h2>Premiações</h2>
-            </div>
-            <div class="col-twelve">
-               <div class="timeline-wrap">
-                  <!-- Premiação 1 -->
-                  <article class="timeline-block" data-type="award">
-                     <div class="timeline-ico">
-                        <i class="fas fa-award"></i>
-                     </div>
-                     <div class="timeline-header">
-                        <h3>InfoAgro - Aprsentação de projeto para bancada e público geral</h3>
-                     </div>
-                     <div class="timeline-content">
-                        <p>
-                           O InfoAgro é uma plataforma web responsiva, de fácil acesso, que oferece suporte ao
-                           agricultor na tomada de decisões, com base em dados precisos e atualizados coletados
-                           diretamente dos sensores instalados no campo.
-                           Com essa solução, os agricultores podem:</p>
-							<ul>
-								<li>Monitorar em tempo real as condições do solo, clima e outras variáveis importantes para a produção agrícola.</li>
-								<li>Analisar dados históricos para identificar tendências e padrões que possam afetar a produção.</li>
-								<li>Tomar decisões informadas sobre irrigação, fertilização, controle de pragas e outras práticas agrícolas.</li>
-							</ul>
-						<p>
-                        A plataforma InfoAgro é altamente personalizável e pode ser adaptada às necessidades
-                        específicas de cada fazenda ou cultivo. Além disso, a interface intuitiva e amigável
-                        torna a plataforma fácil de usar para agricultores de todos os níveis de
-                        experiência.<br />
-                        Com o InfoAgro, os agricultores podem aumentar a eficiência e a produtividade,
-                        reduzir custos e minimizar o impacto ambiental de suas operações. É uma solução
-                        inovadora e poderosa para a agricultura moderna.
-                        </p>
-                     </div>
-                  </article>
-                  <!-- Premiação 2 -->
-                  <article class="timeline-block" data-type="award">
-                     <div class="timeline-ico">
-                        <i class="fas fa-award"></i>
-                     </div>
-                     <div class="timeline-header">
-                        <h3>INIC - Iniciação Científica</h3>
-                     </div>
-                     <div class="timeline-content">
-                        <h4>Autenticação de certificados emitidos em eventos usando algoritmo message-digest
-                           algorithm 5
-                        </h4>
-                        <p>
-                           Desenvolvido solução durante pandemia do Covid-19 de verificação de autenticidade
-                           para certificados emitidos em eventos, aproveitando o poder do MD5 - um algoritmo
-                           criptográfico de hash.<br>
-                           O MD5 gera um código de soma único para cada documento de certificação, garantindo a
-                           integridade e a exclusividade destes mesmos.<br />
-                           O uso do MD5 permite:</p>
-						 <ul>
-							<li>Verificação rápida e precisa da integridade dos arquivos de certificação.</li>
-							<li>Detecção de alterações maliciosas ou incorretas nos arquivos de certificação.</li>
-							<li>Geração de um código de soma único para cada certificado, evitando colisões.</li>
-						</ul>
-						<p>
-                        Embora o MD5 seja considerado obsoleto hoje em dia devido a vulnerabilidades
-                        encontradas, foi fundamental para a história do crescimento da segurança em nossos
-                        processos de autenticação.<br />
-                        Hoje, podemos utilizar algoritmos mais recentes e robustos, como SHA-256, para
-                        substituir o MD5 em situações críticas de segurança.</h4>
-                        </p>
-                     </div>
-                  </article>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section id="portfolio">
-         <div class="row section-intro">
-            <div class="col-twelve">
-               <h5>Portfólio</h5>
-               <h1></h1>
-               <p>
-                  Agora que você tem um pequeno entendimento sobre mim, aqui existe um pequeno repositório de projetos
-                  realizados em tempo livre.
-               </p>
-            </div>
-         </div>
-         <!-- /section-intro-->
-         <div class="row portfolio-content">
-            <div class="col-twelve">
-               <div id="owl-slider-port" class="owl-carousel portfolio-list">
-                  <!-- Project 3 -->
-                  <div id="folio-wrapper" class="block-1-1 block-mob-full stack">
-                     <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                           <h5>Apresentação Power BI</h5>
-                           <br>
-                           <img src="images/portfolio/PowerBi1.png" alt="Twitter III">
-                           <a href="#modal-03" class="overlay">
-                              <div class="folio-item-table">
-                                 <div class="folio-item-cell">
-                                    <h3 class="folio-title">Painel de Análise da Resolução de Queixas Consumidorias em Power BI</h3>
-                                    <span class="folio-types">
-                                    Visão Geral Com Métricas Pré-Definidas e Análise de Dados Abertos.
-                                    </span>
-                                 </div>
-                              </div>
-                           </a>
+
+            <div class="resume-grid">
+                <!-- Educação -->
+                <div class="resume-column">
+                    <h3><i class="fas fa-graduation-cap"></i> Formação Acadêmica</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Pós-Graduação em Gestão de Projetos</h4>
+                                <!--<p class="timeline-date">Universidade [] - Concluído em Junho, 2020</p>-->
+                                <p>Aprofundamento em liderança, planejamento (escopo, prazo, recursos), gerenciamento de riscos e entrega de valor em projetos de TI.</p>
+                            </div>
                         </div>
-                     </div>
-                     <!-- /folio-item -->
-                     <!-- modal popups - begin ============================================================= -->
-                     <div id="modal-03" class="popup-modal slider mfp-hide">
-                        <div class="media">
-                           <img src="images/portfolio/modals/m-PowerBi1.png" alt="" />
+                         <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Engenharia da Computação</h4>
+                                <!--<p class="timeline-date">Universidade [] - Concluído em Junho, 2018</p>-->
+                                <p>Base sólida em algoritmos, estruturas de dados, <strong>arquitetura de software</strong>, <strong>bancos de dados</strong>, redes, IA e sistemas embarcados.</p>
+                            </div>
                         </div>
-                        <div class="description-box">
-                           <h4>Painel de Análise da Resolução de Queixas Consumidorias</h4>
-                           <p>
-                              Apresentamos o Painel de Taxa de Resolução, que utiliza métricas pré-definidas e análise de dados abertos para fornecer uma visão geral das reclamações registradas pelos consumidores, juntamente com a capacidade de resolução. A apresentação inclui uma página de capa, introdução (destacando os detalhes das métricas) e painéis interativos para visualização de dados.
-                           </p>
-                           <div class="categories">Power BI</div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Técnico em Informática</h4>
+                                <!--<p class="timeline-date">Colégio Técnico [] - Concluído em Dezembro, 2011</p>-->
+                                <p>Introdução prática ao <strong>desenvolvimento de sistemas</strong>, programação, design de interfaces e hardware.</p>
+                            </div>
                         </div>
-                        <div class="link-box">
-                           <a href="#" class="popup-modal-dismiss">Fechar</a>
+                    </div>
+                </div>
+
+                <!-- Work Experience -->
+                <div class="resume-column">
+                    <h3><i class="fas fa-briefcase"></i> Experiência Profissional</h3>
+                     <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Desenvolvedor Sênior / Analista de Sistemas</h4>
+                                <p class="timeline-date">[] - Agosto, 2015 - Presente</p>
+                                <ul>
+                                    <li>Análise, projeto e <strong>desenvolvimento de software</strong> (desktop, web, mobile) utilizando <strong>metodologias ágeis</strong> e foco em UX.</li>
+                                    <li>Levantamento e <strong>análise de requisitos</strong> técnicos e de negócio com stakeholders.</li>
+                                    <li><strong>Desenvolvimento full-stack</strong> (Genexus, Delphi, Python, etc.) com ênfase em código limpo, <strong>testes automatizados</strong> e <strong>revisão de código</strong>.</li>
+                                    <li>Definição e implementação de <strong>arquiteturas de sistemas</strong> escaláveis, performáticas e seguras.</li>
+                                    <li><strong>Gestão de cronogramas</strong> e entregas de projetos de software, com comunicação proativa.</li>
+                                    <li>Implementação de <strong>melhorias contínuas</strong> nos processos de desenvolvimento (CI/CD quando aplicável).</li>
+                                    <li>Análise de performance e <strong>otimização de aplicações</strong> e consultas a <strong>bancos de dados (SQL Server, Oracle)</strong>.</li>
+                                    <li>Desenvolvimento e manutenção de APIs para <strong>integração de sistemas</strong>, garantindo segurança e conformidade (<strong>LGPD</strong>).</li>
+                                    <li>Criação de <strong>documentação técnica</strong> (diagramas, manuais, guias de API).</li>
+                                    <li><strong>Liderança técnica</strong> e mentoria para desenvolvedores júnior/pleno.</li>
+                                    <li>Suporte especializado e <strong>resolução de problemas</strong> complexos relacionados aos sistemas.</li>
+                                    <li>Pesquisa e adoção de <strong>novas tecnologias</strong> para inovação e otimização de produtos.</li>
+                                    <li>Garantia de conformidade regulatória (Normas <strong>ANS</strong> para sistemas de saúde).</li>
+                                </ul>
+                            </div>
                         </div>
-                     </div>
-                     <!-- /modal -->
-                     <!-- modal popups - end ============================================================ -->
-                  </div>
-                  <!-- /portfolio-wrapper -->
-                  <!-- \Project 3 -->
-                  <!-- Project 2 -->
-                  <div id="folio-wrapper" class="block-1-1 block-mob-full stack">
-                     <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                           <h5>Criado em Figma</h5>
-                           <br>
-                           <img src="images/portfolio/ifood.png" alt="Twitter III">
-                           <a href="#modal-02" class="overlay">
-                              <div class="folio-item-table">
-                                 <div class="folio-item-cell">
-                                    <h3 class="folio-title">Design Inspirado no iFood: Introduzindo o Nosso Aplicativo de Comida</h3>
-                                    <span class="folio-types">
-                                    Aplicativo de comida, com base na interface do iFood, realizado em Figma.
-                                    Possui Tela de Splash, Home e etc...
-                                    </span>
-                                 </div>
-                              </div>
-                           </a>
+                         <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">                                 
+                                <h4>Programador Pleno</h4>
+                                <p class="timeline-date">[] - Junho, 2011 - Julho, 2015</p>
+                                <p>(Progressão: Estágio > Programador Júnior > Programador Pleno)</p>                                  
+                                <ul>
+                                    <li>Desenvolvimento e manutenção de software utilizando Genexus (3.0, 7.5, 8.0, 9.0 (Yi), X (Rocha), X Evolution 1, X Evolution 2, X Evolution 3), C, C++, C#, VB.NET e bancos de dados relacionais.</li>
+                                    <li>Participação em levantamento de requisitos e apresentação de soluções técnicas a clientes.</li>
+                                    <li>Implementação de <strong>testes unitários</strong> e de integração para garantia de qualidade.</li>
+                                    <li>Utilização de sistemas de controle de versão (Git/SVN) em ambiente de equipe.</li>
+                                    <li>Colaboração em <strong>equipes ágeis</strong> (Scrum/Kanban), participando de cerimônias e planejamento.</li>
+                                    <li>Desenvolvimento de Web Services (SOAP/REST) para integração entre aplicações.</li>
+                                    <li>Participação em projetos de <strong>migração de sistemas</strong> legados.</li>
+                                    <li>Correção de bugs e implementação de novas funcionalidades em sistemas existentes.</li>
+                                </ul>
+                            </div>
                         </div>
-                     </div>
-                     <!-- /folio-item -->
-                     <!-- modal popups - begin ============================================================= -->
-                     <div id="modal-02" class="popup-modal slider mfp-hide">
-                        <div class="media">
-                           <img src="images/portfolio/modals/m-ifood.png" alt="" />
-                        </div>
-                        <div class="description-box">
-                           <h4>Design Inspirado no iFood: Introduzindo o Nosso Aplicativo de Comida</h4>
-                           <p>
-                              Splash Screen
-                              Aplicação começa com uma tela de splash, onde é exibido o logotipo do app enquanto carregam recursos e informações necessárias para iniciar a experiência do usuário.
-                              Home Page
-                              Inspira-se no layout claro e organizado do iFood, nossa home page permite ao usuário explorar facilmente promoções, restaurantes favoritos e sugestões personalizadas.
-                              Outras Telas
-                              Incluí telas como pesquisa, carrinho de compras, perfil do usuário e outros elementos essenciais para completar a experiência do usuário.
-                              Desenvolvimento em Figma
-                              Utilizado a plataforma de design colaborativa Figma para criar e iterar a interface.
-                           </p>
-                           <div class="categories">Figma</div>
-                        </div>
-                        <div class="link-box">
-                           <a href="#" class="popup-modal-dismiss">Fechar</a>
-                        </div>
-                     </div>
-                     <!-- /modal -->
-                     <!-- modal popups - end ============================================================ -->
-                  </div>
-                  <!-- /portfolio-wrapper -->
-                  <!-- \Project 2 -->
-                  <!-- Project 1 -->
-                  <div id="folio-wrapper" class="block-1-1 block-mob-full stack">
-                     <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                           <h5>Interface Dinâmica e Personalizada</h5>
-                           <br>
-                           <img src="images/portfolio/Spotify.png" alt="Twitter III">
-                           <a href="#modal-01" class="overlay">
-                              <div class="folio-item-table">
-                                 <div class="folio-item-cell">
-                                    <h3 class="folio-title">Explorando Novos Sons: Apresentando Nosso Site de Música Inspirado no Spotify</h3>
-                                    <span class="folio-types">
-                                    Site de música com base na renomada interface do Spotify, oferecendo aos usuários uma experiência familiar e intuitiva ao descobrir e desfrutar de novas músicas.
-                                    </span>
-                                 </div>
-                              </div>
-                           </a>
-                        </div>
-                     </div>
-                     <!-- /folio-item -->
-                     <!-- modal popups - begin ============================================================= -->
-                     <div id="modal-01" class="popup-modal slider mfp-hide">
-                        <div class="media">
-                           <img src="images/portfolio/modals/m-Spotify.png" alt="" />
-                        </div>
-                        <div class="description-box">
-                           <h4>Explorando Novos Sons: Apresentando Nosso Site de Música Inspirado no Spotify</h4>
-                           <p>
-                              Site de música, com base na interface do Spotify. Aplicando os conhecimentos mais modernos do HTML, CSS e JavaScript, para criar uma interface responsiva.
-                           </p>
-                           <div class="categories">Front-End</div>
-                        </div>
-                        <div class="link-box">
-                           <!--<a href="">Ver Projeto</a>-->
-                           <a href="#" class="popup-modal-dismiss">Fechar</a>
-                        </div>
-                     </div>
-                     <!-- /modal -->
-                     <!-- modal popups - end ============================================================ -->
-                  </div>
-                  <!-- /portfolio-wrapper -->
-                  <!-- \Project 1 -->
-               </div>
-               <!-- \owl-slider-port -->
+                    </div>
+                </div>
             </div>
-            <!-- /twelve -->
-         </div>
-         <!-- /portfolio-content -->
-      </section>
-      <!-- /portfolio -->
-      <section id="contact">
-         <div class="row section-intro">
-            <div class="col-twelve">
-               <h1>Contato</h1>
-               <p class="lead">
-                  Entre em contato comigo para discutir oportunidades de trabalho, projetos ou apenas para um bate-papo sobre tecnologia!
-               </p>
-               <div class="row contact-form">
-                  <a href="mailto:patrick.americo@outlook.com"><button class="submitform">Enviar E-mail</button></i></a>
-               </div>
-               <!-- /contact-form -->
+
+             <!-- Certificações e Prêmios -->
+             <div class="resume-grid certifications-awards">
+                 <div class="resume-column">
+                    <h3><i class="fas fa-certificate"></i> Certificações Relevantes</h3>
+                     <div class="timeline">
+
+                         <div class="timeline-item simple">
+                             <p><strong>Scrum Foundation (SFPC)</strong> - Maio, 2023</p>
+                             <small>Validação do conhecimento fundamental na estrutura ágil Scrum.</small>
+                         </div>
+                          <div class="timeline-item simple">
+                             <p><strong>Six Sigma Yellow Belt</strong> - Maio, 2023</p>
+                             <small>Capacidade de análise e melhoria de processos, focado em eliminar desperdícios.</small>
+                         </div>
+                         <div class="timeline-item simple">
+                             <p><strong>Six Sigma White Belt in Healthcare</strong> - Maio, 2023</p>
+                             <small>Fundamentos do Six Sigma aplicados ao setor de saúde.</small>
+                         </div>
+                          <div class="timeline-item simple">
+                             <p><strong>Business Intelligence Foundation (BIFPC)</strong> - Abril, 2023</p>
+                              <small>Conhecimento em conceitos, processos e arquitetura de Business Intelligence.</small>
+                         </div>
+                         <div class="timeline-item simple">
+                             <p><strong>Remote Work Professional (RWP)</strong> - Abril, 2023</p>
+                             <small>Boas práticas e ferramentas para trabalho remoto produtivo.</small>
+                         </div>
+                         <div class="timeline-item simple">
+                             <p><strong>Fundamentos na LGPD</strong> - Abril, 2023</p>
+                              <small>Compreensão da Lei Geral de Proteção de Dados e seu impacto.</small>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="resume-column">
+                     <h3><i class="fas fa-award"></i> Projetos e Reconhecimentos</h3>
+                     <div class="timeline">
+                         
+                         <div class="timeline-item simple">
+                              <p><strong>InfoAgro (Apresentação de Projeto Acadêmico)</strong></p>
+                              <small>Desenvolvimento de plataforma web responsiva para suporte à decisão agrícola com dados de sensores IoT.</small>
+                          </div>
+                          <div class="timeline-item simple">
+                              <p><strong>INIC - Iniciação Científica (Projeto Acadêmico)</strong></p>
+                              <small>Estudo e implementação de autenticação de certificados digitais usando hash MD5 (conceitual).</small>
+                          </div>
+                     </div>
+                 </div>
+             </div>
+
+        </div>
+    </section>
+
+    <!-- Seção de portfólio -->
+    <section id="portfolio" class="section section-portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Portfólio de Projetos</h2> 
+                
+                <p>Amostras de projetos para demonstrar habilidades práticas em <strong>visualização de dados</strong>, <strong>UI Design</strong> e <strong>desenvolvimento front-end</strong>.</p>
             </div>
-         </div>
-         <div class="row contact-form">
-            <div class="col-twelve">
+            <div class="portfolio-grid">
+
+                <!-- Project 1: Power BI -->
+                <div class="portfolio-item" data-modal-target="modal-powerbi">
+                     <!-- Otimização: Alt text -->
+                    <img src="images/portfolio/PowerBi1.png" alt="Dashboard Power BI - Análise de Queixas">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+
+                            <h3>Dashboard Power BI</h3>
+                            <p>Análise de Resolução de Queixas</p>
+                            <span class="view-details">Ver Detalhes <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Figma Design -->
+                 <div class="portfolio-item" data-modal-target="modal-figma">
+
+                    <img src="images/portfolio/ifood.png" alt="Protótipo Figma - App Food Delivery">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                             
+                            <h3>UI Design (Figma)</h3>
+                            <p>Protótipo App Food Delivery</p>
+                           <span class="view-details">Ver Detalhes <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Spotify Clone -->
+                <div class="portfolio-item" data-modal-target="modal-spotify">
+                     
+                    <img src="images/portfolio/Spotify.png" alt="Clone Interface Spotify - HTML/CSS/JS">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                             
+                             <h3>Clone Interface Spotify</h3>
+                             <p>Desenvolvimento Front-End</p>
+                            <span class="view-details">Ver Detalhes <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-         </div>
-      </section>
-      <footer>
-         <div class="row">
-            <div class="col-six tab-full pull-right social">
-               <ul class="footer-social">
-                  <li><a href="https://github.com/patrickamerico" aria-label="Visitar GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
-                  <li><a href="https://www.linkedin.com/in/patrick-americo-analista-ti-saude" aria-label="Visitar LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-               </ul>
+        </div>
+    </section>
+
+    <!-- Seção de contato -->
+    <section id="contact" class="section section-contact">
+        <div class="container">
+             <div class="section-header">
+                <h2>Contato</h2>
+                 
+                <p>Estou aberto a novas oportunidades e desafios. Vamos conversar sobre como minhas habilidades em <strong>desenvolvimento de software</strong>, <strong>análise de sistemas</strong> e <strong>gestão de projetos</strong> podem agregar valor à sua equipe?</p>
             </div>
-            <div class="col-six tab-full">
-               <div class="copyright">
-                  <span>
-                     © Copyright 2024 - <script>document.write(new Date().getFullYear());</script>
-                  </span>
-                  <span>Design by <a href="#" aria-label="Sobre o Design">Patrick</a></span>
-               </div>
+            <div class="contact-content">
+                <p>Sinta-se à vontade para entrar em contato por e-mail ou me encontrar nas redes profissionais.</p>
+                <a href="mailto:patrick.americo@outlook.com" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Enviar E-mail</a>
+                <div class="contact-social">
+                    <p>Conecte-se comigo:</p>
+                    <a href="https://github.com/patrickamerico" aria-label="Visitar GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/patrick-americo-analista-ti-saude" aria-label="Visitar LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
-            <div id="go-top">
-               <a class="smoothscroll" title="Voltar ao Topo" href="#top" aria-label="Voltar ao Topo"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                   <a href="https://github.com/patrickamerico" aria-label="Visitar GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                   <a href="https://www.linkedin.com/in/patrick-americo-analista-ti-saude" aria-label="Visitar LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="copyright">
+                    © Copyright <span id="current-year"></span> Patrick Américo. Todos os direitos reservados.
+                </div>
             </div>
-         </div>
-      </footer>
-      <div id="preloader">
-         <div id="loader"></div>
-      </div>
-      <script src="js/jquery-3.5.1.min.js"></script>
-      <script src="js/jquery-migrate-1.4.1.min.js"></script>
-      <script src="js/plugins.js"></script>
-      <script src="js/main.js"></script>
-      <script>
-         // JavaScript para as funcionalidades de acessibilidade
-         $(document).ready(function() {
-         
-           // Aumentar Fonte
-           $("#increase-font").click(function() {
-             let currentFontSize = parseInt($("body").css("font-size"));
-             currentFontSize += 2;
-             $("body").css("font-size", currentFontSize + "px");
-           });
-         
-           // Diminuir Fonte
-           $("#decrease-font").click(function() {
-             let currentFontSize = parseInt($("body").css("font-size"));
-             currentFontSize -= 2;
-             $("body").css("font-size", currentFontSize + "px");
-           });
-         
-           // Alto Contraste
-           $("#high-contrast").click(function() {
-             $("body").toggleClass("high-contrast");
-           });
-         
-           // Resetar Estilos
-           $("#reset-styles").click(function() {
-             $("body").removeClass("high-contrast");
-             $("body").css("font-size", "16px"); // Defina o tamanho de fonte padrão aqui
-           });
-         });
-      </script>
-   </body>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao início -->
+    <a href="#top" id="go-top" class="go-top nav-link" title="Voltar ao Topo" aria-label="Voltar ao Topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Modais de Portfólio -->
+    <!-- Modal Power BI -->
+    <div id="modal-powerbi" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar Modal">×</button>
+             
+            <img src="images/portfolio/modals/m-PowerBi1.png" alt="Dashboard Power BI Detalhado - Análise de Queixas">
+
+            <h2>Painel de Análise de Queixas (Power BI)</h2>
+            <p>Dashboard interativo desenvolvido em <strong>Microsoft Power BI</strong> para <strong>análise de dados</strong> e visualização da taxa de resolução de reclamações de consumidores. Demonstra habilidades em criação de métricas, tratamento de dados e <strong>visualização de insights</strong> para tomada de decisão.</p>
+            <div class="modal-categories">
+                <span>Power BI</span>
+                <span>Análise de Dados</span>
+                <span>Visualização de Dados</span>
+                 <span>Business Intelligence</span>
+            </div>
+            <!-- <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Ver Projeto</a> -->
+        </div>
+    </div>
+
+    <!-- Modal Figma -->
+    <div id="modal-figma" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar Modal">×</button>
+             <!-- Otimização: Alt text -->
+            <img src="images/portfolio/modals/m-ifood.png" alt="Protótipo de Alta Fidelidade Figma - App Food Delivery">
+            
+            <h2>Design de Interface de App (Figma)</h2>
+            <p>Protótipo de alta fidelidade para um aplicativo mobile de food delivery, inspirado no iFood. Projeto desenvolvido no <strong>Figma</strong>, demonstrando competências em <strong>UI Design</strong>, <strong>UX Principles</strong>, criação de componentes e fluxos de navegação para aplicativos móveis.</p>
+            <div class="modal-categories">
+                <span>Figma</span>
+                <span>UI Design</span>
+                <span>UX Design</span> 
+                <span>Prototipagem</span>
+                <span>Mobile App Design</span>
+            </div>
+             <!-- <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Ver no Figma</a> -->
+        </div>
+    </div>
+
+    <!-- Modal Spotify Clone -->
+    <div id="modal-spotify" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar Modal">×</button>
+             
+            <img src="images/portfolio/modals/m-Spotify.png" alt="Clone da Interface Web Spotify - HTML, CSS, JavaScript">
+             
+            <h2>Clone da Interface do Spotify (Front-End)</h2>
+            <p>Projeto de estudo recriando a interface web do Spotify utilizando <strong>HTML5</strong> semântico, <strong>CSS3</strong> (com Flexbox e Grid Layout) e <strong>JavaScript</strong> para interatividade básica. Foco na construção de layouts responsivos e componentização da interface.</p>
+            <div class="modal-categories">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Front-End</span>
+                <span>UI Clone</span>
+                <span>Design Responsivo</span> <!-- Otimização: Keyword adicionada -->
+            </div>
+             <!-- <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Ver Projeto Online</a> -->
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    
+    <script src="js/script.js"></script>
+
+</body>
 </html>
