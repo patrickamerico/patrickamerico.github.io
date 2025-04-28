@@ -56,7 +56,7 @@ Aqui estão algumas das tecnologias e ferramentas com as quais tenho mais experi
 [![My Skills](https://skillicons.dev/icons?i=git,figma&theme=light)](https://skillicons.dev)
 *   **Metodologias Ágeis (Scrum)**, **Gestão de Projetos**, **Power BI**, **MS Project**, **LGPD**, **Delphi**, **Genexus**
 
-*(Para uma lista mais completa, visite meu [portfólio]([PLACEHOLDER: ]))*
+*(Para uma lista mais completa, visite meu [portfólio]([PLACEHOLDER: https://patrickamerico.github.io/ ]))*
 
 ---
 
