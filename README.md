@@ -2,8 +2,8 @@
 
 ### Software Engineering
 
-<a href="[PLACEHOLDER: Link para o seu Portfólio Online, ex: https://patrickamerico.github.io/]">
-  <img align="right" width="300" src="[PLACEHOLDER: Link para uma imagem/banner legal, talvez do seu portfólio ou uma imagem tech - OPCIONAL]" alt="Banner ou Imagem de Perfil">
+<a href="[PLACEHOLDER: https://patrickamerico.github.io/]">
+  <img align="right" width="300" src="[PLACEHOLDER: banner.jpg]" alt="Banner ou Imagem de Perfil">
 </a>
 
 Sou um profissional de TI apaixonado por tecnologia e resolução de problemas, com **mais de 10 anos de experiência** na concepção, desenvolvimento e implementação de soluções de software robustas e escaláveis. Minha trajetória combina uma sólida formação em **Engenharia da Computação** com especialização em **Gestão de Projetos** e ampla vivência prática em **desenvolvimento full-stack**, **análise de sistemas** e **arquitetura**.
