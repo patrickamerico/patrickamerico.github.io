@@ -1,21 +1,19 @@
-MIT License
+Licença de Uso para Modelo de Portfólio
 
-Copyright (c) 2025 Patrick Américo
+Copyright (c) [2025] [Patrick Américo]
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Todos os direitos reservados.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Este código está disponível para uso, modificação e redistribuição como base para outros projetos, desde que as seguintes condições sejam respeitadas:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+1. As informações sensíveis, proprietárias ou pessoais contidas no código original (incluindo, mas não se limitando a, dados de contato, credenciais, informações privadas ou confidenciais) não podem ser copiadas, divulgadas ou incluídas em projetos derivados.
+
+2. Qualquer uso do código deve garantir a remoção ou anonimização dessas informações antes de redistribuição ou publicação.
+
+3. O código pode ser utilizado livremente para aprendizado, desenvolvimento e criação de projetos derivados, desde que as condições acima sejam cumpridas.
+
+4. Esta licença não concede permissão para uso comercial do código original sem autorização prévia.
+
+Ao utilizar este código, você concorda em respeitar estes termos.
+
+---
