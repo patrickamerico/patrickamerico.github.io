@@ -66,19 +66,19 @@ Aqui estão algumas das tecnologias e ferramentas com as quais tenho mais experi
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle" width="32" />
 </a>
 <a href="https://www.ibm.com/analytics/db2">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/db2/db2-original.svg" alt="DB2" width="32" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/IBM_DB2_logo.svg" alt="DB2" width="32" />
 </a>
 <a href="https://www.progress.com/">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/progress/progress-original.svg" alt="Progress" width="32" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Progress_Software_logo.svg" alt="Progress" width="32" />
 </a>
 
-
+<!--
 [![SQL Server](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg)](https://www.microsoft.com/en-us/sql-server)
 [![MySQL](https://skillicons.dev/icons?i=mysql)](https://www.mysql.com/)
 [![Oracle](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg)](https://www.oracle.com/database/)
 [![DB2](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/db2/db2-original.svg)](https://www.ibm.com/analytics/db2)
 [![Progress](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/progress/progress-original.svg)](https://www.progress.com/)
-
+-->
 ---
 
 ## BI & Analytics
