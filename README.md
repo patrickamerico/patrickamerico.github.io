@@ -101,6 +101,6 @@ Estou sempre aberto a conexões, discussões sobre tecnologia, oportunidades de 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/patrick-americo-analista-ti-saude/)
 [![Gmail](https://img.shields.io/badge/Enviar%20E--mail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:patrick.americo@outlook.com)
-[![Portfolio](https://img.shields.io/badge/Meu%20Portfólio-%231DA1F2?style=for-the-badge&logo=react&logoColor=white)]\([PLACEHOLDER: https://patrickamerico.github.io/])
+[![Portfolio]([https://img.shields.io/badge/Meu%20Portfólio-%231DA1F2?style=for-the-badge&logo=react&logoColor=white](https://patrickamerico.github.io/))]
 
 Sinta-se à vontade para conectar ou enviar uma mensagem! 😊
