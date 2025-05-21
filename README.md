@@ -2,14 +2,16 @@
 
 ### Full Stack Software Engineer
 
-<a href="[PLACEHOLDER: https://patrickamerico.github.io/]">
-  <!--<img align="right" width="300" src="[PLACEHOLDER: banner.jpg]" alt="Banner ou Imagem de Perfil">-->
-  ![Banner ou Imagem de Perfil](banner.jpg)
-</a>
+[![Banner ou Imagem de Perfil](banner.jpg)](https://patrickamerico.github.io/)
 
-Sou um profissional de TI apaixonado por tecnologia e resolução de problemas, com **mais de 10 anos de experiência** na concepção, desenvolvimento e implementação de soluções de software robustas e escaláveis. Minha trajetória combina uma sólida formação em **Engenharia da Computação** com especialização em **Gestão de Projetos** e ampla vivência prática em **desenvolvimento full-stack**, **análise de sistemas** e **arquitetura**.
+## Experiência que fala por si
 
-Atuo com foco em entregar valor real aos negócios, utilizando **metodologias ágeis ** e as melhores práticas de engenharia de software para garantir qualidade, eficiência e cumprimento de prazos.
+Mais de uma década navegando entre desafios e soluções, construindo sistemas que resistem ao tempo.  
+Não é sobre títulos, mas sobre o que realmente entrega — com técnica, foco e consistência.
+
+Se isso desperta sua curiosidade, talvez valha a pena conhecer melhor meu trabalho.
+
+**Explore meu portfolio.**
 
 ### 🔭 O que estou fazendo no momento:
 
