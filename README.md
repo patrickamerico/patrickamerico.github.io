@@ -56,6 +56,23 @@ Aqui estão algumas das tecnologias e ferramentas com as quais tenho mais experi
 
 ## Bancos de Dados
 
+<a href="https://www.microsoft.com/en-us/sql-server">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="SQL Server" width="32" />
+</a>
+<a href="https://www.mysql.com/">
+  <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" width="32" />
+</a>
+<a href="https://www.oracle.com/database/">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle" width="32" />
+</a>
+<a href="https://www.ibm.com/analytics/db2">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/db2/db2-original.svg" alt="DB2" width="32" />
+</a>
+<a href="https://www.progress.com/">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/progress/progress-original.svg" alt="Progress" width="32" />
+</a>
+
+
 [![SQL Server](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg)](https://www.microsoft.com/en-us/sql-server)
 [![MySQL](https://skillicons.dev/icons?i=mysql)](https://www.mysql.com/)
 [![Oracle](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg)](https://www.oracle.com/database/)
