@@ -705,3 +705,9 @@ strong { color: var(--terminal-text); font-weight: 600; } /* Destaque mais forte
     color: var(--terminal-bg);
     background-color: var(--terminal-link-color);
 }
+
+img {
+  max-width: 90%;
+  height: auto;
+  display: block; /* evitar espaçamento abaixo da imagem */
+}
