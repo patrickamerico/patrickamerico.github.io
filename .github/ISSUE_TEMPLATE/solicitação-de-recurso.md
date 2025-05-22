@@ -3,7 +3,7 @@ name: solicitação de recurso
 about: apresentar um pedido formal para que uma decisão seja revista ou alterada,
   com base em argumentos e evidências
 title: Solicitação de Funcionalidade
-labels: ''
+labels: documentation, enhancement, good first issue
 assignees: ''
 
 ---

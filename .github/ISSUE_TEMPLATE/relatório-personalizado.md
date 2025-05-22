@@ -2,7 +2,7 @@
 name: relatório personalizado
 about: específica para atender a necessidades de análise de dados particulares
 title: Modelo Personalizado
-labels: ''
+labels: enhancement
 assignees: ''
 
 ---

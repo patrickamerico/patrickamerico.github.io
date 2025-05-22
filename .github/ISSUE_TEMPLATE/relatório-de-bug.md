@@ -2,7 +2,7 @@
 name: relatório de bug
 about: documento que detalha um problema ou defeito encontrado
 title: Descreva o bug
-labels: ''
+labels: bug
 assignees: ''
 
 ---
