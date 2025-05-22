@@ -2,14 +2,16 @@
 
 ### Full Stack Software Engineer
 
-<a href="[PLACEHOLDER: https://patrickamerico.github.io/]">
-  <!--<img align="right" width="300" src="[PLACEHOLDER: banner.jpg]" alt="Banner ou Imagem de Perfil">-->
-  ![Banner ou Imagem de Perfil](banner.jpg)
-</a>
+[![Banner ou Imagem de Perfil](banner.jpg)](https://patrickamerico.github.io/)
 
-Sou um profissional de TI apaixonado por tecnologia e resolução de problemas, com **mais de 10 anos de experiência** na concepção, desenvolvimento e implementação de soluções de software robustas e escaláveis. Minha trajetória combina uma sólida formação em **Engenharia da Computação** com especialização em **Gestão de Projetos** e ampla vivência prática em **desenvolvimento full-stack**, **análise de sistemas** e **arquitetura**.
+## Experiência que fala por si
 
-Atuo com foco em entregar valor real aos negócios, utilizando **metodologias ágeis ** e as melhores práticas de engenharia de software para garantir qualidade, eficiência e cumprimento de prazos.
+Mais de uma década navegando entre desafios e soluções, construindo sistemas que resistem ao tempo.  
+Não é sobre títulos, mas sobre o que realmente entrega — com técnica, foco e consistência.
+
+Se isso desperta sua curiosidade, talvez valha a pena conhecer melhor meu trabalho.
+
+**Explore meu portfolio.**
 
 ### 🔭 O que estou fazendo no momento:
 
@@ -54,12 +56,29 @@ Aqui estão algumas das tecnologias e ferramentas com as quais tenho mais experi
 
 ## Bancos de Dados
 
+<a href="https://www.microsoft.com/en-us/sql-server">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="SQL Server" width="32" />
+</a>
+<a href="https://www.mysql.com/">
+  <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" width="32" />
+</a>
+<a href="https://www.oracle.com/database/">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle" width="32" />
+</a>
+<a href="https://www.ibm.com/analytics/db2">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/IBM_DB2_logo.svg" alt="DB2" width="32" />
+</a>
+<a href="https://www.progress.com/">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Progress_Software_logo.svg" alt="Progress" width="32" />
+</a>
+
+<!--
 [![SQL Server](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg)](https://www.microsoft.com/en-us/sql-server)
 [![MySQL](https://skillicons.dev/icons?i=mysql)](https://www.mysql.com/)
 [![Oracle](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg)](https://www.oracle.com/database/)
 [![DB2](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/db2/db2-original.svg)](https://www.ibm.com/analytics/db2)
 [![Progress](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/progress/progress-original.svg)](https://www.progress.com/)
-
+-->
 ---
 
 ## BI & Analytics
@@ -101,6 +120,6 @@ Estou sempre aberto a conexões, discussões sobre tecnologia, oportunidades de 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/patrick-americo-analista-ti-saude/)
 [![Gmail](https://img.shields.io/badge/Enviar%20E--mail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:patrick.americo@outlook.com)
-[![Portfolio](https://img.shields.io/badge/Meu%20Portfólio-%231DA1F2?style=for-the-badge&logo=react&logoColor=white)]\([PLACEHOLDER: https://patrickamerico.github.io/])
+[![Portfolio](https://img.shields.io/badge/Meu%20Portfólio-%231DA1F2?style=for-the-badge&logo=react&logoColor=white)](https://patrickamerico.github.io/)
 
 Sinta-se à vontade para conectar ou enviar uma mensagem! 😊
