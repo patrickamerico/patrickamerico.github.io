@@ -1,9 +1,9 @@
 ---
-nome: Relatório de bug
-sobre: ​​Crie um relatório para nos ajudar a melhorar
-título: ''
-rótulos: ''
-destinatários: ''
+name: relatório de bug
+about: documento que detalha um problema ou defeito encontrado
+title: Descreva o bug
+labels: ''
+assignees: ''
 
 ---
 

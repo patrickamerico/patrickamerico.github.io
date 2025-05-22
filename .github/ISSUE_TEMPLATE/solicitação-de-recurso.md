@@ -1,9 +1,10 @@
 ---
-Nome: Solicitação de recurso
-Sobre: ​​Sugira uma ideia para este projeto
-Título: ''
-Etiquetas: ''
-Responsáveis: ''
+name: solicitação de recurso
+about: apresentar um pedido formal para que uma decisão seja revista ou alterada,
+  com base em argumentos e evidências
+title: Solicitação de Funcionalidade
+labels: ''
+assignees: ''
 
 ---
 

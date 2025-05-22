@@ -1,9 +1,9 @@
 ---
-nome: modelo de problema personalizado
-sobre: ​​Descreva o propósito deste modelo de problema aqui.
-título: ''
-rótulos: ''
-cessionários: ''
+name: relatório personalizado
+about: específica para atender a necessidades de análise de dados particulares
+title: Modelo Personalizado
+labels: ''
+assignees: ''
 
 ---
 
