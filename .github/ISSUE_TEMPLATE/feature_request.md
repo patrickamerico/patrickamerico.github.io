@@ -1,18 +1,18 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
+Nome: Solicitação de recurso
+Sobre: ​​Sugira uma ideia para este projeto
+Título: ''
+Etiquetas: ''
+Responsáveis: ''
 
 ---
 
 ---
-name: ✨ Solicitação de Funcionalidade
-about: Sugira uma nova funcionalidade ou melhoria
-title: "[FEATURE] "
-labels: enhancement
-assignees: ''
+nome: ✨ Solicitação de Funcionalidade
+sobre: ​​Sugira uma nova funcionalidade ou melhoria
+título: "[RECURSO]"
+rótulos: aprimoramento
+cessionários: ''
 
 ---
 

@@ -1,18 +1,18 @@
 ---
-name: Custom issue template
-about: Describe this issue template's purpose here.
-title: ''
-labels: ''
-assignees: ''
+nome: modelo de problema personalizado
+sobre: ​​Descreva o propósito deste modelo de problema aqui.
+título: ''
+rótulos: ''
+cessionários: ''
 
 ---
 
 ---
-name: 📝 Template Personalizado
-about: Use este formulário para reportar problemas ou sugerir melhorias com informações detalhadas.
-title: "[ISSUE] "
-labels: ''
-assignees: ''
+nome: 📝 Modelo Personalizado
+sobre: ​​Utilize este formulário para reportar problemas ou sugerir melhorias com informações feitas.
+título: "[PROBLEMA]"
+rótulos: ''
+cessionários: ''
 ---
 
 ## Resumo
