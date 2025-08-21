@@ -7,41 +7,42 @@ Obrigado por seu interesse em contribuir para este projeto! Sua participação �
 ### 1. Reportar Problemas (Issues)
 
 - Antes de abrir uma nova issue, verifique se o problema já não foi reportado.  
-- Seja claro e detalhado ao descrever o problema: passos para reproduzir, comportamento esperado e comportamento atual.  
-- Inclua informações relevantes, como sistema operacional, versão do software, logs de erro, etc.
+- Descreva claramente o problema, incluindo:  
+  - Passos para reproduzir  
+  - Comportamento esperado  
+  - Comportamento atual  
+- Inclua detalhes relevantes, como sistema operacional, versão do software, mensagens de erro, entre outros.
 
 ### 2. Solicitações de Funcionalidades
 
-- Proponha novas funcionalidades explicando o problema que deseja resolver e o benefício esperado.  
-- Se possível, sugira ideias de implementação ou exemplos de uso.
+- Explique o problema que a nova funcionalidade pretende resolver e o benefício esperado.  
+- Se possível, apresente sugestões de implementação ou exemplos de uso.
 
 ### 3. Enviando Pull Requests (PRs)
 
-- Fork este repositório e clone sua cópia localmente.  
-- Crie uma branch para sua modificação:  
-git checkout -b minha-feature
+- Faça um fork do repositório e clone sua cópia localmente.  
+- Crie uma branch para sua modificação:  git checkout -b minha-feature
 - Faça suas alterações de forma clara e objetiva.  
 - Teste suas alterações antes de enviar.  
-- Commit suas mudanças com mensagens descritivas:  
-git commit -m "Descrição clara da mudança"
-- Envie sua branch para o seu fork:  
-git push origin minha-feature
-- Abra um Pull Request explicando o que foi alterado e o motivo.
+- Faça commits com mensagens descritivas:  git commit -m "Descrição clara da mudança"
+- Envie sua branch para o fork:  git push origin minha-feature
+
+- Abra um Pull Request explicando o que foi alterado e por quê.
 
 ### 4. Estilo de Código
 
-- Siga os padrões de código já existentes no projeto.  
-- Use ferramentas de formatação e lint quando disponíveis.  
+- Siga os padrões de código existentes no projeto.  
+- Utilize ferramentas de formatação e lint quando disponível.  
 - Escreva código limpo, legível e bem comentado.
 
 ### 5. Testes
 
 - Sempre que possível, escreva testes para suas alterações.  
-- Certifique-se de que todos os testes existentes passam antes de enviar seu PR.
+- Certifique-se de que todos os testes existentes continuam passando antes de enviar seu PR.
 
 ### 6. Comunicação
 
-- Seja respeitoso e colaborativo nas discussões.  
+- Mantenha uma comunicação respeitosa e colaborativa.  
 - Responda a comentários e sugestões de forma construtiva.
 
 ---

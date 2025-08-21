@@ -1,99 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Patrick Américo :: Terminal Portfólio</title>
-    <meta name="description" content="Portfólio de Patrick Américo, Desenvolvedor Sênior e Engenheiro da Computação com +10 anos de experiência em desenvolvimento de software full-stack, análise de sistemas, arquitetura, metodologias ágeis (Scrum) e gestão de projetos. Expertise em Genexus, Delphi, Python, SQL Server, Power BI.">
+    <meta name="description" content="Portfólio de Patrick Américo, Desenvolvedor Sênior e Engenheiro da Computação com +10 anos de experiência em desenvolvimento de software full-stack, análise de sistemas, arquitetura, metodologias ágeis (Scrum) e gestão de projetos. Expertise em Genexus, Delphi, Python, SQL Server, Power BI." />
+    <meta name="author" content="Patrick Américo" />
+
+    <!-- Open Graph para redes sociais -->
+    <meta property="og:title" content="Patrick Américo :: Terminal Portfólio" />
+    <meta property="og:description" content="Portfólio de Patrick Américo, Desenvolvedor Sênior e Engenheiro da Computação com +10 anos de experiência." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://seu-site.com" />
+    <meta property="og:image" content="https://seu-site.com/imagem-preview.png" />
 
     <!-- Favicon-->
-    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.ico" />
 
     <!-- Font Awesome (for icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body id="top">
 
-    <div id="preloader">
-        <div class="loader-text">Iniciando Portfólio...</div>
-        <div class="loader-cursor cursor">_</div> 
-    </div>
+<div id="preloader" role="region" aria-live="polite" aria-label="Carregando portfólio">
+    <div class="loader-text">Iniciando Portfólio...</div>
+    <div class="loader-cursor cursor" aria-hidden="true">_</div> 
+</div>
 
-    <div id="accessibility-menu" aria-label="Menu de Acessibilidade">
-        <button id="increase-font" aria-label="Aumentar Fonte" title="Aumentar Fonte">A+</button>
-        <button id="decrease-font" aria-label="Diminuir Fonte" title="Diminuir Fonte">A-</button>
-        <button id="high-contrast" aria-label="Alternar Alto Contraste" title="Alternar Alto Contraste"><i class="fas fa-adjust"></i></button>
-        <button id="reset-styles" aria-label="Resetar Estilos" title="Resetar Estilos"><i class="fas fa-undo"></i></button>
-    </div>
+<div id="accessibility-menu" aria-label="Menu de Acessibilidade" role="region">
+    <button id="increase-font" aria-label="Aumentar Fonte" title="Aumentar Fonte" type="button">A+</button>
+    <button id="decrease-font" aria-label="Diminuir Fonte" title="Diminuir Fonte" type="button">A-</button>
+    <button id="high-contrast" aria-label="Alternar Alto Contraste" title="Alternar Alto Contraste" type="button">
+        <i class="fas fa-adjust" aria-hidden="true"></i><span class="sr-only">Alternar Alto Contraste</span>
+    </button>
+    <button id="reset-styles" aria-label="Resetar Estilos" title="Resetar Estilos" type="button">
+        <i class="fas fa-undo" aria-hidden="true"></i><span class="sr-only">Resetar Estilos</span>
+    </button>
+</div>
 
-    <header id="header">
-        <div class="container">
-            <!-- Botões de "janela" macOS (apenas visual, sem funcionalidade real aqui) -->
-            <div class="window-buttons-macos">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-            </div>
-            <div class="logo">
-                <!-- O JS tratará o href para mostrar a seção intro -->
-                <a href="#intro" class="nav-link active" data-command="inicio">Patrick Américo — portfolio<span class="cursor">_</span></a>
-            </div>
-            <nav id="main-nav">
-                <ul class="nav-list">
-                    <!-- data-command é usado pelo JS para atualizar o current-command-text -->
-                    <li><a class="nav-link" href="#about" data-command="sobre_mim">Sobre_Mim</a></li>
-                    <li><a class="nav-link" href="#skills" data-command="competencias">Competências</a></li>
-                    <li><a class="nav-link" href="#resume" data-command="trajetoria">Trajetória</a></li>
-                    <li><a class="nav-link" href="#portfolio" data-command="portfolio">Portfólio</a></li>
-                    <li><a class="nav-link" href="#contact" data-command="contato">Contato</a></li>
-                </ul>
-            </nav>
-            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir Menu" aria-expanded="false">
-                <i class="fas fa-bars"></i>
-            </button>
+<header id="header">
+    <div class="container">
+        <div class="window-buttons-macos" aria-hidden="true">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
         </div>
-        <div class="current-command-display">             
-            <span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ % </span>
-            <span id="current-command-text">inicio</span>
+        <div class="logo">
+            <a href="#intro" class="nav-link active" data-command="inicio" role="link" aria-current="page">
+                Patrick Américo — portfolio<span class="cursor" aria-hidden="true">_</span>
+            </a>
         </div>
-    </header>
+        <nav id="main-nav" role="navigation" aria-label="Menu Principal">
+            <ul class="nav-list">
+                <li><a class="nav-link" href="#about" data-command="sobre_mim">Sobre_Mim</a></li>
+                <li><a class="nav-link" href="#skills" data-command="competencias">Competências</a></li>
+                <li><a class="nav-link" href="#resume" data-command="trajetoria">Trajetória</a></li>
+                <li><a class="nav-link" href="#portfolio" data-command="portfolio">Portfólio</a></li>
+                <li><a class="nav-link" href="#contact" data-command="contato">Contato</a></li>
+            </ul>
+        </nav>
 
-    <main id="main-content">
-        <!-- Seção de introdução -->
-        <section id="intro" class="section active-section">
-            <div class="container section-container">
-                <div class="terminal-output">
-                    <!-- O JS cuidará do efeito de digitação aqui -->
-                    <p class="typed-text" data-text="Olá, Sou Patrick Américo, Full-stack Software Engineer."></p>
-                    <h1 class="typed-text" data-text="Análise que gera valor, código que transforma negócios."></h1>
-                    <div class="prompt-line">
-                        <span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ %</span>
-                        <a href="#about" class="nav-link internal-link prompt-command" data-command="sobre_mim">view ./sobre_mim.md</a>
-                    </div>
-                    <ul class="intro-social">
-                        <li><a href="mailto:patrick.americo@outlook.com" aria-label="Enviar Email" target="_blank" class="external-link"><i class="fas fa-envelope"></i> Email</a></li>
-                        <li><a href="https://patrickamerico.github.io/" aria-label="Visitar GitHub" target="_blank" rel="noopener noreferrer" class="external-link"><i class="fab fa-github"></i> GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/patrick-americo-analista-ti-saude" aria-label="Visitar LinkedIn" target="_blank" rel="noopener noreferrer" class="external-link"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                     </ul>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir Menu" aria-expanded="false" aria-controls="main-nav" type="button">
+            <i class="fas fa-bars" aria-hidden="true"></i><span class="sr-only">Menu</span>
+        </button>
+    </div>
+    <div class="current-command-display" role="region" aria-live="polite" aria-atomic="true">
+        <span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ % </span>
+        <span id="current-command-text" aria-live="polite" aria-atomic="true">inicio</span>
+    </div>
+</header>
+
+<main id="main-content" tabindex="-1">
+    <!-- Seção de introdução -->
+    <section id="intro" tabindex="-1" class="section active-section" aria-labelledby="intro-title" role="region">
+        <div class="container section-container">
+            <div class="terminal-output">
+                <p class="typed-text" data-text="Olá, Sou Patrick Américo, Full-stack Software Engineer."></p>
+                <h1 id="intro-title" class="typed-text" data-text="Análise que gera valor, código que transforma negócios."></h1>
+                <div class="prompt-line" role="list">
+                    <span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ %</span>
+                    <a href="#about" class="nav-link internal-link prompt-command" data-command="sobre_mim" role="link">view ./sobre_mim.md</a>
                 </div>
+                <ul class="intro-social" role="list">
+                    <li><a href="mailto:patrick.americo@outlook.com" aria-label="Enviar Email para Patrick Américo" class="external-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a></li>
+                    <li><a href="https://patrickamerico.github.io/" aria-label="Visitar GitHub de Patrick Américo" class="external-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/patrick-americo-analista-ti-saude" aria-label="Visitar LinkedIn de Patrick Américo" class="external-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+                 </ul>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Sobre a seção -->
-        <section id="about" class="section">
-            <div class="container section-container">
-                <h2 class="section-title">Sobre Mim<span class="cursor">_</span></h2>
-                <div class="terminal-output">
-                    <p class="lead">
+    <!-- Seção Sobre Mim -->
+    <section id="about" tabindex="-1" class="section" aria-labelledby="about-title" role="region">
+        <div class="container section-container">
+            <h2 id="about-title" class="section-title">Sobre Mim<span class="cursor" aria-hidden="true">_</span></h2>
+            <div class="terminal-output">
+                <p class="lead">
 					Sou um profissional de TI com formação técnica em Informática e graduação em Engenharia da Computação, onde adquiri uma base sólida em algoritmos, arquitetura de software e inteligência artificial. Minha jornada é marcada pelo compromisso constante de unir conhecimento técnico a objetivos claros e estratégicos.
 					<br/><br/>
 					Com uma Pós-Graduação em Gestão de Projetos, desenvolvi uma visão ampla e estratégica para liderar iniciativas complexas, garantindo a entrega de valor real ao negócio e o alinhamento entre tecnologia e metas organizacionais.
@@ -103,30 +115,30 @@
 					Fora do ambiente profissional, acredito no equilíbrio entre corpo e mente para garantir a performance ideal tanto no trabalho quanto na vida pessoal.
 					<br/><br/>
 					Acredito que a tecnologia não é apenas uma ferramenta, mas um motor de transformação que pode gerar impactos positivos e inovadores em qualquer setor.
-
-                    </p>
-                     <h3>Idiomas:</h3>
-                     <ul>
-                        <li><span class="list-prefix">PT:</span>  Português (Nativo)</li>
-                        <li><span class="list-prefix">EN:</span>  Inglês (Intermediário - Leitura/Escrita Técnica)</li>
-                        <li><span class="list-prefix">ES:</span>  Espanhol (Intermediário - Leitura/Escrita Técnica)</li>
-                     </ul>
-                     <div class="prompt-line">
-                        <span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ %</span>
-                        <a href="#skills" class="nav-link internal-link prompt-command" data-command="competencias">ls /usr/local/bin/skills</a>
-                    </div>
+				</p>
+				
+                <h3>Idiomas:</h3>
+                <ul>
+                    <li><span class="list-prefix">PT:</span> Português (Nativo)</li>
+                    <li><span class="list-prefix">EN:</span> Inglês (Intermediário - Leitura/Escrita Técnica)</li>
+                    <li><span class="list-prefix">ES:</span> Espanhol (Intermediário - Leitura/Escrita Técnica)</li>
+                </ul>
+                <div class="prompt-line" role="list">
+                    <span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ %</span>
+                    <a href="#skills" class="nav-link internal-link prompt-command" data-command="competencias" role="link">ls /usr/local/bin/skills</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Seção de Habilidades -->
-        <section id="skills" class="section">
-            <div class="container section-container">
-                <h2 class="section-title">Competências Técnicas e Ferramentas<span class="cursor">_</span></h2>
-                <p class="section-subtitle">Domínio e experiência nas seguintes tecnologias, linguagens e plataformas:</p>
-                <div class="terminal-output">
-                    <div class="skills-grid">
-                        <div class="skill-category">
+    <!-- Seção Competências -->
+    <section id="skills" tabindex="-1" class="section" aria-labelledby="skills-title" role="region">
+        <div class="container section-container">
+            <h2 id="skills-title" class="section-title">Competências Técnicas e Ferramentas<span class="cursor" aria-hidden="true">_</span></h2>
+            <p class="section-subtitle">Domínio e experiência nas seguintes tecnologias, linguagens e plataformas:</p>
+            <div class="terminal-output">
+                <div class="skills-grid" role="list">
+                    <div class="skill-category">
                             <h3>// Frontend</h3>
                             <ul>
                                 <li><span class="list-prefix">></span> <i class="fab fa-html5"></i> HTML5</li>
@@ -182,23 +194,23 @@
                                 <li><span class="list-prefix">></span> Gestão de Projetos</li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="prompt-line">
-                        <span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ %</span>
-                        <a href="#resume" class="nav-link internal-link prompt-command" data-command="trajetoria">history | grep "carreira"</a>
-                    </div>
+                </div>
+                <div class="prompt-line" role="list">
+                    <span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ %</span>
+                    <a href="#resume" class="nav-link internal-link prompt-command" data-command="trajetoria" role="link">history | grep "career"</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Seção de currículo -->
-        <section id="resume" class="section">
-            <div class="container section-container">
-                <h2 class="section-title">Trajetória Profissional e Acadêmica<span class="cursor">_</span></h2>
-                <p class="section-subtitle">Minha jornada combina formação técnica sólida em <strong>Engenharia da Computação</strong> com especialização em <strong>Gestão de Projetos</strong> e mais de uma década de experiência prática em <strong>desenvolvimento de software</strong> e <strong>análise de sistemas</strong>.</p>
-                <div class="terminal-output">
-                    <div class="resume-columns">
-                        <div class="resume-column">
+    <!-- Seção Trajetória -->
+    <section id="resume" tabindex="-1" class="section" aria-labelledby="resume-title" role="region">
+        <div class="container section-container">
+            <h2 id="resume-title" class="section-title">Trajetória Profissional e Acadêmica<span class="cursor" aria-hidden="true">_</span></h2>
+            <p class="section-subtitle">Minha jornada combina formação técnica sólida em <strong>Engenharia da Computação</strong> com especialização em <strong>Gestão de Projetos</strong>...</p>
+            <div class="terminal-output">
+                <div class="resume-columns">
+                    <div class="resume-column">
                             <h3><i class="fas fa-graduation-cap"></i> Formação Acadêmica</h3>
 							<p>Minha trajetória acadêmica reflete um compromisso contínuo com o aprendizado e o desenvolvimento profissional.</p>
 							<p>Iniciei no curso <strong>Técnico em Informática</strong>, onde adquiri experiência prática em desenvolvimento de sistemas (programação) e manutenção de computadores e redes, além de fortalecer habilidades essenciais como organização, atenção aos detalhes e trabalho em equipe — fundamentos que aplico até hoje.</p>
@@ -215,166 +227,163 @@
 							<p>Na sequência, como <strong>Desenvolvedor Sênior</strong>, liderei projetos de alta complexidade durante todo o ciclo do projeto, onde minha atuação vai muito além da programação e se volta para o negócio.</p>
 							<p><strong>Atualmente</strong>, atuo com foco em melhorar a vida de pacientes e profissionais de saúde, criando soluções inovadoras que transformam experiências clínicas e administrativas, aumentando a confiabilidade dos dados e trazendo ganhos de tempo e facilitando processos.</p>
                         </div>
-                    </div>
-
-                    <div class="resume-columns certifications-awards">
-                         <div class="resume-column">
-                            <h3><i class="fas fa-certificate"></i> Certificações Relevantes</h3>
-                             <ul>
-								 <li><span class="list-prefix">*</span> 2023 - Scrum Foundation (SFPC): Expertise em metodologias ágeis para entregas eficientes.</li>
-								 <li><span class="list-prefix">*</span> 2023 - Six Sigma Yellow Belt: Capacidade de análise e melhoria de processos, focado em eliminar desperdícios.</li>
-								 <li><span class="list-prefix">*</span> 2023 - Six Sigma White Belt in Healthcare: Fundamentos do Six Sigma aplicados ao setor de saúde.</li>
-								 <li><span class="list-prefix">*</span> 2023 - Business Intelligence Foundation (BIFPC): Conhecimento em conceitos, processos e arquitetura de Business Intelligence.</li>
-								 <li><span class="list-prefix">*</span> 2023 - Fundamentos na LGPD: Compreensão da Lei Geral de Proteção de Dados e seu impacto.</li>
-								 <li><span class="list-prefix">*</span> 2023 - Remote Work Professional (RWP): Boas práticas e ferramentas para trabalho remoto produtivo.</li>
-                             </ul>
-                         </div>
-                         <div class="resume-column">
-                             <h3><i class="fas fa-award"></i> Projetos e Reconhecimentos</h3>
-                             <ul>
-                                 <li><span class="list-prefix">P</span> <strong>InfoAgro (Apresentação de Projeto Acadêmico de Conclusão de Curso):</strong> Liderança no desenvolvimento de plataforma IoT para o agronegócio, reconhecida por sua inovação e suporte à tomada de decisão.</li>								 
-                                 <li><span class="list-prefix">P</span> <strong>INIC - Iniciação Científica (Projeto Acadêmico):</strong> Pesquisa e prototipagem de solução de autenticação digital, explorando conceitos de segurança.</li>
-                             </ul>
-                         </div>
-                     </div>
-                     <div class="prompt-line">
-                        <span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ %</span>
-                        <a href="#portfolio" class="nav-link internal-link prompt-command" data-command="portfolio">open ~/Documents/Portfolio</a>
-                    </div>
+                </div>
+				
+				<div class="resume-columns certifications-awards">
+				 <div class="resume-column">
+					<h3><i class="fas fa-certificate"></i> Certificações Relevantes</h3>
+					 <ul>
+						 <li><span class="list-prefix">*</span> 2023 - Scrum Foundation (SFPC): Expertise em metodologias ágeis para entregas eficientes.</li>
+						 <li><span class="list-prefix">*</span> 2023 - Six Sigma Yellow Belt: Capacidade de análise e melhoria de processos, focado em eliminar desperdícios.</li>
+						 <li><span class="list-prefix">*</span> 2023 - Six Sigma White Belt in Healthcare: Fundamentos do Six Sigma aplicados ao setor de saúde.</li>
+						 <li><span class="list-prefix">*</span> 2023 - Business Intelligence Foundation (BIFPC): Conhecimento em conceitos, processos e arquitetura de Business Intelligence.</li>
+						 <li><span class="list-prefix">*</span> 2023 - Fundamentos na LGPD: Compreensão da Lei Geral de Proteção de Dados e seu impacto.</li>
+						 <li><span class="list-prefix">*</span> 2023 - Remote Work Professional (RWP): Boas práticas e ferramentas para trabalho remoto produtivo.</li>
+					 </ul>
+				 </div>
+				 <div class="resume-column">
+					 <h3><i class="fas fa-award"></i> Projetos e Reconhecimentos</h3>
+					 <ul>
+						 <li><span class="list-prefix">P</span> <strong>InfoAgro (Apresentação de Projeto Acadêmico de Conclusão de Curso):</strong> Liderança no desenvolvimento de plataforma IoT para o agronegócio, reconhecida por sua inovação e suporte à tomada de decisão.</li>								 
+						 <li><span class="list-prefix">P</span> <strong>INIC - Iniciação Científica (Projeto Acadêmico):</strong> Pesquisa e prototipagem de solução de autenticação digital, explorando conceitos de segurança.</li>
+					 </ul>
+				 </div>
+			 </div>
+					 
+                <div class="prompt-line" role="list">
+                    <span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ %</span>
+                    <a href="#portfolio" class="nav-link internal-link prompt-command" data-command="portfolio" role="link">open ~/Documents/Portfolio</a>
                 </div>
             </div>
-        </section>
-
-        <!-- Seção de portfólio -->
-        <section id="portfolio" class="section">
-            <div class="container section-container">
-                <h2 class="section-title">Portfólio de Projetos<span class="cursor">_</span></h2>
-                <p class="section-subtitle">Amostras de projetos para demonstrar habilidades práticas em <strong>visualização de dados</strong>, <strong>UI Design</strong> e <strong>desenvolvimento front-end e back-end</strong>.</p>
-                <div class="terminal-output">
-                    <div class="portfolio-grid">
-                        <div class="portfolio-item" data-modal-target="modal-powerbi">
-                            <span class="item-name">Dashboard Power BI</span>
-                            <span class="item-description">Mini-Projeto no contexto análise  de dados de  RH (Recursos Humanos)</span>
-                        </div>
-                        <div class="portfolio-item" data-modal-target="modal-dados-python">
-                            <span class="item-name">Pipeline de Engenharia de Dados em Python</span>
-                            <span class="item-description">Mini-Projeto de pipeline para extração, limpeza, transformação e enriquecimento de dados utilizando Python e SQLite</span>
-                        </div>
-                        <div class="portfolio-item" data-modal-target="modal-churn">
-                            <span class="item-name">Previsão de Churn</span>
-                            <span class="item-description">Mini-Projeto de Data Science para prever cancelamento de clientes em Telecom.</span>
-                        </div>
-                        <div class="portfolio-item" data-modal-target="modal-covid19">
-                             <span class="item-name">Dashboard Indicador - Acompanhamento COVID-19</span>
-                            <span class="item-description">Painel interativo para monitoramento hospitalar da COVID-19, com dados extraídos e refinados do ERP Tasy.</span>
-                        </div>
-                        <div class="portfolio-item" data-modal-target="modal-validacpf">
-                            <span class="item-name">Projeto Validação de CPF</span>
-                            <span class="item-description">Solução automatizada para validação e verificação de CPF integrada à ERP.</span>
-                        </div>
-                        <div class="portfolio-item" data-modal-target="modal-figma">
-                            <span class="item-name">UI Design</span>
-                            <span class="item-description">Mini-Projeto UI Design App Food Delivery em Figma.</span>
-                        </div>
-                        <div class="portfolio-item" data-modal-target="modal-spotify">
-                            <span class="item-name">Interface Spotify</span>
-                            <span class="item-description">Clone Interface Web Spotify (Front-End)</span>
-                        </div>
-                        <div class="portfolio-item" data-modal-target="modal-C">
-                            <span class="item-name">Repositório - C</span>
-                            <span class="item-description">Repositório de exemplos em C (Backend)</span>
-                        </div>
-                        <div class="portfolio-item" data-modal-target="modal-CEP">
-                            <span class="item-name">Consulta de CEP com Vue.js</span>
-                            <span class="item-description">Consulta de CEP com Vue.js e API</span>
-                        </div>
-						<div class="portfolio-item" data-modal-target="modal-fastapi">
-							<span class="item-name">API FastAPI - Gestão Escolar</span>
-							<span class="item-description">API para gerenciar alunos, cursos e matrículas em instituição de ensino</span>
-						</div>
-						<div class="portfolio-item" data-modal-target="modal-dashboard-salarios">
-							<span class="item-name">Dashboard de Análise de Salários na Área de Dados</span>
-							<span class="item-description">Dashboard interativo para explorar dados salariais no setor de dados, com filtros e gráficos interativos</span>
-						</div>
-                    </div>
-                     <div class="prompt-line">
-                        <span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ %</span>
-                        <a href="#contact" class="nav-link internal-link prompt-command" data-command="contato">contact --all</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção de contato -->
-        <section id="contact" class="section">
-            <div class="container section-container">
-                 <h2 class="section-title">Contato<span class="cursor">_</span></h2>
-                 <p class="section-subtitle">Estou disponível para novas oportunidades que demandem expertise em <strong>desenvolvimento de software</strong>, <strong>análise de sistemas</strong> e <strong>gestão de projetos</strong>. Gostaria de explorar como minha experiência pode agregar valor estratégico, promovendo o sucesso e o desenvolvimento contínuo da sua equipe? </p>
-                <div class="terminal-output contact-details">
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:patrick.americo@outlook.com" class="external-link">patrick.americo@outlook.com</a></p>
-                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/patrick-americo-analista-ti-saude" target="_blank" rel="noopener noreferrer" class="external-link">linkedin.com/in/patrick-americo-analista-ti-saude</a></p>
-                    <p><i class="fab fa-github"></i> <a href="https://patrickamerico.github.io/" target="_blank" rel="noopener noreferrer" class="external-link">patrickamerico.github.io</a></p>
-
-                    <div class="prompt-line final-prompt">
-                        <span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ %</span>
-                        <span class="prompt-command">exit</span><span class="cursor">_</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="footer">
-        <div class="container">
-            <p>© <span id="current-year"></span> Patrick Américo. Todos os direitos reservados.</p>
-            <p>[status: online] [sessão: patrick] [tempo de atividade: <span id="uptime-placeholder">calculando...</span>]</p>
         </div>
-    </footer>
+    </section>
 
-    <a href="#" id="go-top" class="go-top" title="Voltar ao Topo" aria-label="Voltar ao Topo">↑</a>
-
-    <!-- Modais de Portfólio -->
-    <!-- Modal Power BI -->
-    <div id="modal-powerbi" class="modal">
-        <div class="modal-content">
-            <button class="modal-close" aria-label="Fechar Modal">×</button>
-            <img src="images/portfolio/modals/modal_power bi.png" alt="Dashboard Power BI Detalhado - Análise de Queixas">
-            <h3>Painel de Análise de dados RH</h3>
-            <p>Dashboard interativo desenvolvido em <strong>Microsoft Power BI</strong> para <strong>análise de dados</strong> e visualização de total de funcionários (ativos), Total de funcionários do gênero, total de funcionários por função entre outras metricas. Demonstra habilidades em criação de métricas, tratamento de dados e <strong>visualização de insights</strong> para tomada de decisão.</p>
-            <div class="modal-categories">
-                <span>Power BI</span>
-                <span>Análise de Dados</span>
-                <span>Business Intelligence</span>
+    <!-- Seção Portfólio -->
+    <section id="portfolio" tabindex="-1" class="section" aria-labelledby="portfolio-title" role="region">
+        <div class="container section-container">
+            <h2 id="portfolio-title" class="section-title">Portfólio de Projetos<span class="cursor" aria-hidden="true">_</span></h2>
+            <p class="section-subtitle">Amostras de projetos para demonstrar habilidades práticas em <strong>visualização de dados</strong>, <strong>UI Design</strong> e <strong>desenvolvimento front-end e back-end</strong>.</p>
+            <div class="terminal-output">
+                <div class="portfolio-grid" role="list">
+                    <div class="portfolio-item" data-modal-target="modal-powerbi" role="listitem" tabindex="0" aria-haspopup="dialog" aria-controls="modal-powerbi" aria-expanded="false">
+                        <span class="item-name">Dashboard Power BI</span>
+                        <span class="item-description">Mini-Projeto no contexto análise de dados de RH (Recursos Humanos)</span>												
+                    </div>
+					
+					<div class="portfolio-item" data-modal-target="modal-dados-python" role="listitem" tabindex="0" aria-haspopup="dialog" aria-controls="modal-dados-python" aria-expanded="false">
+						<span class="item-name">Pipeline de Engenharia de Dados em Python</span>
+						<span class="item-description">Mini-Projeto de pipeline para extração, limpeza, transformação e enriquecimento de dados utilizando Python e SQLite</span>
+					</div>
+					<div class="portfolio-item" data-modal-target="modal-churn" role="listitem" tabindex="0" aria-haspopup="dialog" aria-controls="modal-churn" aria-expanded="false">
+						<span class="item-name">Previsão de Churn</span>
+						<span class="item-description">Mini-Projeto de Data Science para prever cancelamento de clientes em Telecom.</span>
+					</div>
+					<div class="portfolio-item" data-modal-target="modal-covid19" role="listitem" tabindex="0" aria-haspopup="dialog" aria-controls="modal-covid19" aria-expanded="false">
+						 <span class="item-name">Dashboard Indicador - Acompanhamento COVID-19</span>
+						<span class="item-description">Painel interativo para monitoramento hospitalar da COVID-19, com dados extraídos e refinados do ERP Tasy.</span>
+					</div>
+					<div class="portfolio-item" data-modal-target="modal-validacpf" role="listitem" tabindex="0" aria-haspopup="dialog" aria-controls="modal-validacpf" aria-expanded="false">
+						<span class="item-name">Projeto Validação de CPF</span>
+						<span class="item-description">Solução automatizada para validação e verificação de CPF integrada à ERP.</span>
+					</div>
+					<div class="portfolio-item" data-modal-target="modal-figma" role="listitem" tabindex="0" aria-haspopup="dialog" aria-controls="modal-figma" aria-expanded="false">
+						<span class="item-name">UI Design</span>
+						<span class="item-description">Mini-Projeto UI Design App Food Delivery em Figma.</span>
+					</div>
+					<div class="portfolio-item" data-modal-target="modal-spotify" role="listitem" tabindex="0" aria-haspopup="dialog" aria-controls="modal-spotify" aria-expanded="false">
+						<span class="item-name">Interface Spotify</span>
+						<span class="item-description">Clone Interface Web Spotify (Front-End)</span>
+					</div>
+					<div class="portfolio-item" data-modal-target="modal-C" role="listitem" tabindex="0" aria-haspopup="dialog" aria-controls="modal-C" aria-expanded="false">
+						<span class="item-name">Repositório - C</span>
+						<span class="item-description">Repositório de exemplos em C (Backend)</span>
+					</div>
+					<div class="portfolio-item" data-modal-target="modal-CEP" role="listitem" tabindex="0" aria-haspopup="dialog" aria-controls="modal-CEP" aria-expanded="false">
+						<span class="item-name">Consulta de CEP com Vue.js</span>
+						<span class="item-description">Consulta de CEP com Vue.js e API</span>
+					</div>
+					<div class="portfolio-item" data-modal-target="modal-fastapi" role="listitem" tabindex="0" aria-haspopup="dialog" aria-controls="modal-fastapi" aria-expanded="false">
+						<span class="item-name">API FastAPI - Gestão Escolar</span>
+						<span class="item-description">API para gerenciar alunos, cursos e matrículas em instituição de ensino</span>
+					</div>
+					<div class="portfolio-item" data-modal-target="modal-dashboard-salarios" role="listitem" tabindex="0" aria-haspopup="dialog" aria-controls="modal-dashboard-salarios" aria-expanded="false">
+						<span class="item-name">Dashboard de Análise de Salários na Área de Dados</span>
+						<span class="item-description">Dashboard interativo para explorar dados salariais no setor de dados, com filtros e gráficos interativos</span>
+					</div>
+	
+                </div>
+                <div class="prompt-line" role="list">
+                    <span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ %</span>
+                    <a href="#contact" class="nav-link internal-link prompt-command" data-command="contato" role="link">contact --all</a>
+                </div>
             </div>
-            <a href="https://github.com/patrickamerico/Portfolio/tree/main/BI-PowerBI-Dashboards" class="btn-modal-link" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
         </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact" tabindex="-1" class="section" aria-labelledby="contact-title" role="region">
+        <div class="container section-container">
+            <h2 id="contact-title" class="section-title">Contato<span class="cursor" aria-hidden="true">_</span></h2>
+            <p class="section-subtitle">Estou disponível para novas oportunidades que demandem expertise em <strong>desenvolvimento de software</strong>, <strong>análise de sistemas</strong> e <strong>gestão de projetos</strong>. Gostaria de explorar como minha experiência pode agregar valor estratégico, promovendo o sucesso e o desenvolvimento contínuo da sua equipe?</p>
+            <div class="terminal-output contact-details">
+                <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:patrick.americo@outlook.com" class="external-link" aria-label="Enviar email para Patrick Américo">patrick.americo@outlook.com</a></p>
+                <p><i class="fab fa-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/patrick-americo-analista-ti-saude" target="_blank" rel="noopener noreferrer" class="external-link" aria-label="LinkedIn de Patrick Américo">linkedin.com/in/patrick-americo-analista-ti-saude</a></p>
+                <p><i class="fab fa-github" aria-hidden="true"></i> <a href="https://patrickamerico.github.io/" target="_blank" rel="noopener noreferrer" class="external-link" aria-label="GitHub de Patrick Américo">patrickamerico.github.io</a></p>
+
+                <div class="prompt-line final-prompt" role="list">
+                    <span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ %</span>
+                    <span class="prompt-command">exit</span><span class="cursor" aria-hidden="true">_</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="footer" role="contentinfo">
+    <div class="container">
+        <p>© <span id="current-year"></span> Patrick Américo. Todos os direitos reservados.</p>
+        <p>[status: online] [sessão: patrick] [tempo de atividade: <span id="uptime-placeholder">calculando...</span>]</p>
     </div>
+</footer>
 
-	<!-- Modal Pipeline de Engenharia de Dados em Python -->
-    <div id="modal-dados-python" class="modal">
-        <div class="modal-content">
-            <button class="modal-close" aria-label="Fechar Modal">×</button>
-            <img src="images/portfolio/modals/modal_pedp.png" alt="Dashboard Power BI Detalhado - Análise de Queixas">
-            <h3>Pipeline de Engenharia de Dados com Python</h3>
-            <p>Este projeto apresenta uma pipeline completa para manipulação de dados de produção de alimentos, que inclui:</p>
-			<ul>
-				<li><span class="list-prefix">-</span> Extração dos dados a partir de arquivos CSV;</li>
-				<li><span class="list-prefix">-</span> Limpeza e transformação dos dados, aplicando regras de negócio;</li>
-				<li><span class="list-prefix">-</span> Enriquecimento dos dados com cálculo da margem de lucro;</li>
-				<li><span class="list-prefix">-</span> Armazenamento dos dados processados em banco SQLite.</li>
-			</ul>
-            <div class="modal-categories">
-                <span>Python</span>
-                <span>SQLite</span>
-                <span>Engenharia de Dados</span>
-                <span>ETL</span>
-            </div>
-            <a href="https://github.com/patrickamerico/Portfolio/tree/main/Engenharia%20de%20Dados%20com%20Linguagem%20Python" class="btn-modal-link" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+<a href="#top" id="go-top" class="go-top" title="Voltar ao Topo" aria-label="Voltar ao Topo">↑</a>
+
+<!-- Modais de Portfólio -->
+
+<div id="modal-powerbi" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-powerbi-title" tabindex="-1" aria-hidden="true">
+    <div class="modal-content">
+        <button class="modal-close" aria-label="Fechar Modal" type="button">×</button>
+        <img src="images/portfolio/modals/modal_power_bi.png" alt="Dashboard Power BI Detalhado - Análise de Queixas" />
+        <h3 id="modal-powerbi-title">Painel de Análise de dados RH</h3>
+        <p>Dashboard interativo desenvolvido em <strong>Microsoft Power BI</strong> para <strong>análise de dados</strong> e visualização de total de funcionários...</p>
+        <div class="modal-categories">
+            <span>Power BI</span>
+            <span>Análise de Dados</span>
+            <span>Business Intelligence</span>
         </div>
+        <a href="https://github.com/patrickamerico/Portfolio/tree/main/BI-PowerBI-Dashboards" class="btn-modal-link" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
     </div>
+</div>
 
-	<!-- Modal Previsão de Churn -->
-	<div id="modal-churn" class="modal">
+<!-- Modal Pipeline Python -->
+<div id="modal-dados-python" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-dados-python-title" tabindex="-1" aria-hidden="true">
+    <div class="modal-content">
+        <button class="modal-close" aria-label="Fechar Modal" type="button">×</button>
+        <img src="images/portfolio/modals/modal_pedp.png" alt="Pipeline de Engenharia de Dados com Python" />
+        <h3 id="modal-dados-python-title">Pipeline de Engenharia de Dados com Python</h3>
+        <p>Este projeto apresenta uma pipeline completa para manipulação de dados de produção de alimentos...</p>
+        <div class="modal-categories">
+            <span>Python</span>
+            <span>SQLite</span>
+            <span>Engenharia de Dados</span>
+            <span>ETL</span>
+        </div>
+        <a href="https://github.com/patrickamerico/Portfolio/tree/main/Engenharia%20de%20Dados%20com%20Linguagem%20Python" class="btn-modal-link" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+    </div>
+</div>
+
+<!-- Modal Previsão de Churn -->
+	<div id="modal-churn" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-churn-title" tabindex="-1" aria-hidden="true">
 		<div class="modal-content">
 			<button class="modal-close" aria-label="Fechar Modal">×</button>
 			<img src="images/portfolio/modals/modeal_churn_prediction.png" alt="Detalhes do Projeto Previsão de Churn - Telecomunicações">
@@ -390,7 +399,7 @@
 	</div>
 
 	<!-- Modal Indicador - Detalhe COVID-19 -->
-	<div id="modal-covid19" class="modal">
+	<div id="modal-covid19" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-covid19-title" tabindex="-1" aria-hidden="true">
 		<div class="modal-content">
 			<button class="modal-close" aria-label="Fechar Modal">×</button>
 			<img src="images/portfolio/modals/modal_weknow.png" alt="Dashboard Indicador Detalhado - Acompanhamento COVID-19">
@@ -407,7 +416,7 @@
 	</div>
 
 	<!-- Modal Projeto - Detalhe Validação de CPF -->
-	<div id="modal-validacpf" class="modal">
+	<div id="modal-validacpf" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-validacpf-title" tabindex="-1" aria-hidden="true">
 		<div class="modal-content">
 			<button class="modal-close" aria-label="Fechar Modal">×</button>
 			<img src="images/portfolio/modals/modal_validacpf.png" alt="Detalhe do Projeto - Validação de CPF">
@@ -423,7 +432,7 @@
 	</div>
 
     <!-- Modal Figma -->
-    <div id="modal-figma" class="modal">
+    <div id="modal-figma" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-figma-title" tabindex="-1" aria-hidden="true">
         <div class="modal-content">
             <button class="modal-close" aria-label="Fechar Modal">×</button>
             <img src="images/portfolio/modals/modal_figma.png" alt="Protótipo de Alta Fidelidade Figma - App Food Delivery">
@@ -440,7 +449,7 @@
     </div>
 
     <!-- Modal Spotify Clone -->
-    <div id="modal-spotify" class="modal">
+    <div id="modal-spotify" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-spotify-title" tabindex="-1" aria-hidden="true">
         <div class="modal-content">
             <button class="modal-close" aria-label="Fechar Modal">×</button>
             <img src="images/portfolio/modals/modal_spotify.png" alt="Clone da Interface Web Spotify - HTML, CSS, JavaScript">
@@ -457,7 +466,7 @@
     </div>
 
 	<!-- Modal C -->
-    <div id="modal-C" class="modal">
+    <div id="modal-C" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-C-title" tabindex="-1" aria-hidden="true">
         <div class="modal-content">
             <button class="modal-close" aria-label="Fechar Modal">×</button>
             <img src="images/portfolio/modals/modal_C.png" alt="Projeto em C">
@@ -472,7 +481,7 @@
     </div>
 
 	<!-- Modal Consulta CEP -->
-    <div id="modal-CEP" class="modal">
+    <div id="modal-CEP" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-CEP-title" tabindex="-1" aria-hidden="true">
         <div class="modal-content">
             <button class="modal-close" aria-label="Fechar Modal">×</button>
             <img src="images/portfolio/modals/modal_CEP.png" alt="Projeto de Consulta de CEP">
@@ -490,7 +499,7 @@
     </div>
 	
 	<!-- Modal FastAPI -->
-	<div id="modal-fastapi" class="modal">
+	<div id="modal-fastapi" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-fastapi-title" tabindex="-1" aria-hidden="true">
 		<div class="modal-content">
 			<button class="modal-close" aria-label="Fechar Modal">×</button>
 			<img src="images/portfolio/modals/modal_fastapi.jpg" alt="API FastAPI para Gestão Escolar - Detalhes do Projeto">
@@ -507,7 +516,7 @@
 	</div>
 	
 	<!-- Modal Dashboard de Salários -->
-	<div id="modal-dashboard-salarios" class="modal">
+	<div id="modal-dashboard-salarios" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-dashboard-salarios-title" tabindex="-1" aria-hidden="true">
 		<div class="modal-content">
 			<button class="modal-close" aria-label="Fechar Modal">×</button>
 			<img src="images/portfolio/modals/modal_dashboard_salarios.jpg" alt="Dashboard de Análise de Salários - Detalhes do Projeto">
@@ -522,9 +531,24 @@
 			<a href="https://github.com/patrickamerico/Portfolio/tree/main/python-imersao-dados" class="btn-modal-link" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
 		</div>
 	</div>
+	
+<!-- Scripts -->
+<script src="js/script.js" defer></script>
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+<!-- Texto oculto para leitores de tela -->
+<style>
+    .sr-only {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        clip: rect(0, 0, 0, 0) !important;
+        white-space: nowrap !important;
+        border: 0 !important;
+    }
+</style>
 
 </body>
 </html>

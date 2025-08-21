@@ -2,34 +2,33 @@
 
 ## Reportando Vulnerabilidades
 
-A segurança é uma prioridade para este projeto. Se você identificar uma vulnerabilidade ou problema de segurança, por favor, reporte de forma responsável para que possamos corrigir o mais rápido possível.
+A segurança é uma prioridade máxima para este projeto. Caso identifique qualquer vulnerabilidade ou problema relacionado à segurança, solicitamos que faça o reporte de forma responsável para que possamos agir rapidamente na correção.
 
 ### Como reportar
 
-- Envie um e-mail detalhado:   
-- Inclua as seguintes informações no seu relatório:  
-  - Descrição detalhada da vulnerabilidade  
-  - Passos para reproduzir o problema  
-  - Impacto potencial  
-  - Sugestões para mitigação (se possível)  
-- Por favor, não reporte vulnerabilidades publicamente antes de termos a chance de corrigir o problema.
+Por favor, envie um e-mail detalhado contendo as seguintes informações:
+
+- **Descrição detalhada** da vulnerabilidade encontrada.  
+- **Passos claros e precisos** para reproduzir o problema.  
+- **Impacto potencial** que a vulnerabilidade pode causar.  
+- **Sugestões de mitigação** ou possíveis soluções, se houver.  
+
+> Importante: não divulgue a vulnerabilidade publicamente antes de oferecermos uma correção para evitar exposição desnecessária.
 
 ## Processo de Resposta
 
-- Confirmaremos o recebimento do seu relatório em até 480 horas úteis.  
-- Trabalharemos para avaliar e corrigir o problema com prioridade.  
-- Manteremos contato durante o processo para atualizá-lo sobre o andamento.  
-- Após a correção, divulgaremos um comunicado público, se apropriado, reconhecendo sua contribuição.
+- Confirmaremos o recebimento do seu relatório em até 31 dias úteis (744 horas úteis).  
+- Avaliaremos a vulnerabilidade com prioridade e iniciaremos as ações corretivas.  
+- Manteremos você informado durante todo o processo de investigação e correção.  
+- Após a resolução, poderemos divulgar um comunicado público reconhecendo sua contribuição, caso seja apropriado.
 
-## Boas práticas de segurança para colaboradores
+## Boas Práticas de Segurança para Colaboradores
 
-- Sempre revise seu código para evitar vulnerabilidades comuns (ex: injeção de código, exposição de dados sensíveis).  
-- Use ferramentas de análise estática e testes automatizados quando disponíveis.  
-- Mantenha dependências atualizadas para evitar vulnerabilidades conhecidas.  
-- Não exponha informações sensíveis em commits, issues ou pull requests.
+- Revise seu código sempre atentamente para evitar vulnerabilidades comuns, como injeção de código e exposição indevida de dados sensíveis.  
+- Utilize ferramentas de análise estática e testes automatizados sempre que disponíveis para garantir maior qualidade e segurança.  
+- Mantenha todas as dependências e bibliotecas atualizadas para prevenir vulnerabilidades conhecidas.  
+- Evite expor informações sensíveis em commits, issues, pull requests ou qualquer outra comunicação pública no repositório.
 
 ---
 
-Agradecemos sua colaboração para manter este projeto seguro!
-
-
+Agradeço sua colaboração para manter este projeto seguro e protegido.
