@@ -1,251 +1,486 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Cache dos elementos DOM usados com frequência
-    const navLinks = document.querySelectorAll('.nav-link');
-    const sections = document.querySelectorAll('main > .section');
-    const mainContent = document.getElementById('main-content');
-    const preloader = document.getElementById('preloader');
-    const currentCommandTextEl = document.getElementById('current-command-text');
-    const menuToggle = document.getElementById('menu-toggle');
-    const mainNav = document.getElementById('main-nav');
-    const bodyForModal = document.body;
-    const goTopBtn = document.getElementById('go-top');
-    const currentYearSpan = document.getElementById('current-year');
-    const htmlElement = document.documentElement;
+/* ============================================
+   PATRICK AMÉRICO | TECH LEAD PORTFOLIO
+============================================= */
 
-    // ACESSIBILIDADE
-    const increaseFontBtn = document.getElementById('increase-font');
-    const decreaseFontBtn = document.getElementById('decrease-font');
-    const highContrastBtn = document.getElementById('high-contrast');
-    const resetStylesBtn = document.getElementById('reset-styles');
+(() => {
+  'use strict';
 
-    // Armazena valores iniciais para reset
-    const originalFontSize = parseFloat(getComputedStyle(htmlElement).fontSize);
-    let currentFontSize = originalFontSize;
-    const originalBodyClass = document.body.className;
+  /* ============================================
+     CONFIGURAÇÕES GLOBAIS
+  ============================================= */
 
-    // FUNÇÕES GERAIS
+  const CONFIG = {
+    parallaxFactor: 0.15,
+    parallaxEase: 0.08,
+    revealThreshold: 0.2,
+    modalAnimationDelay: 300
+  };
 
-    /** Função para exibir uma seção e esconder as demais */
-    function displaySection(targetId) {
-        let sectionFound = false;
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isTouchDevice = 'ontouchstart' in window;
 
-        sections.forEach(section => {
-            if (section.id === targetId) {
-                section.classList.add('active-section');
-                section.style.display = '';
-                sectionFound = true;
-                initiateTypingForSection(targetId);
-            } else {
-                section.classList.remove('active-section');
-                section.style.display = 'none';
-            }
+  /* ============================================
+     SCROLL REVEAL - Performance Optimized
+  ============================================= */
+
+  const ScrollReveal = (() => {
+    if (prefersReducedMotion) return { init: () => {} };
+
+    const elements = new Set();
+    let observer = null;
+
+    const init = () => {
+      const revealElements = document.querySelectorAll('.reveal');
+      if (!revealElements.length) return;
+
+      revealElements.forEach(el => elements.add(el));
+
+      observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          
+          entry.target.classList.add('visible');
+          elements.delete(entry.target);
+          
+          if (elements.size === 0) observer.disconnect();
         });
+      }, {
+        threshold: CONFIG.revealThreshold,
+        rootMargin: '0px 0px -5% 0px'
+      });
 
-        if (!sectionFound) {
-            console.warn(`Seção "${targetId}" não encontrada.`);
-        }
+      elements.forEach(el => observer.observe(el));
+    };
 
-        // Atualiza texto do comando atual
-        if (currentCommandTextEl) {
-            const activeLink = document.querySelector(`.nav-link[href="#${targetId}"]`);
-            currentCommandTextEl.textContent = activeLink?.dataset.command || (targetId === 'intro' ? 'inicio' : '');
-        }
+    return { init };
+  })();
 
-        // Scroll para o topo do conteúdo principal
-        if (mainContent) {
-            const headerHeight = document.getElementById('header')?.offsetHeight || 0;
-            window.scrollTo({ top: headerHeight - 1, behavior: 'smooth' });
-        }
-    }
+  /* ============================================
+     PARALLAX PREMIUM - Smooth Animation Loop
+  ============================================= */
 
-    /** Função para simular animação de digitação em um elemento */
-    function typeText(element, text, callback) {
-        let index = 0;
-        element.innerHTML = '';
-        element.classList.remove('typing-done');
+  const Parallax = (() => {
+    if (prefersReducedMotion) return { init: () => {} };
 
-        (function type() {
-            if (index < text.length) {
-                element.innerHTML += text.charAt(index++);
-                setTimeout(type, Math.random() * 100 + 25);
-            } else {
-                element.classList.add('typing-done');
-                if (typeof callback === 'function') callback();
-            }
-        })();
-    }
+    const gradient = document.querySelector('.gradient-bg');
+    if (!gradient) return { init: () => {} };
 
-    /** Inicia animação de digitação para todos os elementos ".typed-text" de uma seção */
-    function initiateTypingForSection(sectionId) {
-        const section = document.getElementById(sectionId);
-        if (!section) return;
+    let currentY = 0;
+    let targetY = 0;
+    let isAnimating = false;
 
-        const elementsToType = section.querySelectorAll('.typed-text');
-        let delay = 0;
+    const update = () => {
+      currentY += (targetY - currentY) * CONFIG.parallaxEase;
+      
+      gradient.style.transform = `translate3d(0, ${currentY}px, 0)`;
 
-        elementsToType.forEach(el => {
-            const text = el.dataset.text;
-            if (text) {
-                setTimeout(() => typeText(el, text), delay);
-                delay += text.length * 80 + 500; // Estima duração da digitação e pausa
-            }
-        });
-    }
+      if (Math.abs(targetY - currentY) > 0.1) {
+        requestAnimationFrame(update);
+      } else {
+        isAnimating = false;
+      }
+    };
 
-    /** Fecha um modal */
-    function closeModal(modal) {
-        if (!modal) return;
+    const handleScroll = () => {
+      targetY = window.scrollY * CONFIG.parallaxFactor;
 
-        modal.style.display = 'none';
-        modal.classList.remove('active');
-        bodyForModal.style.overflow = '';
-    }
+      if (!isAnimating) {
+        requestAnimationFrame(update);
+        isAnimating = true;
+      }
+    };
 
-    // PRELOADER
-    window.addEventListener('load', () => {
-        if (!preloader) return;
+    const init = () => {
+      window.addEventListener('scroll', handleScroll, { passive: true });
+    };
 
-        setTimeout(() => {
-            preloader.style.opacity = '0';
-            setTimeout(() => {
-                preloader.style.display = 'none';
-                // Descomente para iniciar animação na intro depois do preloader
-                // initiateTypingForSection('intro');
-            }, 500);
-        }, 1000); // Simula tempo de boot
-    });
+    return { init };
+  })();
 
-    // NAVEGAÇÃO
-    function handleNavClick(event) {
-        const link = event.currentTarget;
-        const href = link.getAttribute('href');
+  /* ============================================
+     MODAL SYSTEM APPLE-STYLE - Acessível
+  ============================================= */
 
-        if (!href || !href.startsWith('#')) return;
+  const ModalSystem = (() => {
+    const modals = document.querySelectorAll('.modal-apple');
+    const body = document.body;
+    
+    let activeModal = null;
+    let lastFocusedElement = null;
 
-        event.preventDefault();
-        const targetId = href.substring(1);
-        const targetSection = document.getElementById(targetId);
+    // Focus trap para acessibilidade
+    const focusableSelectors = 'button, [href], input, [tabindex]:not([tabindex="-1"])';
 
-        if (!targetSection) return;
+    const trapFocus = (e) => {
+      if (!activeModal) return;
+      if (e.key !== 'Tab') return;
 
-        displaySection(targetId);
+      const focusable = activeModal.querySelectorAll(focusableSelectors);
+      if (!focusable.length) return;
 
-        // Atualiza classe 'active' nos links
-        navLinks.forEach(l => l.classList.remove('active'));
-        link.classList.add('active');
+      const firstFocusable = focusable[0];
+      const lastFocusable = focusable[focusable.length - 1];
 
-        // Marca ativo se for logo (seu caso específico)
-        if (link.parentElement?.classList.contains('logo')) link.classList.add('active');
+      if (e.shiftKey && document.activeElement === firstFocusable) {
+        e.preventDefault();
+        lastFocusable.focus();
+      } else if (!e.shiftKey && document.activeElement === lastFocusable) {
+        e.preventDefault();
+        firstFocusable.focus();
+      }
+    };
 
-        // Esconde menu mobile, se estiver aberto
-        if (mainNav.classList.contains('active')) {
-            mainNav.classList.remove('active');
-            menuToggle.setAttribute('aria-expanded', 'false');
-            const icon = menuToggle.querySelector('i');
-            if (icon) icon.classList.replace('fa-times', 'fa-bars');
-        }
-    }
+    const openModal = (modal) => {
+      if (!modal) return;
 
-    navLinks.forEach(link => link.addEventListener('click', handleNavClick));
+      // Salva elemento que estava com foco
+      lastFocusedElement = document.activeElement;
 
-    // Exibe 'intro' por padrão
-    displaySection('intro');
-    document.querySelector('.nav-link[href="#intro"]')?.classList.add('active');
+      // Fecha qualquer modal aberto
+      if (activeModal) closeModal(activeModal);
 
-    // MENU MOBILE
-    if (menuToggle && mainNav) {
-        menuToggle.addEventListener('click', () => {
-            const isActive = mainNav.classList.toggle('active');
-            menuToggle.setAttribute('aria-expanded', isActive.toString());
-            const icon = menuToggle.querySelector('i');
-            if (!icon) return;
+      modal.classList.add('active');
+      modal.setAttribute('aria-hidden', 'false');
+      body.style.overflow = 'hidden';
+      
+      activeModal = modal;
 
-            icon.classList.toggle('fa-bars', !isActive);
-            icon.classList.toggle('fa-times', isActive);
-        });
-    }
+      // Foca no primeiro elemento focável do modal
+      setTimeout(() => {
+        const closeBtn = modal.querySelector('.modal-close');
+        if (closeBtn) closeBtn.focus();
+      }, CONFIG.modalAnimationDelay);
 
-    // MODAIS DE PORTFÓLIO
-    const portfolioItems = document.querySelectorAll('.portfolio-item');
-    const modals = document.querySelectorAll('.modal');
+      document.addEventListener('keydown', trapFocus);
+    };
 
-    portfolioItems.forEach(item =>
-        item.addEventListener('click', () => {
-            const modalId = item.dataset.modalTarget;
-            const modal = document.getElementById(modalId);
-            if (!modal) return;
+    const closeModal = (modal) => {
+      if (!modal) return;
 
-            modal.style.display = 'flex';
-            modal.classList.add('active');
-            bodyForModal.style.overflow = 'hidden';
-        }));
+      modal.classList.remove('active');
+      modal.setAttribute('aria-hidden', 'true');
+      
+      if (activeModal === modal) activeModal = null;
 
-    modals.forEach(modal => {
-        modal.addEventListener('click', event => {
-            if (event.target === modal) closeModal(modal);
-        });
+      // Só restaura overflow se nenhum modal estiver aberto
+      if (!document.querySelector('.modal-apple.active')) {
+        body.style.overflow = '';
+      }
 
-        const closeButton = modal.querySelector('.modal-close');
-        if (closeButton) closeButton.addEventListener('click', () => closeModal(modal));
-    });
+      document.removeEventListener('keydown', trapFocus);
 
-    document.addEventListener('keydown', event => {
-        if (event.key === 'Escape') {
-            [...modals].filter(modal => modal.classList.contains('active')).forEach(closeModal);
-        }
-    });
+      // Restaura foco anterior
+      if (lastFocusedElement) {
+        lastFocusedElement.focus();
+        lastFocusedElement = null;
+      }
+    };
 
-    // BOTÃO VOLTAR AO TOPO
-    if (goTopBtn) {
-        const checkScroll = () => {
-            const activeSectionOutput = document.querySelector('.section.active-section .terminal-output');
-            const shouldShow = (activeSectionOutput?.scrollTop > 100) || window.scrollY > 200;
-            goTopBtn.classList.toggle('visible', shouldShow);
-        };
+    const init = () => {
+      // Abrir modal pelos botões "Ver Detalhes"
+      document.querySelectorAll('.project-card').forEach(card => {
+        const modalId = card.dataset.modalId;
+        const modal = document.getElementById(modalId);
+        const btn = card.querySelector('.btn-modal');
 
-        window.addEventListener('scroll', checkScroll, true); // Escuta scroll em elementos internos
-        checkScroll(); // Verifica ao carregar também
-
-        goTopBtn.addEventListener('click', e => {
+        if (modal && btn) {
+          btn.addEventListener('click', (e) => {
+            e.stopPropagation();
             e.preventDefault();
-            const activeSectionOutput = document.querySelector('.section.active-section .terminal-output');
-            if (activeSectionOutput) activeSectionOutput.scrollTo({ top: 0, behavior: 'smooth' });
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            openModal(modal);
+          });
+        }
+
+        // Opcional: abrir ao clicar no card inteiro (mobile)
+        if (isTouchDevice) {
+          card.addEventListener('click', (e) => {
+            if (!e.target.classList.contains('btn-modal')) {
+              const modal = document.getElementById(card.dataset.modalId);
+              if (modal) openModal(modal);
+            }
+          });
+        }
+      });
+
+      // Botões de fechar
+      document.querySelectorAll('.modal-close').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const modal = e.target.closest('.modal-apple');
+          closeModal(modal);
         });
+      });
+
+      // Clique no overlay (fundo)
+      modals.forEach(modal => {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) closeModal(modal);
+        });
+      });
+
+      // Tecla ESC
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && activeModal) {
+          closeModal(activeModal);
+        }
+      });
+
+      // Previne scroll do body quando modal estiver aberto
+      window.addEventListener('scroll', () => {
+        if (activeModal) {
+          window.scrollTo(0, window.scrollY); // trava scroll
+        }
+      }, { passive: false });
+    };
+
+    return { init };
+  })();
+
+  /* ============================================
+     TOUCH & MOBILE OTIMIZAÇÕES
+  ============================================= */
+
+  const TouchOptimizer = (() => {
+    const init = () => {
+      if (isTouchDevice) {
+        document.documentElement.classList.add('touch-device');
+        
+        // Remove hover effects que podem causar problemas no mobile
+        const style = document.createElement('style');
+        style.textContent = `
+          .touch-device .btn-modal {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+          }
+          .touch-device .project-card:hover {
+            transform: none !important;
+          }
+        `;
+        document.head.appendChild(style);
+      }
+    };
+
+    return { init };
+  })();
+
+  /* ============================================
+     LOADING PERFORMANCE
+  ============================================= */
+
+  const PerformanceOptimizer = (() => {
+    const init = () => {
+      // Lazy loading para imagens dos modais
+      const modalImages = document.querySelectorAll('.modal-image');
+      if ('loading' in HTMLImageElement.prototype) {
+        modalImages.forEach(img => {
+          img.setAttribute('loading', 'lazy');
+        });
+      }
+
+      // Debounce para eventos de resize
+      let resizeTimeout;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+          // Recalcula qualquer coisa necessária após resize
+        }, 150);
+      }, { passive: true });
+    };
+
+    return { init };
+  })();
+
+  /* ============================================
+     SMOOTH SCROLL PARA ÂNCORAS
+  ============================================= */
+
+  const SmoothScroll = (() => {
+    const init = () => {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', (e) => {
+          const href = anchor.getAttribute('href');
+          if (href === '#') return;
+
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            
+            const offset = 80; // altura da navbar fixa
+            const targetPosition = target.getBoundingClientRect().top + window.scrollY - offset;
+
+            window.scrollTo({
+              top: targetPosition,
+              behavior: prefersReducedMotion ? 'auto' : 'smooth'
+            });
+
+            // Atualiza URL sem causar scroll
+            history.pushState(null, null, href);
+          }
+        });
+      });
+    };
+
+    return { init };
+  })();
+
+  /* ============================================
+     INITIALIZATION
+     Tudo limpo, modular e performático
+  ============================================= */
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Inicializa módulos na ordem correta
+    ScrollReveal.init();
+    Parallax.init();
+    ModalSystem.init();
+    TouchOptimizer.init();
+    PerformanceOptimizer.init();
+    SmoothScroll.init();
+
+    // Log de inicialização (remover em produção)
+    console.log('✓ Apple 2026 Interaction Engine loaded');
+  });
+
+})();
+
+/* ============================================
+   FALLBACK PARA NAVEGAÇÃO (caso algo falhe)
+============================================= */
+
+(function() {
+  // Garante que os links de navegação funcionem mesmo se o smooth scroll falhar
+  const navLinks = document.querySelectorAll('.nav-links a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId && targetId.startsWith('#')) {
+        const target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  });
+})();
+
+// ===== LANGUAGE TOGGLE SIMPLES =====
+(function() {
+  // Elementos
+  const langButtons = document.querySelectorAll('.lang-option');
+  
+  // Textos traduzidos (só o essencial para começar)
+  const translations = {
+    pt: {
+      'hero-subtitle': 'Tech Lead • Analista Desenvolvedor Full-Stack • Full-Stack Sênior',
+      'hero-description': 'Arquitetura de sistemas escaláveis, liderança técnica e transformação digital com foco em resultados de negócio.',
+      'buttons.skills': 'Minhas Habilidades',
+      'buttons.projects': 'Ver Projetos',
+      'buttons.contact': 'Falar Comigo',
+      'nav.skills': 'Habilidades',
+      'nav.projects': 'Projetos',
+      'nav.contact': 'Contato',
+      'section-title.skills': 'Habilidades',
+      'section-subtitle.skills': 'Tecnologia como estratégia: da arquitetura à decisão executiva.',
+      'section-title.projects': 'Portfólio de Projetos',
+      'section-subtitle.projects': 'Projetos estratégicos com impacto para decisões rápidas de negócio.',
+      'contact.title': 'Vamos conversar',
+      'contact.description': 'Entre em contato para discutirmos como posso agregar valor ao seu negócio com tecnologia e liderança estratégica.',
+      'footer': '© 2026 Patrick Américo • Tech Lead & Analista Desenvolvedor Full-Stack'
+    },
+    en: {
+      'hero-subtitle': 'Tech Lead • Full-Stack Developer Analyst • Senior Full-Stack Developer',
+      'hero-description': 'Scalable systems architecture, technical leadership, and digital transformation focused on business results.',
+      'buttons.skills': 'My Skills',
+      'buttons.projects': 'View Projects',
+      'buttons.contact': 'Contact Me',
+      'nav.skills': 'Skills',
+      'nav.projects': 'Projects',
+      'nav.contact': 'Contact',
+      'section-title.skills': 'Skills',
+      'section-subtitle.skills': 'Technology as strategy: from architecture to executive decision.',
+      'section-title.projects': 'Project Portfolio',
+      'section-subtitle.projects': 'Strategic projects with real impact and technical authority.',
+      'contact.title': "Let's talk",
+      'contact.description': 'Get in touch to discuss how I can add value to your business with technology and strategic leadership.',
+      'footer': '© 2026 Patrick Américo • Tech Lead & Full-Stack Developer Analyst'
+    },
+    es: {
+      'hero-subtitle': 'Tech Lead • Desarrollador Full-stack Senior • Arquitecto de Software',
+      'hero-description': 'Arquitectura de sistemas escalables, liderazgo técnico y transformación digital con foco en resultados de negocio.',
+      'buttons.skills': 'Mis Habilidades',
+      'buttons.projects': 'Ver Proyectos',
+      'buttons.contact': 'Contactame',
+      'nav.skills': 'Habilidades',
+      'nav.projects': 'Proyectos',
+      'nav.contact': 'Contacto',
+      'section-title.skills': 'Habilidades',
+      'section-subtitle.skills': 'Tecnología como estrategia: de la arquitectura a la toma de decisiones.',
+      'section-title.projects': 'Portfolio de Proyectos',
+      'section-subtitle.projects': 'Proyectos estratégicos con impacto real y autoridad técnica.',
+      'contact.title': 'Charlamos?',
+      'contact.description': 'Ponete en contacto para que veamos cómo puedo sumar valor a tu negocio con tecnología y liderazgo estratégico.',
+      'footer': '© 2026 Patrick Américo • Tech Lead & Full-stack Dev'
+    }
+  };
+
+  // Função para aplicar idioma
+  function setLanguage(lang) {
+    // Atualiza botões ativos
+    langButtons.forEach(btn => {
+      const btnLang = btn.getAttribute('data-lang');
+      if (btnLang === lang) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+
+    // Aplica traduções nos elementos principais
+    if (translations[lang]) {
+      // Hero
+      document.querySelector('.hero-subtitle').textContent = translations[lang]['hero-subtitle'];
+      document.querySelector('.hero-description').textContent = translations[lang]['hero-description'];
+      
+      // Nav
+      const navLinks = document.querySelectorAll('.nav-links a');
+      if (navLinks[0]) navLinks[0].textContent = translations[lang]['nav.skills'];
+      if (navLinks[1]) navLinks[1].textContent = translations[lang]['nav.projects'];
+      if (navLinks[2]) navLinks[2].textContent = translations[lang]['nav.contact'];
+      
+      // Buttons
+      const buttons = document.querySelectorAll('.hero-buttons .btn');
+      if (buttons[0]) buttons[0].textContent = translations[lang]['buttons.skills'];
+      if (buttons[1]) buttons[1].textContent = translations[lang]['buttons.projects'];
+      if (buttons[2]) buttons[2].textContent = translations[lang]['buttons.contact'];
+      
+      // Section titles
+      document.querySelector('#skills .section-title').textContent = translations[lang]['section-title.skills'];
+      document.querySelector('#skills .section-subtitle').innerHTML = translations[lang]['section-subtitle.skills'];
+      document.querySelector('#projetos .section-title').textContent = translations[lang]['section-title.projects'];
+      document.querySelector('#projetos .section-subtitle').innerHTML = translations[lang]['section-subtitle.projects'];
+      
+      // Contact
+      document.querySelector('#contato .section-title').textContent = translations[lang]['contact.title'];
+      document.querySelector('#contato p').textContent = translations[lang]['contact.description'];
+      
+      // Footer
+      document.querySelector('footer p').textContent = translations[lang]['footer'];
     }
 
-    // ATUALIZAÇÃO DO ANO NO RODAPÉ
-    if (currentYearSpan) {
-        currentYearSpan.textContent = new Date().getFullYear();
-    }
+    // Salva preferência
+    localStorage.setItem('preferred-language', lang);
+  }
 
-    // MENU DE ACESSIBILIDADE
-    if (increaseFontBtn) {
-        increaseFontBtn.addEventListener('click', () => {
-            currentFontSize = Math.min(22, currentFontSize + 1);
-            htmlElement.style.fontSize = `${currentFontSize}px`;
-        });
-    }
+  // Adiciona evento aos botões
+  langButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.getAttribute('data-lang');
+      setLanguage(lang);
+    });
+  });
 
-    if (decreaseFontBtn) {
-        decreaseFontBtn.addEventListener('click', () => {
-            currentFontSize = Math.max(12, currentFontSize - 1);
-            htmlElement.style.fontSize = `${currentFontSize}px`;
-        });
-    }
-
-    if (highContrastBtn) {
-        highContrastBtn.addEventListener('click', () => {
-            document.body.classList.toggle('high-contrast');
-        });
-    }
-
-    if (resetStylesBtn) {
-        resetStylesBtn.addEventListener('click', () => {
-            currentFontSize = originalFontSize;
-            htmlElement.style.fontSize = `${originalFontSize}px`;
-            document.body.className = originalBodyClass;
-            document.body.classList.remove('high-contrast');
-        });
-    }
-});
+  // Carrega idioma salvo ou usa português
+  const savedLang = localStorage.getItem('preferred-language') || 'pt';
+  setLanguage(savedLang);
+})();

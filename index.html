@@ -1,522 +1,658 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Patrick Américo :: Terminal Portfólio</title>
-		<meta name="description" content="Portfólio de Patrick Américo – Desenvolvedor Full-Stack Sênior e Analista de Sistemas com +10 anos de experiência em arquitetura de software, desenvolvimento backend e frontend, metodologias ágeis (Scrum), gestão de projetos e soluções orientadas a negócios. Expertise em Genexus, Delphi, Python, SQL Server, Power BI e aplicações de inteligência artificial." />
-		<meta name="author" content="Patrick Américo" />
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+  <!-- Título Profissional -->
+  <title>Patrick Américo | Tech Lead & Analista Desenvolvedor Full-Stack</title>
+  
+  <!-- Meta tags para SEO e compartilhamento -->
+  <meta name="description" content="Tech Lead e Analista Desenvolvedor Full-Stack especializado em soluções escaláveis, liderança técnica e transformação digital.">
+  <meta name="author" content="Patrick Américo">
+  
+  <!-- Open Graph / LinkedIn -->
+  <meta property="og:title" content="Patrick Américo | Tech Lead & Full-Stack Sênior">
+  <meta property="og:description" content="Tech Lead, Analista de Sistemas, Desenvolvedor Full-Stack, Arquitetura de software, liderança técnica e desenvolvimento de soluções escaláveis.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://patrickamerico.github.io">
+  <meta property="og:image" content="images/og-preview.jpg">
+  
+  <!-- Fontes premium -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Principal -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Elementos de fundo (atmosfera) -->
+  <div class="noise-overlay"></div>
+  <div class="gradient-bg"></div>
 
-		<!-- Open Graph para redes sociais -->
-		<meta property="og:title" content="Patrick Américo :: Terminal Portfólio" />
-		<meta property="og:description" content="Patrick Américo – Desenvolvedor Full-Stack Sênior e Analista de Sistemas com +10 anos de experiência em software, arquitetura, metodologias ágeis e Power BI." />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://patrickamerico.github.io/" />
-		<meta property="og:image" content="https://patrickamerico.github.io/images/perfil.png" />
-
-		<!-- Favicon-->
-		<link rel="icon" type="image/png" href="favicon.ico" />
-
-		<!-- Font Awesome (for icons) -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-			  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-			  crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-		<!-- Google Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
-
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="css/style.css" />
-	</head>
-<body id="top">
-
-	<div id="preloader" role="region" aria-live="polite" aria-label="Carregando portfólio">
-		<div class="loader-text">Iniciando Portfólio...</div>
-		<div class="loader-cursor cursor" aria-hidden="true">_</div> 
-	</div>
-
-	<div id="accessibility-menu" aria-label="Menu de Acessibilidade" role="region">
-		<button id="increase-font" aria-label="Aumentar Fonte" title="Aumentar Fonte" type="button">A+</button>
-		<button id="decrease-font" aria-label="Diminuir Fonte" title="Diminuir Fonte" type="button">A-</button>
-		<button id="high-contrast" aria-label="Alternar Alto Contraste" title="Alternar Alto Contraste" type="button">
-			<i class="fas fa-adjust" aria-hidden="true"></i><span class="sr-only">Alternar Alto Contraste</span>
-		</button>
-		<button id="reset-styles" aria-label="Resetar Estilos" title="Resetar Estilos" type="button">
-			<i class="fas fa-undo" aria-hidden="true"></i><span class="sr-only">Resetar Estilos</span>
-		</button>
-	</div>
-
-	<header id="header">
-		<div class="container">
-			<div class="window-buttons-macos" aria-hidden="true">
-				<span class="dot red"></span>
-				<span class="dot yellow"></span>
-				<span class="dot green"></span>
-			</div>
-			<div class="logo">
-				<a href="#intro" class="nav-link active" data-command="inicio" role="link" aria-current="page">
-					Patrick Américo — portfolio<span class="cursor" aria-hidden="true">_</span>
-				</a>
-			</div>
-			<nav id="main-nav" role="navigation" aria-label="Menu Principal">
-				<ul class="nav-list">
-					<li><a class="nav-link" href="#about" data-command="sobre_mim">Sobre_Mim</a></li>
-					<li><a class="nav-link" href="#skills" data-command="competencias">Competências</a></li>
-					<li><a class="nav-link" href="#resume" data-command="trajetoria">Trajetória</a></li>
-					<li><a class="nav-link" href="#portfolio" data-command="portfolio">Portfólio</a></li>
-					<li><a class="nav-link" href="#contact" data-command="contato">Contato</a></li>
-				</ul>
-			</nav>
-
-			<button id="menu-toggle" class="menu-toggle" aria-label="Abrir Menu" aria-expanded="false" aria-controls="main-nav" type="button">
-				<i class="fas fa-bars" aria-hidden="true"></i><span class="sr-only">Menu</span>
-			</button>
-		</div>
-		<div class="current-command-display" role="region" aria-live="polite" aria-atomic="true">
-			<span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ % </span>
-			<span id="current-command-text" aria-live="polite" aria-atomic="true">inicio</span>
-		</div>
-	</header>
-
-	<main id="main-content" tabindex="-1">
-		<!-- Seção de introdução -->
-		<section id="intro" tabindex="-1" class="section active-section" aria-labelledby="intro-title" role="region">
-			<div class="container section-container">
-				<div class="terminal-output">
-					<p class="typed-text" data-text="Olá, Sou Patrick, Analista de Sistemas e Desenvolvedor Full-Stack Sênior."></p>
-					<h1 id="intro-title" class="typed-text" data-text="Arquitetando soluções de software orientadas a negócio para resolver problemas complexos com eficiência e escala."></h1>
-					<div class="prompt-line" role="list">
-						<span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ %</span>
-						<a href="#about" class="nav-link internal-link prompt-command" data-command="sobre_mim" role="link">view ./sobre_mim.md</a>
-					</div>
-					<ul class="intro-social" role="list">
-						<li><a href="mailto:patrick.americo@outlook.com" aria-label="Enviar Email para Patrick Américo" class="external-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a></li>
-						<li><a href="https://patrickamerico.github.io/" aria-label="Visitar GitHub de Patrick Américo" class="external-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-						<li><a href="https://www.linkedin.com/in/patrick-americo-analista-ti-saude" aria-label="Visitar LinkedIn de Patrick Américo" class="external-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
-					 </ul>
-				</div>
-			</div>
-		</section>
-
-		<!-- Seção Sobre Mim -->
-		<section id="about" tabindex="-1" class="section" aria-labelledby="about-title" role="region">
-			<div class="container section-container">
-				<h2 id="about-title" class="section-title">Sobre Mim<span class="cursor" aria-hidden="true">_</span></h2>
-				<div class="terminal-output">
-					<p class="lead">
-						Sou Analista de Sistemas e Desenvolvedor Full-Stack Sênior com formação em Engenharia da Computação e especialização em Gestão de Projetos. Atuo arquitetando sistemas do zero, definindo stacks tecnológicas e estruturando soluções escaláveis orientadas a objetivos estratégicos de negócio.
-						<br><br>
-						Tenho experiência em modernização de sistemas legados, reestruturação de arquiteturas e resolução de problemas críticos de performance e modelagem complexa de dados. Minhas decisões técnicas são guiadas por análise de contexto, avaliação de trade-offs e foco em escalabilidade, manutenibilidade e eficiência operacional.
-						<br><br>
-						Mais do que implementar funcionalidades, estruturo bases sólidas que sustentam crescimento, reduzem riscos técnicos e garantem previsibilidade nas entregas. Trabalho integrando áreas técnicas e de negócio para transformar requisitos complexos em soluções claras, robustas e sustentáveis.
-						<br><br>
-						Acredito que tecnologia bem arquitetada é um diferencial competitivo e um motor estratégico de transformação empresarial.
-					</p>
-					
-					<h3>Idiomas:</h3>
-					<ul>
-						<li><span class="list-prefix">PT:</span> Português (Nativo)</li>
-						<li><span class="list-prefix">EN:</span> Inglês (Intermediário - Leitura/Escrita Técnica)</li>
-						<li><span class="list-prefix">ES:</span> Espanhol (Intermediário - Leitura/Escrita Técnica)</li>
-					</ul>
-					<div class="prompt-line" role="list">
-						<span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ %</span>
-						<a href="#skills" class="nav-link internal-link prompt-command" data-command="competencias" role="link">ls /usr/local/bin/skills</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Seção Competências -->
-		<section id="skills" tabindex="-1" class="section" aria-labelledby="skills-title" role="region">
-			<div class="container section-container">
-				<h2 id="skills-title" class="section-title">Competências<span class="cursor" aria-hidden="true">_</span></h2>
-				<p class="section-subtitle">Competências técnicas aplicadas à arquitetura, evolução de sistemas e liderança técnica de soluções:</p>
-				<div class="terminal-output">
-					<div class="skills-grid" role="list">
-						<div class="skill-category">
-						
-							<div class="skill-category">
-								<h3>Arquitetura & Engenharia de Software</h3>
-								<ul>
-									<li><span class="list-prefix">></span> <i class="fas fa-puzzle-piece"></i> Arquitetura de aplicações desktop, web, mobile e sistemas corporativos</li>
-									<li><span class="list-prefix">></span> <i class="fas fa-puzzle-piece"></i> Modernização e migração de sistemas legados</li>
-									<li><span class="list-prefix">></span> <i class="fas fa-puzzle-piece"></i> Modelagem de dados complexa</li>
-									<li><span class="list-prefix">></span> <i class="fas fa-puzzle-piece"></i> Definição e avaliação de stack tecnológica</li>
-									<li><span class="list-prefix">></span> <i class="fas fa-puzzle-piece"></i> Otimização de performance e escalabilidade</li>
-								</ul>
-							</div>
-							
-							<div class="skill-category">
-								<h3>Desenvolvimento Back-End</h3>
-								<ul>
-									<li><span class="list-prefix">></span> <i class="fas fa-puzzle-piece"></i> Construção de APIs RESTful</li>
-									<li><span class="list-prefix">></span> <i class="fas fa-puzzle-piece"></i> Integração com sistemas corporativos (ERP, BI, legado)</li>
-									<li><span class="list-prefix">></span> <i class="fas fa-puzzle-piece"></i> Segurança e controle de acesso</li>
-									<li><span class="list-prefix">></span> <i class="fas fa-puzzle-piece"></i> Banco de dados relacionais (SQL Server, Oracle, MySQL, DB2)</li>
-								</ul>
-							</div>
-							
-							<div class="skill-category">
-								<h3>Desenvolvimento Front-End</h3>
-								<ul>
-									<li><span class="list-prefix">></span> <i class="fab fa-vuejs"></i> Aplicações SPA com Vue.js</li>
-									<li><span class="list-prefix">></span> <i class="fab fa-js-square"></i> JavaScript moderno</li>
-									<li><span class="list-prefix">></span> <i class="fab fa-html5"></i> Estruturação de interfaces orientadas à experiência do usuário</li>
-								</ul>
-							</div>
-
-							<div class="skill-category">
-								<h3>Dados & Business Intelligence</h3>
-								<ul>
-									<li><span class="list-prefix">></span> <i class="fas fa-chart-line"></i> Estruturação de indicadores e dashboards executivos</li>
-									<li><span class="list-prefix">></span> <i class="fas fa-chart-line"></i> Integração de dados para suporte à decisão</li>
-								</ul>
-							</div>
-							
-							<div class="skill-category">
-								<h3>Governança & Gestão</h3>
-								<ul>
-									<li><span class="list-prefix">></span> <i class="fas fa-tasks"></i> Gestão de Projetos</li>
-									<li><span class="list-prefix">></span> <i class="fas fa-tasks"></i> Metodologias Ágeis e Tradicionais</li>
-									<li><span class="list-prefix">></span> <i class="fas fa-tasks"></i> LGPD e boas práticas de compliance</li>
-									<li><span class="list-prefix">></span> <i class="fab fa-git-alt"></i> Versionamento com Git</li>
-								</ul>
-							</div>				
-					</div>
-					<div class="prompt-line" role="list">
-						<span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ %</span>
-						<a href="#resume" class="nav-link internal-link prompt-command" data-command="trajetoria" role="link">history | grep "career"</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Seção Trajetória -->
-		<section id="resume" tabindex="-1" class="section" aria-labelledby="resume-title" role="region">
-			<div class="container section-container">
-				<h2 id="resume-title" class="section-title">Trajetória Profissional e Acadêmica<span class="cursor" aria-hidden="true">_</span></h2>
-				<p class="section-subtitle">Minha jornada combina formação técnica sólida em <strong>Engenharia da Computação</strong> com especialização em <strong>Gestão de Projetos</strong>...</p>
-			   <p class="section-subtitle">
-					Base sólida em <strong>Engenharia da Computação</strong> com especialização em <strong>Gestão de Projetos</strong>, aliando profundidade técnica à visão estratégica de negócio.
-				</p>
-
-				<div class="terminal-output">
-					<div class="resume-columns">
-						<div class="resume-column">
-							<h3><i class="fas fa-graduation-cap"></i> Formação Acadêmica</h3>
-							<p><strong>Pós-Graduação em Gestão de Projetos</strong> — Ênfase em planejamento estratégico, liderança técnica, gestão de riscos e entrega de valor em projetos de TI.</p>						
-							<p><strong>Engenharia da Computação</strong> — Formação com foco em algoritmos, arquitetura de software, bancos de dados e modelagem de sistemas complexos.</p>												
-							<p><strong>Técnico em Informática</strong> — Base prática em desenvolvimento de sistemas e infraestrutura.</p>
-						</div>
-
-						<div class="resume-column">
-							<h3><i class="fas fa-briefcase"></i> Experiência Profissional</h3>						
-							<p>Atuação evolutiva em desenvolvimento de software até posição de <strong>Desenvolvedor Sênior</strong>, com foco em arquitetura, modernização e evolução de sistemas corporativos.</p>						
-							<p>Experiência em definição de stack tecnológica, migração de sistemas legados, modelagem de dados complexa e otimização de performance e escalabilidade.</p>						
-							<p>Condução técnica de projetos ao longo de todo o ciclo de vida, alinhando decisões arquiteturais às necessidades estratégicas do negócio.</p>						
-							<p><strong>Atualmente:</strong> Desenvolvimento de soluções para o setor de saúde, com foco em confiabilidade de dados, eficiência operacional e melhoria de processos clínicos e administrativos.</p>
-						</div>
-					</div>
-
-					<div class="resume-columns certifications-awards">
-						<div class="resume-column">
-							<h3><i class="fas fa-certificate"></i> Certificações</h3>
-							<ul>
-								<li>Scrum Foundation</li>
-								<li>Six Sigma</li>
-								<li>Business Intelligence Foundation</li>
-								<li>Fundamentos em LGPD</li>
-							</ul>
-						</div>
-
-						<div class="resume-column">
-							<h3><i class="fas fa-award"></i> Projetos Acadêmicos Relevantes</h3>
-							<ul>
-								<li><strong>InfoAgro:</strong> Plataforma IoT voltada à análise e suporte à decisão no agronegócio.</li>
-								<li><strong>INIC:</strong> Pesquisa e prototipagem de solução de autenticação digital com foco em segurança.</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-						 
-					<div class="prompt-line" role="list">
-						<span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ %</span>
-						<a href="#portfolio" class="nav-link internal-link prompt-command" data-command="portfolio" role="link">open ~/Documents/Portfolio</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Seção Portfólio -->
-		<section id="portfolio" tabindex="-1" class="section" aria-labelledby="portfolio-title" role="region">
-		<div class="container section-container">
-			<h2 id="portfolio-title" class="section-title">
-				Portfólio de Projetos<span class="cursor" aria-hidden="true">_</span>
-			</h2>
-			<p class="section-subtitle">
-				Projetos selecionados para demonstrar capacidade de <strong>arquitetura</strong>, <strong>modelagem de dados</strong>,
-				<strong>integração de sistemas</strong> e construção de soluções orientadas a negócio.
-			</p>
-
-			<div class="terminal-output">
-				<div class="portfolio-grid" role="list">
-					
-					<!-- Card 1: Dashboard Hospitalar (Tech Lead) -->
-					<div class="portfolio-item" data-modal-target="modal-covid19" role="listitem" tabindex="0" aria-haspopup="dialog" aria-controls="modal-covid19" aria-expanded="false">
-						<span class="item-name">Dashboard Estratégico – Monitoramento Hospitalar</span>
-						<span class="item-description">
-							Liderança técnica na arquitetura e implementação de dashboard hospitalar, consolidando KPIs críticos para decisões em tempo real.
-						</span>
-					</div>
-
-					<!-- Card 2: API Corporativa Gestão Escolar (Tech Lead) -->
-					<div class="portfolio-item" data-modal-target="modal-fastapi" role="listitem" tabindex="0" aria-haspopup="dialog" aria-controls="modal-fastapi" aria-expanded="false">
-						<span class="item-name">API Corporativa – Gestão Escolar</span>
-						<span class="item-description">
-							Arquitetura e implementação de API REST escalável, integrando cadastros acadêmicos e documentação interativa.
-						</span>
-					</div>
-
-					<!-- Card 3: Pipeline de Engenharia de Dados -->
-					<div class="portfolio-item" data-modal-target="modal-dados-python" role="listitem" tabindex="0" aria-haspopup="dialog" aria-controls="modal-dados-python" aria-expanded="false">
-						<span class="item-name">Pipeline de Engenharia de Dados</span>
-						<span class="item-description">
-							Estruturação de ETL em Python para extração, transformação e preparação de dados estratégicos.
-						</span>
-					</div>
-
-					<!-- Card 4: Modelo Preditivo de Churn -->
-					<div class="portfolio-item" data-modal-target="modal-churn" role="listitem" tabindex="0" aria-haspopup="dialog" aria-controls="modal-churn" aria-expanded="false">
-						<span class="item-name">Modelo Preditivo de Churn</span>
-						<span class="item-description">
-							Projeto de Data Science para antecipação de cancelamentos, com modelagem preditiva e métricas interpretáveis.
-						</span>
-					</div>
-
-					<!-- Card 5: Dashboard Analítico – Indicadores de RH -->
-					<div class="portfolio-item" data-modal-target="modal-powerbi" role="listitem" tabindex="0" aria-haspopup="dialog" aria-controls="modal-powerbi" aria-expanded="false">
-						<span class="item-name">Dashboard Analítico – RH</span>
-						<span class="item-description">
-							Painel Power BI para métricas de Recursos Humanos, suporte à decisão e visualizações interativas.
-						</span>
-					</div>
-
-					<!-- Card 6: Serviço de Validação de CPF Integrado -->
-					<div class="portfolio-item" data-modal-target="modal-validacpf" role="listitem" tabindex="0" aria-haspopup="dialog" aria-controls="modal-validacpf" aria-expanded="false">
-						<span class="item-name">Validação de CPF Integrado a ERP</span>
-						<span class="item-description">
-							Automação e integração de validação de CPFs, garantindo confiabilidade e integridade dos dados.
-						</span>
-					</div>
-
-				</div>
-
-				<div class="prompt-line" role="list">
-					<span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ %</span>
-					<a href="#contact" class="nav-link internal-link prompt-command" data-command="contato" role="link">contact --all</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-		<!-- Seção Contato -->
-		<section id="contact" tabindex="-1" class="section" aria-labelledby="contact-title" role="region">
-			<div class="container section-container">
-				<h2 id="contact-title" class="section-title">Contato<span class="cursor" aria-hidden="true">_</span></h2>
-				<p class="section-subtitle">
-					Estou disponível para novas oportunidades que exijam expertise em 
-					<strong>desenvolvimento de software</strong>, 
-					<strong>análise de sistemas</strong> e 
-					<strong>gestão de projetos</strong>. 
-					Vamos explorar como minha experiência pode gerar valor estratégico, 
-					impulsionar resultados e fortalecer o desenvolvimento da sua equipe?
-				</p>
-				<div class="terminal-output contact-details">
-					<p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:patrick.americo@outlook.com" class="external-link" aria-label="Enviar email para Patrick Américo">patrick.americo@outlook.com</a></p>
-					<p><i class="fab fa-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/patrick-americo-analista-ti-saude" target="_blank" rel="noopener noreferrer" class="external-link" aria-label="LinkedIn de Patrick Américo">linkedin.com/in/patrick-americo-analista-ti-saude</a></p>
-					<p><i class="fab fa-github" aria-hidden="true"></i> <a href="https://patrickamerico.github.io/" target="_blank" rel="noopener noreferrer" class="external-link" aria-label="GitHub de Patrick Américo">patrickamerico.github.io</a></p>
-
-					<div class="prompt-line final-prompt" role="list">
-						<span class="prompt-user">patrick@portfolio</span><span class="prompt-path"></span><span class="prompt-symbol">~ %</span>
-						<span class="prompt-command">exit</span><span class="cursor" aria-hidden="true">_</span>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
-
-	<footer id="footer" role="contentinfo">
-		<div class="container">
-			<p>© <span id="current-year"></span> Patrick Américo. Todos os direitos reservados.</p>
-			<p>[status: online] [sessão: patrick] [tempo de atividade: <span id="uptime-placeholder">calculando...</span>]</p>
-		</div>
-	</footer>
-
-	<a href="#top" id="go-top" class="go-top" title="Voltar ao Topo" aria-label="Voltar ao Topo">↑</a>
-
-	<!-- Modais de Portfólio -->
-
-	<!-- Modal Dashboard Hospitalar (Tech Lead) -->
-	<div id="modal-covid19" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-covid19-title" tabindex="-1" aria-hidden="true">
-    <div class="modal-content">
-        <button class="modal-close" aria-label="Fechar Modal" type="button">×</button>
-        <img src="images/portfolio/modals/modal_weknow.png" alt="Dashboard Hospitalar Detalhado - Monitoramento COVID-19" loading="lazy">
-        <h3 id="modal-covid19-title">Dashboard Estratégico – Monitoramento Hospitalar</h3>
-        <p>
-            <strong>Case:</strong> Conduzi a arquitetura e implementação de um dashboard hospitalar integrado para acompanhamento de KPIs clínicos e operacionais focado no COVID-19.
-            A solução consolidou dados do ERP Tasy e fontes complementares em uma modelagem multidimensional, permitindo monitoramento em tempo real de:
-        </p>
-        <ul>
-            <li>Número de casos suspeitos, confirmados, descartados e óbitos</li>
-            <li>Análise detalhado dos casos suspeitos</li>
-            <li>Alertas automáticos de situações específicas</li>
-        </ul>
-        <p>
-            <strong>Decisões estratégicas de Tech Lead:</strong>
-            definição de arquitetura escalável, integração de múltiplas fontes de dados, governança de dados e otimização de performance. 
-            O projeto reduziu em 30% o tempo médio de geração de relatórios e aumentou a confiabilidade dos dados em 99,9%.
-        </p>
-        <div class="modal-categories">
-            <span>Weknow</span>
-            <span>BI Hospitalar</span>
-            <span>Tech Lead</span>
-            <span>Indicadores Estratégicos</span>
-            <span>Arquitetura de Dados</span>
-        </div>
-        <a href="https://github.com/patrickamerico/Portfolio/tree/main/BI-Weknow-Indicadores" class="btn-modal-link" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
-    </div>
-</div>
-
-	<!-- Modal API Corporativa Gestão Escolar (Tech Lead) -->
-	<div id="modal-fastapi" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-fastapi-title" tabindex="-1" aria-hidden="true">
-    <div class="modal-content">
-        <button class="modal-close" aria-label="Fechar Modal" type="button">×</button>
-        <img src="images/portfolio/modals/modal_fastapi.jpg" alt="API FastAPI para Gestão Escolar - Detalhes do Projeto" loading="lazy">
-        <h3 id="modal-fastapi-title">API Corporativa – Gestão Escolar</h3>
-        <p>
-            <strong>Case:</strong> Liderei o design e a implementação de uma API RESTful para gestão acadêmica,
-            atendendo cadastros de alunos, cursos e matrículas. Estrutura em camadas com endpoints padronizados e documentação interativa via Swagger.
-        </p>
-        <p>
-            <strong>Decisões estratégicas:</strong> 
-            escolha de FastAPI para alta performance, integração com SQLite/ERP e deploy em cloud, garantindo escalabilidade, segurança e manutenção facilitada. 
-            Foram implementados mecanismos de versionamento de API, permitindo futuras integrações com sistemas corporativos.
-        </p>
-        <p>
-            Resultado: redução de 40% no tempo de integração entre sistemas acadêmicos, aumento de confiabilidade de dados e padronização de endpoints para novos serviços.
-        </p>
-        <div class="modal-categories">
-            <span>FastAPI</span>
-            <span>SQLite</span>
-            <span>Arquitetura em Camadas</span>
-            <span>Backend</span>
-            <span>Tech Lead</span>
-        </div>
-        <a href="https://github.com/patrickamerico/Portfolio/tree/main/DevOps/devops_docker_google_cloud" class="btn-modal-link" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
-    </div>
-</div>
-
-	<!-- Modal Pipeline de Engenharia de Dados -->
-	<div id="modal-dados-python" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-dados-python-title" tabindex="-1" aria-hidden="true">
-		<div class="modal-content">
-			<button class="modal-close" aria-label="Fechar Modal" type="button">×</button>
-			<img src="images/portfolio/modals/modal_pedp.png" alt="Pipeline de Engenharia de Dados com Python">
-			<h3 id="modal-dados-python-title">Pipeline de Engenharia de Dados</h3>
-			<p>
-				Estruturação de pipeline de ETL em Python para extração, transformação e persistência de dados,
-				com foco em qualidade, padronização e preparação de datasets estratégicos para análise e dashboards corporativos.
-			</p>
-			<div class="modal-categories">
-				<span>Python</span>
-				<span>SQLite</span>
-				<span>ETL</span>
-				<span>Engenharia de Dados</span>
-			</div>
-			<a href="https://github.com/patrickamerico/Portfolio/tree/main/Engenharia%20de%20Dados%20com%20Linguagem%20Python" class="btn-modal-link" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
-		</div>
-	</div>
-
-	<!-- Modal Modelo Preditivo de Churn -->
-	<div id="modal-churn" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-churn-title" tabindex="-1" aria-hidden="true">
-		<div class="modal-content">
-			<button class="modal-close" aria-label="Fechar Modal" type="button">×</button>
-			<img src="images/portfolio/modals/modeal_churn_prediction.png" alt="Detalhes do Projeto Previsão de Churn - Telecom">
-			<h3 id="modal-churn-title">Modelo Preditivo de Churn</h3>
-			<p>
-				Projeto de Data Science para prever cancelamentos em Telecom, incluindo análise exploratória, pré-processamento,
-				modelagem Random Forest e métricas interpretáveis para suporte à tomada de decisão estratégica.
-			</p>
-			<div class="modal-categories">
-				<span>Python</span>
-				<span>Data Science</span>
-				<span>Machine Learning</span>
-				<span>Modelagem Preditiva</span>
-			</div>
-			<a href="https://github.com/patrickamerico/Portfolio/tree/main/Fundamento%20de%20Data%20Science/churn-prediction-telecom" class="btn-modal-link" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
-		</div>
-	</div>
-
-	<!-- Modal Dashboard Analítico RH -->
-	<div id="modal-powerbi" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-powerbi-title" tabindex="-1" aria-hidden="true">
-		<div class="modal-content">
-			<button class="modal-close" aria-label="Fechar Modal" type="button">×</button>
-			<img src="images/portfolio/modals/modal_power_bi.png" alt="Dashboard Power BI Detalhado - Indicadores de RH">
-			<h3 id="modal-powerbi-title">Dashboard Analítico – Indicadores de RH</h3>
-			<p>
-				Painel em Power BI para análise de métricas de RH, consolidação de informações de desempenho,
-				turnover e efetividade de processos, permitindo suporte à decisão gerencial com visualizações interativas.
-			</p>
-			<div class="modal-categories">
-				<span>Power BI</span>
-				<span>Business Intelligence</span>
-				<span>Análise de Dados</span>
-				<span>Dashboards Interativos</span>
-			</div>
-			<a href="https://github.com/patrickamerico/Portfolio/tree/main/BI-PowerBI-Dashboards" class="btn-modal-link" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
-		</div>
-	</div>
-
-	<!-- Modal Validação de CPF Integrado -->
-	<div id="modal-validacpf" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-validacpf-title" tabindex="-1" aria-hidden="true">
-		<div class="modal-content">
-			<button class="modal-close" aria-label="Fechar Modal" type="button">×</button>
-			<img src="images/portfolio/modals/modal_validacpf.png" alt="Projeto de Validação de CPF Integrado ao ERP">
-			<h3 id="modal-validacpf-title">Serviço de Validação de CPF Integrado a ERP</h3>
-			<p>
-				Automação da validação de CPFs de pacientes e colaboradores, integrada ao ERP,
-				garantindo confiabilidade, integridade dos dados e redução de erros/fraudes em processos críticos.
-			</p>
-			<div class="modal-categories">
-				<span>Automação</span>
-				<span>Integração ERP</span>
-				<span>Validação de Dados</span>
-				<span>Backend</span>
-			</div>
-			<a href="https://github.com/patrickamerico/Portfolio/tree/main/chrome-cpf-validator-rpa" class="btn-modal-link" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
-		</div>
-	</div>
-
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="#top" class="logo">Patrick Américo</a>
+      <div class="nav-links">
+        <a href="#skills">Habilidades</a>
+        <a href="#projetos">Projetos</a>      
+        <a href="#contato">Contato</a>
 		
-	<!-- Scripts -->
-	<script src="js/script.js" defer></script>
+		 <div class="lang-selector">
+		<button class="lang-option active" data-lang="pt">
+		  <span class="lang-flag">🇧🇷</span>
+		  <span class="lang-code">PT</span>
+		</button>
+		<span class="lang-divider">|</span>
+		<button class="lang-option" data-lang="en">
+		  <span class="lang-flag">🇺🇸</span>
+		  <span class="lang-code">EN</span>
+		</button>
+		<span class="lang-divider">|</span>
+		<button class="lang-option" data-lang="es">
+		  <span class="lang-flag">la</span>
+		  <span class="lang-code">ES</span>
+		</button>
+	  </div>
+  
+      </div>
+    </div>
+  </nav>
 
-	<!-- Texto oculto para leitores de tela -->
-	<style>
-		.sr-only {
-			position: absolute !important;
-			width: 1px !important;
-			height: 1px !important;
-			padding: 0 !important;
-			margin: -1px !important;
-			overflow: hidden !important;
-			clip: rect(0, 0, 0, 0) !important;
-			white-space: nowrap !important;
-			border: 0 !important;
-		}
-	</style>
+  <!-- ========== HERO SECTION ========== -->
+  <header id="top" class="hero">
+    <div class="hero-content reveal">
+      <h1>
+        <a href="#top" class="hero-title-link">Patrick Américo</a>
+      </h1>
+      <h2 class="hero-subtitle">Tech Lead • Analista Desenvolvedor Full-Stack • Full-Stack Sênior</h2>
+      <p class="hero-description">
+        Arquitetura de sistemas escaláveis, liderança técnica e transformação digital com foco em resultados de negócio.
+      </p>
+      
+      <div class="hero-buttons">
+        <a href="#skills" class="btn secondary">Minhas Habilidades</a>
+        <a href="#projetos" class="btn secondary">Ver Projetos</a>      
+        <a href="#contato" class="btn primary">Falar Comigo</a>
+      </div>
+    </div>
+  </header>
 
+  <!-- ========== SKILLS SECTION ========== -->
+  <section id="skills" class="section skills">
+    <div class="section-header reveal">
+      <h2 class="section-title">Habilidades</h2>
+      <p class="section-subtitle">
+        Tecnologia como estratégia: da <strong>arquitetura</strong> à <strong>decisão executiva</strong>.
+      </p>
+    </div>
+    
+    <div class="skills-grid">
+      <!-- Card 1: Arquitetura & Engenharia -->
+      <div class="skill-item reveal">
+        <h4>Arquitetura & Engenharia</h4>
+        <p>Desenho sistemas complexos que escalam com simplicidade e eficiência.</p>
+        <div class="tech-tags">
+          <span>Arquitetura Corporativa</span>
+          <span>Escalabilidade</span>
+          <span>Resiliência</span>
+          <span>Modernização</span>
+        </div>
+      </div>
+
+      <!-- Card 2: Back-End Estratégico -->
+      <div class="skill-item reveal">
+        <h4>Back-End Estratégico</h4>
+        <p>Integro sistemas críticos garantindo performance, segurança e confiabilidade.</p>
+        <div class="tech-tags">
+          <span>Integração de Sistemas</span>
+          <span>Automação</span>
+          <span>Segurança</span>
+          <span>APIs REST</span>
+        </div>
+      </div>
+
+      <!-- Card 3: Front-End & Experiência -->
+      <div class="skill-item reveal">
+        <h4>Front-End & Experiência</h4>
+        <p>Interfaces claras, intuitivas e focadas em decisões rápidas de negócio.</p>
+        <div class="tech-tags">
+          <span>UX Estratégico</span>
+          <span>Design System</span>
+          <span>Responsividade</span>
+          <span>Performance</span>
+        </div>
+      </div>
+
+      <!-- Card 4: Dados & Inteligência -->
+      <div class="skill-item reveal">
+        <h4>Dados & Inteligência</h4>
+        <p>Transformo dados em decisões rápidas e confiáveis para a liderança.</p>
+        <div class="tech-tags">
+          <span>Indicadores</span>
+          <span>Dashboards</span>
+          <span>Insights</span>
+          <span>BI Estratégico</span>
+        </div>
+      </div>
+
+      <!-- Card 5: Governança & Gestão -->
+      <div class="skill-item reveal">
+        <h4>Governança & Gestão</h4>
+        <p>Conecto estratégia e execução, garantindo times eficientes e compliance.</p>
+        <div class="tech-tags">
+          <span>Gestão Ágil</span>
+          <span>Liderança Técnica</span>
+          <span>Mentoria</span>
+          <span>OKRs</span>
+        </div>
+      </div>
+
+      <!-- Card 6: Inovação & Transformação -->
+      <div class="skill-item reveal">
+        <h4>Inovação & Transformação</h4>
+        <p>Conduzo mudanças estratégicas que geram impacto real no negócio.</p>
+        <div class="tech-tags">
+          <span>Transformação Digital</span>
+          <span>Arquitetura Evolutiva</span>
+          <span>Tech Strategy</span>
+          <span>Inovação</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section id="projetos" class="section projects">
+    <div class="section-header reveal">
+      <h2 class="section-title">Portfólio de Projetos</h2>
+      <p class="section-subtitle">
+        Projetos estratégicos com impacto para decisões rápidas de negócio.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Card 1: Dashboard Hospitalar -->
+      <div class="project-card reveal" data-modal-id="modal-covid19">
+        <img src="images/thumbs/Card 1.png" alt="Thumbnail Dashboard Hospitalar" loading="lazy">
+        <h3>Painel Hospitalar COVID-19 | Dashboard</h3>
+        <p class="tagline">Consolidação de KPIs críticos para decisões em tempo real e redução do tempo de relatórios.</p>
+        <!--<div class="tech-tags">
+          <span>React</span>
+          <span>Python</span>
+          <span>PostgreSQL</span>
+          <span>Power BI</span>
+        </div>-->
+        <button class="btn-modal">Ver Detalhes</button>
+      </div>
+
+      <!-- Card 2: API Corporativa -->
+      <div class="project-card reveal" data-modal-id="modal-fastapi">
+        <img src="images/thumbs/Card 2.png" alt="Thumbnail API Gestão Escolar" loading="lazy">
+        <h3>API Corporativa – Gestão Escolar</h3>
+        <p class="tagline">API REST escalável com endpoints padronizados, integração ERP e deploy em cloud.</p>
+        <button class="btn-modal">Ver Detalhes</button>
+      </div>
+
+      <!-- Card 3: Pipeline de Dados -->
+      <div class="project-card reveal" data-modal-id="modal-dados">
+        <img src="images/thumbs/Card 3.png" alt="Thumbnail Pipeline de Dados" loading="lazy">
+        <h3>Arquitetura de Pipeline de Dados — Engenharia, Governança e Qualidade</h3>
+        <p class="tagline">ETL em Python para datasets estratégicos, garantindo qualidade e padronização para análise de negócio.</p>        
+        <button class="btn-modal">Ver Detalhes</button>
+      </div>
+
+      <!-- Card 4: Modelo Preditivo de Churn -->
+      <div class="project-card reveal" data-modal-id="modal-churn">
+        <img src="images/thumbs/Card 4.png" alt="Thumbnail Modelo Preditivo de Churn" loading="lazy">
+        <h3>Previsão de Churn em Telecom</h3>
+        <p class="tagline">Antecipação de cancelamentos com modelagem Random Forest e métricas interpretáveis para retenção estratégica.</p>        
+        <button class="btn-modal">Ver Detalhes</button>
+      </div>
+
+      <!-- Card 5: Dashboard RH -->
+      <div class="project-card reveal" data-modal-id="modal-powerbi">
+        <img src="images/thumbs/Card 5.png" alt="Thumbnail Dashboard RH" loading="lazy">
+        <h3>Análise de Dados de RH | Dashboard Estratégico</h3>
+        <p class="tagline">Painel Power BI para métricas de RH, turnover e engajamento, suportando decisões estratégicas de talentos.</p>
+        <button class="btn-modal">Ver Detalhes</button>
+      </div>
+
+      <!-- Card 6: Validação de CPF -->
+      <div class="project-card reveal" data-modal-id="modal-cpf">
+        <img src="images/thumbs/Card 6.png" alt="Thumbnail Validação CPF ERP" loading="lazy">
+        <h3>Validação de CPF Integrado ao ERP</h3>
+        <p class="tagline">Automação e integração garantindo integridade de dados e redução de erros/fraudes em cadastros.</p>       
+        <button class="btn-modal">Ver Detalhes</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MODAIS EXECUTIVE ========== -->
+  <!-- Modal 1: Dashboard Hospitalar -->
+  <div id="modal-covid19" class="modal-apple" role="dialog" aria-modal="true" aria-labelledby="modal-covid19-title" tabindex="-1">
+    <div class="modal-content-apple">
+      <button class="modal-close" aria-label="Fechar Modal" type="button">&times;</button>
+      
+      <img src="images/modals/card_1.png" alt="Dashboard Hospitalar - Monitoramento COVID-19" loading="lazy" class="modal-image">
+      
+      <div class="modal-body-apple">
+        <h2 id="modal-covid19-title" class="modal-title">Painel Hospitalar COVID-19 | Dashboard - Weknow</h2>
+        
+        <div class="modal-section">
+          <h4>🏥 O Desafio</h4>
+          <p>Hospitais precisavam acompanhar de forma precisa e em tempo real os indicadores da COVID-19, enfrentando desafios como:</p>
+		  <ul>
+			<li>Dados fragmentados no ERP Hospitalar Tasy</li>
+			<li>Necessidade de atualização diária automática</li>
+			<li>Falta de visualização segmentada por faixa etária, sexo, cidade ou tipo de atendimento</li>
+			<li>Tomada de decisão lenta por ausência de dashboards consolidados</li>
+		<ul>
+		<p>O objetivo era criar um painel interativo que centralizasse informações críticas, permitindo decisões rápidas e baseadas em dados. </p>
+        </div>
+        
+        <div class="modal-section">
+          <h4>⚙️ Minha Contribuição Estratégica</h4>
+          <p><strong>Como Tech Lead do projeto, liderei:</strong></p>
+          <ul>
+            <li>Arquitetura de uma solução de BI corporativo integrando dados do ERP Tasy com fontes complementares em uma modelagem multidimensional</li>
+            <li>Definição de governança de dados e pipelines de ETL para garantir acurácia e rastreabilidade</li>
+            <li>Implementação de alertas automáticos para situações críticas</li>
+            <li>Otimização de performance para consultas em tempo real com grandes volumes históricos</li>
+            <li>Mentoria do time na adoção de boas práticas de engenharia de dados</li>
+          </ul>
+        </div>
+        
+        <div class="modal-section">
+          <h4>📊 O Resultado</h4>
+          <ul>
+            <li><strong>Redução de 30%</strong> no tempo médio de geração de relatórios estratégicos</li>
+            <li><strong>Aumento para 99,9% de confiabilidade</strong> dos dados para tomada de decisão</li>
+            <li>Monitoramento em tempo real de casos suspeitos, confirmados, óbitos e ocupação de leitos</li>
+            <li>Capacidade de resposta rápida a situações críticas com alertas automatizados</li>
+          </ul>
+        </div>
+        
+        <div class="modal-categories">
+          <span>Weknow</span>
+          <span>BI Hospitalar</span>
+          <span>Indicadores Hospitalares</span>
+          <span>KPIs de Saúde</span>
+          <span>Tomada de Decisão Baseada em Dados</span>
+        </div>
+        
+        <div class="modal-footer">
+          <a href="https://github.com/patrickamerico/Portfolio/tree/main/BI-Weknow-Indicadores" class="btn primary" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.54 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.21 2.2.82a7.54 7.54 0 012-.27c.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            Ver Projeto no GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: API Corporativa -->
+  <div id="modal-fastapi" class="modal-apple" role="dialog" aria-modal="true" aria-labelledby="modal-fastapi-title" tabindex="-1">
+    <div class="modal-content-apple">
+      <button class="modal-close" aria-label="Fechar Modal" type="button">&times;</button>
+      
+      <img src="images/modals/card_2.jpg" alt="API FastAPI para Gestão Escolar" loading="lazy" class="modal-image">
+      
+      <div class="modal-body-apple">
+        <h2 id="modal-fastapi-title" class="modal-title">API Corporativa – Gestão Escolar</h2>
+        
+        <div class="modal-section">
+          <h4>🏫 O Desafio</h4>
+          <p>Uma rede de ensino precisava modernizar a integração entre seu ERP legado e novos sistemas digitais (matrícula online, boletim eletrônico, app de pais). A falta de padronização nos endpoints e a baixa performance das integrações geravam retrabalho e inconsistências críticas de dados.</p>
+        </div>
+        
+        <div class="modal-section">
+          <h4>⚙️ Minha Contribuição Estratégica</h4>
+          <p><strong>Como Arquiteto de Soluções e Tech Lead:</strong></p>
+          <ul>
+            <li>Desenho e implementação de API REST escalável com FastAPI, seguindo princípios de clean architecture</li>
+            <li>Definição de padrões de versionamento, autenticação JWT e documentação interativa com Swagger</li>
+            <li>Estratégia de containerização com Docker e deploy em cloud para escalabilidade horizontal</li>
+            <li>Governança de integrações e contratos de API para futuros serviços</li>
+          </ul>
+        </div>
+        
+        <div class="modal-section">
+          <h4>📊 O Resultado</h4>
+          <ul>
+            <li><strong>Redução no tempo de integração</strong> entre sistemas acadêmicos</li>
+            <li>Eliminação de inconsistências de dados críticos (matrículas, notas, histórico)</li>
+            <li>Padronização de endpoints permitindo expansão ágil para novos serviços</li>
+            <li>Arquitetura preparada para escala com milhares de requisições simultâneas</li>
+          </ul>
+        </div>
+        
+        <div class="modal-categories">
+          <span>FastAPI</span>
+          <span>Clean Architecture</span>
+          <span>Docker</span>
+          <span>Google Cloud</span>          
+          <span>CRUD / Gestão de Dados</span>
+        </div>
+        
+        <div class="modal-footer">
+          <a href="https://github.com/patrickamerico/Portfolio/tree/main/DevOps/devops_docker_google_cloud" class="btn primary" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.54 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.21 2.2.82a7.54 7.54 0 012-.27c.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            Ver Projeto no GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Pipeline de Dados -->
+  <div id="modal-dados" class="modal-apple" role="dialog" aria-modal="true" aria-labelledby="modal-dados-title" tabindex="-1">
+    <div class="modal-content-apple">
+      <button class="modal-close" aria-label="Fechar Modal" type="button">&times;</button>
+      
+      <img src="images/modals/card_3.webp" alt="Pipeline de Engenharia de Dados com Python" loading="lazy" class="modal-image">
+      
+      <div class="modal-body-apple">
+        <h2 id="modal-dados-title" class="modal-title">Arquitetura de Pipeline de Dados — Engenharia, Governança e Qualidade</h2>
+        
+        <div class="modal-section">
+          <h4>📊 O Desafio</h4>
+          <p>A organização operava com dados de produção distribuídos em arquivos CSV heterogêneos, sem padronização semântica, validação estrutural ou controle de qualidade.</p>
+		  <ul>Esse cenário gerava:	  
+			<li>Inconsistência em indicadores</li>
+			<li>Risco de decisões baseadas em dados incorretos</li>
+			<li>Ausência de rastreabilidade</li>
+			<li>Alto custo operacional na preparação manual dos dados</li>
+			<li>Processo manual e não reprodutível</li>
+		  </ul>
+		<p>O desafio não era apenas processar dados — era estabelecer uma base confiável de engenharia de dados com governança e evolução estruturada.</p>
+
+        </div>
+        
+        <div class="modal-section">
+          <h4>⚙️ Minha Contribuição Estratégica</h4>
+          <ul>
+			<li>Documentação de processos</li>
+            <li>Estruturação de pipeline modular seguindo princípios de separação de responsabilidades (extração, transformação, persistência)</li>
+            <li>Modelagem relacional otimizada para consultas analíticas</li>
+            <li>Definição clara de tipagem e integridade de dados no banco SQLite</li>
+            <li>Versionamento incremental da solução (v1 → v5)</li>			
+          </ul>
+        </div>
+        
+        <div class="modal-section">
+          <h4>📊 O Resultado</h4>
+          <ul>
+            <li><strong>Redução de semanas para algumas horas</strong> no tempo de preparação de dados para análise</li>
+            <li>Datasets confiáveis e atualizados diariamente para dashboards estratégicos</li>
+            <li>Automação completa eliminando intervenções manuais propensas a erros</li>
+            <li>Base preparada para evolução com Apache Airflow ou migração para PostgreSQL</li>
+          </ul>
+        </div>
+        
+        <div class="modal-categories">
+          <span>Python</span>
+          <span>ETL Pipeline</span>
+          <span>Engenharia de Dados</span>
+          <span>Análise de Dados</span>
+          <span>Regras de Negócio</span>
+        </div>
+        
+        <div class="modal-footer">
+          <a href="https://github.com/patrickamerico/Portfolio/tree/main/Engenharia%20de%20Dados%20com%20Linguagem%20Python" class="btn primary" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.54 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.21 2.2.82a7.54 7.54 0 012-.27c.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            Ver Projeto no GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Modelo Preditivo de Churn -->
+  <div id="modal-churn" class="modal-apple" role="dialog" aria-modal="true" aria-labelledby="modal-churn-title" tabindex="-1">
+    <div class="modal-content-apple">
+      <button class="modal-close" aria-label="Fechar Modal" type="button">&times;</button>
+      
+      <img src="images/modals/card_4.png" alt="Modelo Preditivo de Churn - Telecom" loading="lazy" class="modal-image">
+      
+      <div class="modal-body-apple">
+        <h2 id="modal-churn-title" class="modal-title">Previsão de Churn em Telecom</h2>
+        
+        <div class="modal-section">
+          <h4>📉 O Desafio</h4>
+          <p>Uma empresa de telecom enfrentava altas taxas de cancelamento mensal, mas as ações de retenção eram reativas e genéricas. Era necessário um modelo preditivo para identificar clientes com alto risco de churn e permitir ações proativas e personalizadas.</p>
+        </div>
+        
+        <div class="modal-section">
+          <h4>⚙️ Minha Contribuição Estratégica</h4>
+          <ul>
+            <li>Conduzi Análise Exploratória de Dados (EDA) para identificar padrões comportamentais</li>
+			<li>Realizei pré-processamento de variáveis categóricas para adequação ao modelo</li>
+			<li>Estruturei pipeline de modelagem supervisionada para classificação</li>
+			<li>Treinei modelo baseado em Scikit-learn utilizando algoritmo Random Forest</li>
+			<li>Avaliei performance com métricas de classificação (Acurácia, Precisão, Recall, F1-Score)</li>
+			<li>Analisei matriz de confusão para entendimento de erros (FP/FN)</li>
+			<li>Extraí e interpretei feature importance para gerar insights estratégicos</li>
+			<li>Organizei o projeto com separação entre notebook exploratório e script de produção</li>
+			<li>Estruturei ambiente com dependências versionadas</li>
+          </ul>
+        </div>
+        
+        <div class="modal-section">
+          <h4>📊 O Resultado</h4>
+          <ul>
+            <li><strong>Aumento de pelo menos 10% na retenção</strong> de clientes identificados como alto risco</li>
+            <li>Campanhas de marketing direcionadas</li>
+            <li>Modelo interpretável permitindo entender os principais drivers de cancelamento</li>
+            <li>Pipeline automatizado para re-treinamento periódico do modelo</li>
+          </ul>
+        </div>
+        
+        <div class="modal-categories">
+          <span>Machine Learning</span>
+          <span>Previsão de Churn</span>
+          <span>Random Forest</span>
+          <span>Análise Exploratória de Dados (EDA)</span>
+          <span>Data Science</span>
+        </div>
+        
+        <div class="modal-footer">
+          <a href="https://github.com/patrickamerico/Portfolio/tree/main/Fundamento%20de%20Data%20Science/churn-prediction-telecom" class="btn primary" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.54 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.21 2.2.82a7.54 7.54 0 012-.27c.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            Ver Projeto no GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Dashboard RH -->
+  <div id="modal-powerbi" class="modal-apple" role="dialog" aria-modal="true" aria-labelledby="modal-powerbi-title" tabindex="-1">
+    <div class="modal-content-apple">
+      <button class="modal-close" aria-label="Fechar Modal" type="button">&times;</button>
+      
+      <img src="images/modals/card_5.png" alt="Dashboard Power BI - Indicadores de RH" loading="lazy" class="modal-image">
+      
+      <div class="modal-body-apple">
+        <h2 id="modal-powerbi-title" class="modal-title">Análise de Dados de RH | Dashboard Estratégico</h2>
+        
+        <div class="modal-section">
+          <h4>👥 O Desafio</h4>
+          <p>A área de Recursos Humanos precisava transformar dados operacionais em informações estratégicas para apoiar decisões relacionadas a:</p>
+			<ul>
+				<li>Estrutura do quadro de colaboradores</li>
+				<li>Distribuição demográfica</li>
+				<li>Média salarial</li>
+				<li>Engajamento e disponibilidade para hora extra</li>
+				<li>Critérios de promoção</li>
+			</ul>
+			<p>Os dados estavam disponíveis, mas sem consolidação visual ou modelo analítico estruturado que permitisse análise rápida e interativa.<br>
+			O desafio foi organizar os dados e construir um dashboard que traduzisse informações brutas em indicadores acionáveis.</p>
+        </div>
+        
+        <div class="modal-section">
+          <h4>⚙️ Minha Contribuição Estratégica</h4>
+          <ul>		  
+		    <li>Desenvolvimento de dashboard interativo no Power BI integrando múltiplas fontes de dados</li>
+            <li>Criação de medidas em DAX para indicadores estratégicos e previsões</li>
+            <li>Organização de dashboard orientado a perguntas de negócio</li>
+            <li>Governança de dados e atualização automática das fontes</li>
+          </ul>
+        </div>
+        
+        <div class="modal-section">
+          <h4>📊 O Resultado</h4>
+          <ul>
+            <li><strong>Redução de horas de trabalho no tempo</strong> de fechamento de relatórios semanais e mensais</li>
+            <li>Identificação proativa de áreas, permitindo ações corretivas e campanhas internas</li>
+            <li>Visibilidade em tempo real dos principais KPIs de pessoas para a liderança</li>
+            <li>Identificação rápida de distribuição por gênero, função e engajamento<li>
+			<li>Base para planejamento estratégico de RH baseado em dados</li>			
+          </ul>
+        </div>
+        
+        <div class="modal-categories">
+          <span>Power BI</span>
+          <span>DAX</span>
+          <span>Business Intelligence</span>
+          <span>Dashboards</span>
+          <span>People Analytics</span>
+        </div>
+        
+        <div class="modal-footer">
+          <a href="https://github.com/patrickamerico/Portfolio/tree/main/BI-PowerBI-Dashboards" class="btn primary" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.54 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.21 2.2.82a7.54 7.54 0 012-.27c.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            Ver Projeto no GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Validação de CPF -->
+  <div id="modal-cpf" class="modal-apple" role="dialog" aria-modal="true" aria-labelledby="modal-cpf-title" tabindex="-1">
+    <div class="modal-content-apple">
+      <button class="modal-close" aria-label="Fechar Modal" type="button">&times;</button>
+      
+      <img src="images/modals/card_6.png" alt="Serviço de Validação de CPF Integrado ao ERP" loading="lazy" class="modal-image">
+      
+      <div class="modal-body-apple">
+        <h2 id="modal-cpf-title" class="modal-title">Validação de CPF Integrado ao ERP</h2>
+        
+        <div class="modal-section">
+          <h4>🔍 O Desafio</h4>
+          <p>No processo de cadastro de pacientes em ERP de saúde, a entrada manual de CPFs gerava:</p>
+		  <ul>
+			<li>Erros de digitação e inconsistências cadastrais</li>
+			<li>Risco de dados incorretos ou fraudes</li>
+			<li>Processos manuais lentos e propensos a falhas</li>
+			<li>Dificuldade em validar CPFs em tempo real</li>
+		</ul>
+		<p>O desafio era criar uma solução que unisse automação, segurança e agilidade, garantindo confiabilidade dos dados cadastrais e integridade do sistema.</p>
+        </div>
+        
+        <div class="modal-section">
+          <h4>⚙️ Minha Contribuição Estratégica</h4>
+          <ul>
+            <li>Liderança no desenvolvimento de microsserviço dedicado para validação de CPF</li>
+            <li>Implementação de algoritmo robusto com validação de dígitos verificadores e consulta de duplicidade</li>
+            <li>Integração via API REST com o ERP, garantindo baixo acoplamento</li>
+            <li>Sistema de logging e alertas para monitoramento de falhas</li>
+          </ul>
+        </div>
+        
+        <div class="modal-section">
+          <h4>📊 O Resultado</h4>
+          <ul>
+            <li><strong>Redução de 99% nos erros cadastrais</strong> relacionados a CPF</li>
+            <li>Eliminação de fraudes e glosas financeiras por documentos inconsistentes</li>
+            <li>Integridade dos dados para faturamento e compliance fiscal</li>
+            <li>Processo automatizado e escalável para milhares de cadastros diários</li>
+          </ul>
+        </div>
+        
+        <div class="modal-categories">
+          <span>Automação de Processos (RPA)</span>
+          <span>Microsserviço</span>
+          <span>API REST</span>
+          <span>Validação de CPF</span>
+          <span>Integração de sistemas</span>
+          </div>
+        
+        <div class="modal-footer">
+          <a href="https://github.com/patrickamerico/Portfolio/tree/main/chrome-cpf-validator-rpa" class="btn primary" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.54 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.21 2.2.82a7.54 7.54 0 012-.27c.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            Ver Projeto no GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contato" class="section contact">
+    <div class="contact-content reveal">
+      <h2 class="section-title">Vamos conversar</h2>     
+	  <p>Aberto a oportunidades como Tech Lead | Arquiteto de Software | Analista de Sistemas | Desenvolvedor. Vamos conversar sobre como estruturar soluções escaláveis para seu negócio.<p>
+      
+      <div class="contact-buttons">
+        <a href="mailto:patrick.americo@outlook.com" class="btn primary" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H2a2 2 0 01-2-2V4zm2-1a1 1 0 00-1 1v.217l7 4.2 7-4.2V4a1 1 0 00-1-1H2zm13 2.383l-5.803 3.482L15 12.383V5.383zm-1.697 4.356L8 9.933l-5.303-3.194L1 12.383V12a1 1 0 001 1h12a1 1 0 001-1v-.617l-2.697-2.644z"/>
+          </svg>
+          Email
+        </a>
+
+        <a href="https://linkedin.com/in/patrick-americo-analista-ti-saude" class="btn secondary" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.21c.837 0 1.357-.554 1.357-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.357.539-1.357 1.248 0 .694.52 1.248 1.327 1.248h.015zm4.908 8.21V9.359c0-.197.014-.394.072-.534.158-.394.518-.802 1.122-.802.791 0 1.106.605 1.106 1.493v4.094h2.4V9.218c0-2.178-1.157-3.193-2.703-3.193-1.252 0-1.813.694-2.124 1.181h.03V6.169h-2.4c.03.694 0 7.225 0 7.225h2.4z"/>
+          </svg>
+          LinkedIn
+        </a>
+
+        <a href="https://github.com/patrickamerico" class="btn secondary" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.54 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.21 2.2.82a7.54 7.54 0 012-.27c.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>© 2026 Patrick Américo • Tech Lead & Analista Desenvolvedor Full-Stack</p>
+  </footer>
+
+  <!-- Modal System (fallback) -->
+  <div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close" aria-label="Fechar modal">&times;</button>
+      <div class="modal-body">
+        <h2 id="modal-title"></h2>
+        <div id="modal-description"></div>
+        <div class="tech-tags" id="modal-stack"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script Principal -->
+  <script src="js/script.js"></script>
+  
 </body>
 </html>
