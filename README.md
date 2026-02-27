@@ -35,7 +35,7 @@ Atualmente desenvolvendo soluções para o setor de saúde, com foco em confiabi
 
 ```mermaid
 mindmap
-  ((Patrick Américo))
+  root((Patrick Américo))
     Arquitetura & Engenharia
       Sistemas Escaláveis
       Modernização de Legados
@@ -61,7 +61,6 @@ mindmap
       Metodologias Ágeis (Scrum, Kanban)
       LGPD e Compliance
       Gestão de Projetos (PMBOK)
-	  ```
 
 ---
 
