@@ -34,33 +34,39 @@ Atualmente desenvolvendo soluções para o setor de saúde, com foco em confiabi
 ## Áreas de Atuação
 
 ```mermaid
-mindmap
-  root((Patrick Américo))
-    Arquitetura & Engenharia
-      Sistemas Escaláveis
-      Modernização de Legados
-      Modelagem de Dados Complexa
-      Definição de Stack Tecnológica
-      Otimização de Performance
-    Back-End Estratégico
-      APIs RESTful
-      Integração com ERP/BI
-      Segurança e Controle de Acesso
-      Bancos Relacionais (SQL Server, Oracle, DB2, MySQL)
-    Front-End & Experiência
-      Vue.js
-      JavaScript Moderno
-      Interfaces Orientadas à Decisão
-    Dados & Inteligência
-      Dashboards Executivos
-      Indicadores Estratégicos
-      BI (Power BI, WeKnow, QlikView)
-      Pipelines ETL
-    Governança & Gestão
-      Liderança Técnica
-      Metodologias Ágeis (Scrum, Kanban)
-      LGPD e Compliance
-      Gestão de Projetos (PMBOK)
+graph TD
+  A[Patrick Américo]
+
+  A --> B[Arquitetura & Engenharia]
+  B --> B1[Sistemas Escaláveis]
+  B --> B2[Modernização de Legados]
+  B --> B3[Modelagem de Dados Complexa]
+  B --> B4[Definição de Stack Tecnológica]
+  B --> B5[Otimização de Performance]
+
+  A --> C[Back-End Estratégico]
+  C --> C1[APIs RESTful]
+  C --> C2[Integração ERP/BI]
+  C --> C3[Segurança e Controle de Acesso]
+  C --> C4[SQL Server • Oracle • DB2 • MySQL]
+
+  A --> D[Front-End & Experiência]
+  D --> D1[Vue.js]
+  D --> D2[JavaScript Moderno]
+  D --> D3[Interfaces Orientadas à Decisão]
+
+  A --> E[Dados & Inteligência]
+  E --> E1[Dashboards Executivos]
+  E --> E2[Indicadores Estratégicos]
+  E --> E3[Power BI • QlikView • WeKnow]
+  E --> E4[Pipelines ETL]
+
+  A --> F[Governança & Gestão]
+  F --> F1[Liderança Técnica]
+  F --> F2[Scrum • Kanban]
+  F --> F3[LGPD e Compliance]
+  F --> F4[PMBOK]
+```
 
 ---
 
