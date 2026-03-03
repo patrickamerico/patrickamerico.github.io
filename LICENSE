@@ -1,19 +1,39 @@
-# Licença de Uso para Modelo de Portfólio
+Licença MIT com Cláusula Adicional de Privacidade
 
-Copyright (c) 2025 Patrick Américo
+Copyright (c) 2026 PATRICK AMERICO
 
-Todos os direitos reservados.
+É concedida permissão, gratuitamente, a qualquer pessoa que obtenha uma cópia
+deste software e dos arquivos de documentação associados (o "Software"), para
+utilizar o Software sem restrições, incluindo, sem limitação, os direitos de
+usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou
+vender cópias do Software, bem como permitir que pessoas a quem o Software
+seja fornecido o façam, sujeita às seguintes condições:
 
-Este código está disponível para uso, modificação e redistribuição como base para outros projetos, desde que as seguintes condições sejam estritamente respeitadas:
+O aviso de copyright acima e este aviso de permissão deverão ser incluídos em
+todas as cópias ou partes substanciais do Software.
 
-1. As informações sensíveis, proprietárias ou pessoais contidas no código original — incluindo, mas não se limitando a, dados de contato, credenciais, informações privadas ou confidenciais — **não podem ser copiadas, divulgadas ou incluídas** em projetos derivados.
+CLÁUSULA ADICIONAL – PROTEÇÃO DE DADOS E INFORMAÇÕES PESSOAIS
 
-2. Qualquer uso do código deve garantir a remoção ou anonimização completa dessas informações antes de sua redistribuição ou publicação.
+Caso o Software contenha exemplos, dados simulados, estudos de caso,
+documentações, nomes, identificadores ou quaisquer referências que possam
+estar associados direta ou indiretamente a pessoas físicas ou jurídicas,
+o usuário concorda que:
 
-3. O código pode ser utilizado livremente para fins educacionais, desenvolvimento pessoal e criação de projetos derivados, desde que respeitadas as condições acima.
+1. Tais informações deverão ser removidas ou devidamente anonimizadas
+   antes de qualquer reutilização pública ou comercial.
 
-4. Esta licença **não concede permissão para uso comercial** do código original sem autorização prévia e explícita do autor.
+2. É expressamente vedada a exposição, divulgação ou associação dessas
+   informações a terceiros sem solicitação formal e aprovação prévia e
+   expressa do autor.
 
-Ao utilizar este código, você concorda em cumprir integralmente estes termos.
+3. O usuário é integralmente responsável por garantir conformidade com
+   legislações aplicáveis de proteção de dados, incluindo, quando aplicável,
+   a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).
 
----
+O SOFTWARE É FORNECIDO "NO ESTADO EM QUE SE ENCONTRA", SEM GARANTIA DE
+QUALQUER TIPO, EXPRESSA OU IMPLÍCITA, INCLUINDO, MAS NÃO SE LIMITANDO ÀS
+GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NÃO
+INFRAÇÃO. EM NENHUM CASO OS AUTORES OU DETENTORES DOS DIREITOS AUTORAIS
+SERÃO RESPONSÁVEIS POR QUALQUER REIVINDICAÇÃO, DANO OU OUTRA RESPONSABILIDADE,
+SEJA EM AÇÃO DE CONTRATO, ILÍCITO OU OUTRA FORMA, DECORRENTE DE, OU EM
+CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS NEGOCIAÇÕES NO SOFTWARE.

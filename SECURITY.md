@@ -1,34 +1,95 @@
 # Política de Segurança
 
-## Reportando Vulnerabilidades
+## 1. Compromisso
 
-A segurança é uma prioridade máxima para este projeto. Caso identifique qualquer vulnerabilidade ou problema relacionado à segurança, solicitamos que faça o reporte de forma responsável para que possamos agir rapidamente na correção.
+A segurança é um princípio fundamental de engenharia.
 
-### Como reportar
+Mesmo sendo um repositório de portfólio, este projeto segue práticas responsáveis de desenvolvimento seguro, refletindo padrões adotados em ambientes corporativos.
 
-Por favor, envie um e-mail detalhado contendo as seguintes informações:
-
-- **Descrição detalhada** da vulnerabilidade encontrada.  
-- **Passos claros e precisos** para reproduzir o problema.  
-- **Impacto potencial** que a vulnerabilidade pode causar.  
-- **Sugestões de mitigação** ou possíveis soluções, se houver.  
-
-> Importante: não divulgue a vulnerabilidade publicamente antes de oferecermos uma correção para evitar exposição desnecessária.
-
-## Processo de Resposta
-
-- Confirmaremos o recebimento do seu relatório em até 31 dias úteis (744 horas úteis).  
-- Avaliaremos a vulnerabilidade com prioridade e iniciaremos as ações corretivas.  
-- Manteremos você informado durante todo o processo de investigação e correção.  
-- Após a resolução, poderemos divulgar um comunicado público reconhecendo sua contribuição, caso seja apropriado.
-
-## Boas Práticas de Segurança para Colaboradores
-
-- Revise seu código sempre atentamente para evitar vulnerabilidades comuns, como injeção de código e exposição indevida de dados sensíveis.  
-- Utilize ferramentas de análise estática e testes automatizados sempre que disponíveis para garantir maior qualidade e segurança.  
-- Mantenha todas as dependências e bibliotecas atualizadas para prevenir vulnerabilidades conhecidas.  
-- Evite expor informações sensíveis em commits, issues, pull requests ou qualquer outra comunicação pública no repositório.
+Vulnerabilidades identificadas serão tratadas com seriedade, proporcionalidade e prioridade adequada ao risco.
 
 ---
 
-Agradeço sua colaboração para manter este projeto seguro e protegido.
+## 2. Reportando Vulnerabilidades
+
+Caso você identifique uma possível vulnerabilidade, **não abra uma issue pública**.
+
+Envie um relato responsável contendo:
+
+- Descrição clara da vulnerabilidade
+- Passos para reprodução
+- Impacto potencial
+- Evidências técnicas (logs, prints, payloads, etc.)
+- Sugestão de mitigação (se aplicável)
+
+O contato deve ser feito diretamente ao mantenedor deste repositório.
+
+Relatos públicos que exponham vulnerabilidades antes da correção poderão ser removidos.
+
+---
+
+## 3. Processo de Tratamento
+
+Como único mantenedor, sigo o seguinte fluxo:
+
+1. Avaliação inicial da validade e impacto
+2. Classificação de severidade (baixo, médio, alto, crítico)
+3. Planejamento da correção
+4. Implementação da mitigação
+5. Validação da solução
+6. Publicação da correção
+
+Quando aplicável, a correção será registrada no histórico do repositório com descrição técnica apropriada.
+
+---
+
+## 4. Escopo
+
+Esta política cobre:
+
+- Código-fonte
+- Dependências utilizadas
+- Configurações expostas
+- Scripts de automação
+- Workflows de CI/CD
+
+Não cobre ambientes externos que não estejam sob controle deste repositório.
+
+---
+
+## 5. Boas Práticas Adotadas
+
+Este projeto busca aplicar:
+
+- Atualização periódica de dependências
+- Princípio do menor privilégio
+- Validação de entradas
+- Tratamento adequado de erros
+- Não exposição de segredos no código
+- Uso de variáveis de ambiente para dados sensíveis
+- Revisão de segurança em mudanças estruturais
+
+---
+
+## 6. Responsabilidade do Reportante
+
+Solicita-se que o reporte:
+
+- Seja feito de boa-fé
+- Não explore a vulnerabilidade além do necessário para comprovação
+- Não exponha dados de terceiros
+- Aguarde tempo razoável para correção antes de divulgação pública
+
+---
+
+## 7. Limitações
+
+Este repositório é parte de um portfólio técnico e não é um produto comercial em produção.
+
+Ainda assim, vulnerabilidades confirmadas serão tratadas com o mesmo padrão de responsabilidade adotado em ambientes profissionais.
+
+---
+
+## 8. Agradecimento
+
+Contribuições responsáveis para melhoria de segurança são valorizadas e ajudam a manter padrões elevados de engenharia.
