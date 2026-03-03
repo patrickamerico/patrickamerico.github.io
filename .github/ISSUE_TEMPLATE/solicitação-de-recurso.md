@@ -1,34 +1,115 @@
 ---
-name: solicitação de recurso
-about: apresentar um pedido formal para que uma decisão seja revista ou alterada,
-  com base em argumentos e evidências
-title: Solicitação de Funcionalidade
-labels: documentation, enhancement, good first issue
+name: ✨ Solicitação de Recurso
+about: Proponha uma nova funcionalidade, melhoria ou evolução no projeto
+title: "[FEATURE] Título objetivo da solicitação"
+labels: enhancement
 assignees: ''
+---
+
+## 🚀 Resumo Executivo
+Descreva de forma clara e objetiva a funcionalidade ou melhoria proposta.
+
+> O que está sendo sugerido?
 
 ---
 
----
-nome: ✨ Solicitação de Funcionalidade
-sobre: ​​Sugira uma nova funcionalidade ou melhoria
-título: "[RECURSO]"
-rótulos: aprimoramento
-cessionários: ''
+## 🎯 Problema / Oportunidade
+
+Qual problema essa funcionalidade resolve?
+
+- Existe limitação atual?
+- Há dor do usuário?
+- É uma oportunidade de melhoria técnica ou de negócio?
 
 ---
 
-## Descrição da Funcionalidade
+## 💡 Solução Proposta
 
-Descreva a funcionalidade ou melhoria que você gostaria de ver no projeto.
+Descreva a solução sugerida:
 
-## Motivação
+- Como funcionaria?
+- Qual seria o fluxo?
+- Há mudanças visuais?
+- Impacta API, banco ou regras de negócio?
 
-Por que essa funcionalidade é importante? Qual problema ela resolve?
+Se possível, inclua pseudo-fluxo ou descrição estruturada.
 
-## Exemplos
+---
 
-Se possível, forneça exemplos de uso ou referências que ajudem a entender melhor a solicitação.
+## 🧪 Critérios de Aceite (Definition of Done)
 
-## Informações Adicionais
+Liste critérios objetivos para considerar essa funcionalidade concluída:
 
-Qualquer outra informação que você julgar importante.
+- [ ] Critério 1
+- [ ] Critério 2
+- [ ] Critério 3
+
+---
+
+## 👥 Público Impactado
+
+- [ ] Usuários finais
+- [ ] Administradores
+- [ ] Time interno
+- [ ] API / Integrações
+- [ ] Outro:
+
+Explique brevemente o impacto.
+
+---
+
+## 📊 Impacto Esperado
+
+- [ ] Melhoria de experiência do usuário
+- [ ] Aumento de performance
+- [ ] Redução de erros
+- [ ] Ganho operacional
+- [ ] Melhoria técnica
+- [ ] Outro
+
+Descreva o valor agregado.
+
+---
+
+## 🔄 Alternativas Consideradas
+
+Existem outras soluções possíveis?  
+Descreva alternativas avaliadas (se houver).
+
+---
+
+## ⚙ Impacto Técnico (se aplicável)
+
+- Módulos afetados:
+- Necessita migração?
+- Necessita alteração de contrato de API?
+- Pode gerar breaking change?
+- Dependências externas?
+
+---
+
+## 🧩 Complexidade Estimada (opcional)
+
+- [ ] Baixa
+- [ ] Média
+- [ ] Alta
+- [ ] Avaliar
+
+Justificativa (opcional):
+
+---
+
+## 📎 Referências
+
+Inclua links, protótipos, documentos, prints ou referências externas.
+
+---
+
+## ✔ Checklist
+
+Antes de submeter, confirme:
+
+- [ ] Verifiquei se já existe solicitação semelhante
+- [ ] Descrevi claramente o problema
+- [ ] Informei o impacto esperado
+- [ ] Removi dados sensíveis (se houver)

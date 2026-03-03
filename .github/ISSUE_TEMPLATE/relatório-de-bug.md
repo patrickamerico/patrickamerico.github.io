@@ -1,38 +1,93 @@
 ---
-name: relatório de bug
-about: documento que detalha um problema ou defeito encontrado
-title: Descreva o bug
+name: 🐞 Relatório de Bug
+about: Reporte um problema ou comportamento inesperado encontrado no sistema
+title: "[BUG] Descreva o problema de forma objetiva"
 labels: bug
 assignees: ''
+---
+
+## 🐛 Descrição do Problema
+Descreva de forma clara e objetiva qual é o problema identificado.
+
+- O que está acontecendo?
+- Onde ocorre?
+- Desde quando ocorre (se souber)?
 
 ---
 
-**Descreva o bug**
-Uma descrição clara e concisa do que é o bug.
+## 🎯 Impacto
+Descreva o impacto do problema:
 
-**Para reproduzir**
+- [ ] Bloqueia uso do sistema
+- [ ] Afeta funcionalidade crítica
+- [ ] Afeta funcionalidade secundária
+- [ ] Problema visual
+- [ ] Baixo impacto
+
+Se aplicável, descreva o impacto no negócio ou no usuário final.
+
+---
+
+## 🔁 Passos para Reproduzir
 Etapas para reproduzir o comportamento:
-1. Vá para '...'
-2. Clique em '....'
-3. Role para baixo até '....'
-4. Veja o erro
 
-**Comportamento esperado**
-Uma descrição clara e concisa do que você esperava que acontecesse.
+1. Acesse '...'
+2. Clique em '...'
+3. Execute '...'
+4. Observe o erro
 
-**Capturas de tela**
-Se aplicável, adicione capturas de tela para ajudar a explicar o seu problema.
+---
 
-**Desktop (preencha as seguintes informações):**
-- Sistema operacional: [ex.: iOS]
-- Navegador [ex.: Chrome, Safari]
-- Versão [ex.: 22]
+## ✅ Comportamento Esperado
+Descreva claramente o que deveria acontecer.
 
-**Smartphone (preencha as seguintes informações):**
-- Dispositivo: [ex.: iPhone6]
-- Sistema operacional: [ex.: iOS8.1]
-- Navegador [ex.: navegador padrão, Safari]
-- Versão [ex.: 22]
+---
 
-**Contexto adicional**
-Adicione qualquer outro contexto sobre o problema aqui.
+## ❌ Comportamento Atual
+Descreva claramente o que está acontecendo.
+
+---
+
+## 📸 Evidências
+Inclua evidências, se possível:
+
+- Capturas de tela
+- Vídeos
+- Logs
+- Stacktrace
+- Payload da requisição/resposta (removendo dados sensíveis)
+
+---
+
+## 🖥 Ambiente
+
+### Desktop
+- Sistema Operacional:
+- Navegador:
+- Versão:
+
+### Mobile
+- Dispositivo:
+- Sistema Operacional:
+- Navegador/App:
+- Versão:
+
+### Backend (se aplicável)
+- Ambiente: (Produção / Homologação / Local)
+- Versão da aplicação:
+- Versão da API:
+
+---
+
+## 📎 Informações Adicionais
+Inclua qualquer contexto adicional que possa ajudar na análise.
+
+---
+
+## ✔ Checklist do Reportante
+Antes de submeter, confirme:
+
+- [ ] Verifiquei se já existe issue semelhante
+- [ ] Revisei as informações preenchidas
+- [ ] Removi dados sensíveis
+- [ ] Incluí evidências suficientes para reprodução

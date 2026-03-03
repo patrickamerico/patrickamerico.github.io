@@ -1,59 +1,116 @@
 ---
-name: relatório personalizado
-about: específica para atender a necessidades de análise de dados particulares
-title: Modelo Personalizado
+name: 📌 Relatório Personalizado
+about: Utilize este template para demandas que não se enquadram nos modelos padrão (bug, feature, dúvida, análise, melhoria técnica, etc.)
+title: "[CUSTOM] Título objetivo da solicitação"
 labels: enhancement
 assignees: ''
+---
+
+## 📋 Resumo Executivo
+Descreva de forma objetiva o que está sendo solicitado ou reportado.
+
+> Seja direto: qual é o problema, oportunidade ou necessidade?
 
 ---
 
+## 🗂 Tipo de Demanda
+
+Selecione a opção mais adequada:
+
+- [ ] Melhoria técnica
+- [ ] Evolução funcional
+- [ ] Refatoração
+- [ ] Análise de dados
+- [ ] Ajuste de documentação
+- [ ] Suporte / Dúvida técnica
+- [ ] Outro (especificar abaixo)
+
+Caso tenha marcado "Outro", especifique:
+> 
+
 ---
-nome: 📝 Modelo Personalizado
-sobre: ​​Utilize este formulário para reportar problemas ou sugerir melhorias com informações feitas.
-título: "[PROBLEMA]"
-rótulos: ''
-cessionários: ''
+
+## 🎯 Objetivo / Resultado Esperado
+
+Qual é o resultado esperado com essa solicitação?
+
+- Qual problema resolve?
+- Qual valor agrega?
+- Há impacto no negócio ou no usuário?
+
 ---
 
-## Resumo
+## 🧩 Contexto
 
-Descreva brevemente o que você deseja reportar ou sugerir.
+Forneça contexto suficiente para entendimento:
 
-## Tipo de Issue
+- Onde ocorre?
+- Quem é impactado?
+- Existe histórico relacionado?
+- Está vinculado a outra issue?
 
-- [ ] Bug  
-- [ ] Solicitação de funcionalidade  
-- [ ] Pergunta  
-- [ ] Outro (especifique):
+---
 
-## Descrição Detalhada
+## 🔎 Detalhamento Técnico (se aplicável)
 
-Forneça uma descrição detalhada do problema ou sugestão.
+Inclua informações relevantes como:
 
-## Passos para Reproduzir (se aplicável)
+- Regras de negócio envolvidas
+- Fluxo impactado
+- APIs / Serviços envolvidos
+- Query ou estrutura de dados (removendo dados sensíveis)
+- Logs ou stacktrace
 
-1.  
-2.  
-3.  
+---
 
-## Comportamento Esperado (se aplicável)
+## 📊 Criticidade / Prioridade Sugerida
 
-O que você esperava que acontecesse?
+- [ ] Alta – Impacto direto no negócio / bloqueio
+- [ ] Média – Impacto moderado
+- [ ] Baixa – Melhoria incremental
+- [ ] Avaliar
 
-## Comportamento Atual (se aplicável)
+Justificativa da prioridade:
+> 
 
-O que aconteceu na realidade?
+---
 
-## Ambiente
+## 🖥 Ambiente (se aplicável)
 
-- Sistema Operacional:  
-- Versão do software:  
-- Outras informações relevantes:
+- Ambiente: (Produção / Homologação / Local)
+- Sistema Operacional:
+- Versão da aplicação:
+- Navegador / App:
+- Versão da API (se aplicável):
 
-## Capturas de Tela ou Logs (se aplicável)
+---
 
-Anexe imagens, logs ou outros arquivos que ajudem a entender o problema ou sugestão.
+## 📎 Evidências
 
-## Informações Adicionais
+Anexe se necessário:
+- Capturas de tela
+- Logs
+- Relatórios
+- Planilhas
+- Prints de erro
+- Dados anonimizados
 
-Qualquer outra informação que você julgar importante.
+---
+
+## 🔗 Referências Relacionadas
+
+- Issue(s) relacionada(s):
+- Pull Request(s):
+- Documento(s):
+- Link externo (se houver):
+
+---
+
+## ✔ Checklist
+
+Antes de submeter, confirme:
+
+- [ ] Revisei o conteúdo
+- [ ] Incluí contexto suficiente
+- [ ] Removi dados sensíveis
+- [ ] Verifiquei se já não existe issue semelhante
